@@ -5,7 +5,7 @@ This project is created on 01-sept-2018
 Post Your Work on GitHub
 
 ### Description
-Describe what your project is about and what it does
+This project is about creating GitHub repository for bikeshare project
 
 ### Files used
 Include the files used
