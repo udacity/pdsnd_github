@@ -9,7 +9,7 @@ n this project, I wrote Python code to import US bike share data and answer inte
 in the terminal to present these statistics.
 
 ### Files used
-Files used include the bikeshare.py file, chicago.csv, new_york_city.csv, and washington.csv files.
+Files used include bikeshare.py, chicago.csv, new_york_city.csv, and washington.csv files.
 
 ### Credits
 Please note the GitHub project (Project 3) repository for PDSND was used in this project.  
