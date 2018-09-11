@@ -50,12 +50,17 @@ def get_filters():
 
 
     months = ['all','january', 'february', 'march', 'april', 'may', 'june']
-    #Use a while loop to manage the user input stream and convert the user input into a string
+    """
+    Use a while loop to manage the user input stream and
+    convert the user input into a string
+    """
     while True:
-        ##Lowercase each element of the list after first converting the user input to a string
+        """
+        Lowercase each element of the list after first converting the user input to a string
+        Consume user input, strip, lowercase, then check to see if the element is in the list
+        """
         try:
             month = input(str('\nPlease enter a month between January and June or all:  \n'))
-            # take in the user input, strip & lowercase, then check to see if the element is in the list
             month = month.strip().lower()
             if month in months:
                 break
@@ -177,7 +182,7 @@ def trip_duration_stats(df):
         """Displays statistics on the total and average trip duration."""
 
         print('\nCalculating Trip Duration...\n')
-        start_time = time.time() 
+        start_time = time.time()
 
         # TO DO: display total travel time
         print('\nDisplaying total travel time statistics in minutes...\n')
