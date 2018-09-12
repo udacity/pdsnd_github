@@ -34,7 +34,7 @@ def get_filters():
             city = city.strip().lower()
             """
             Managing user input until input needs are satisfied
-            Using the break, continue and pass statements for user input
+            Using the break statement for user input
             """
             if city in cities:
                 break
