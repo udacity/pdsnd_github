@@ -11,7 +11,7 @@ In this project, I wrote Python code to import US bike share data and answer int
 Files used include bikeshare.py, chicago.csv, new_york_city.csv, and washington.csv files.
 
 ### Credits
-The GitHub Project 3 repository for PDSND was used in this project.  
+The GitHub Project 3 repo for PDSND was used in this project.  
 
 ### Project Datasets
 Randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
