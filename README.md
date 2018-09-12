@@ -7,7 +7,7 @@ Udacity-GitHub Bike Share Project
 ### Description
 In this project, I wrote Python code to import US bike share data and answer interesting questions about it by computing descriptive statistics. The contains a script that takes in raw input to create an interactive experience in the terminal to present statistics.
 
-### Files used
+### Files Used
 Files used include bikeshare.py, chicago.csv, new_york_city.csv, and washington.csv files.
 
 ### Credits

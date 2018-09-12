@@ -19,7 +19,7 @@ def get_filters():
     months = ['all','january', 'february', 'march', 'april', 'may', 'june']
     days = ['all','sunday','monday', 'tuesday','wednesday','thursday','friday', 'saturday']
     #Use a while loop to manage the user input and convert it to a string
-    
+
     while True:
         try:
             ### Steps: receive user input, convert as a string, once input is received - strip, lowercase the input
@@ -64,7 +64,7 @@ def get_filters():
             print ('\nHi! The day you entered is not in the list. You can get this right. Try again!\n')
         except KeyboardInterrupt:
             print('\nProgram interrupted by user\n')
-        
+
     return city, month, day
 
 
@@ -108,7 +108,7 @@ def load_data(city, month, day):
 
 def time_stats(df):
     try:
-        
+
         """Displays statistics on the most frequent times of travel."""
 
         print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -126,7 +126,7 @@ def time_stats(df):
         print('\nMost common start hour...\n')
         df['hour'] = df['Start Time'].dt.hour
         print(df['hour'].mode()[0])
-    except IndexError:    
+    except IndexError:
         print('\nThe time statistic is out of range\n')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -207,28 +207,28 @@ def user_stats(df):
         print('\nUser Statistic is unavailable for this city\n')
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+
 def show_data(df):
     Indexrow = 0
-    ''' Displays 5 lines of data based on user input. 
-        If user wants more data, 
+    ''' Displays 5 lines of data based on user input.
+        If user wants more data,
         five more lines of data are displayed
     '''
     display_info = input(str('\nDo you want to see raw data? Please type Yes or No!\n'))
-    display_info = display_info.strip().lower() 
-    
+    display_info = display_info.strip().lower()
+
     while True:
         if display_info == 'yes':
             new_df = df[Indexrow:Indexrow+5]
             print('\nThe raw data is presented below!\n')
             print(new_df)
             print('-'*80)
-            Indexrow += 5        
-        display_info = input(str('\nDo you want to see more data? Please type Yes or No!\n'))      
+            Indexrow += 5
+        display_info = input(str('\nDo you want to see more data? Please type Yes or No!\n'))
         if display_info != 'yes':
-            break    
+            break
     print('-'*80)
-    
+
 def main():
     while True:
         city, month, day = get_filters()
