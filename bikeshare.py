@@ -22,7 +22,7 @@ def get_filters():
     months = ['all','january', 'february', 'march', 'april', 'may', 'june']
     days = ['all','sunday','monday', 'tuesday','wednesday','thursday','friday', 'saturday']
     """
-    Use a while loop to manage the user input and convert it to a string
+    Use a while loop to manage user input and convert it to a string
     """
     while True:
         try:
