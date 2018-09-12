@@ -5,13 +5,13 @@ Created on 9/10/2018
 Udacity-GitHub Bike Share Project
 
 ### Description
-In this project, I wrote Python code to import US bike share data and answer interesting questions about it by computing descriptive statistics. This file contains a script that takes in raw input to create an interactive experience in the terminal to present these statistics.
+In this project, I wrote Python code to import US bike share data and answer interesting questions about it by computing descriptive statistics. The contains a script that takes in raw input to create an interactive experience in the terminal to present statistics.
 
 ### Files used
 Files used include bikeshare.py, chicago.csv, new_york_city.csv, and washington.csv files.
 
 ### Credits
-Please note the GitHub Project 3 repository for PDSND was used in this project.  
+The GitHub Project 3 repo for PDSND was used in this project.  
 
 ### Project Datasets
 Randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
@@ -23,13 +23,12 @@ Randomly selected data for the first six months of 2017 are provided for all thr
     End Station (e.g., Sedgwick St & North Ave)
     User Type (Subscriber or Customer)
 
-##The Chicago and New York City files also have the following two columns:
-
+### The Chicago and New York City files also have the following two columns:
     Gender
     Birth Year
 
 ### Datasets detail
-##The urls to the original Datasets are listed below if you'd like to see them.
+Urls for the original datasets are listed below if you'd like to see them.
 
 https://www.divvybikes.com/system-data
 https://www.citibikenyc.com/system-data
@@ -38,24 +37,24 @@ https://www.capitalbikeshare.com/system-data
 ### Statistics Computed
 You will learn about bike share use in Chicago, New York City, and Washington by computing a variety of descriptive statistics. In this project, you'll write code to provide the following information:
 
-#1 Popular times of travel (i.e., occurs most often in the start time)
+### 1 Popular times of travel (i.e., occurs most often in the start time)
 
     most common month
     most common day of week
     most common hour of day
 
-#2 Popular stations and trip
+### 2 Popular stations and trip
 
     most common start station
     most common end station
     most common trip from start to end (i.e., most frequent combination of start station and end station)
 
-#3 Trip duration
+### 3 Trip duration
 
     total travel time
     average travel time
 
-#4 User info
+### 4 User info
 
     counts of each user type
     counts of each gender (only available for NYC and Chicago)
