@@ -98,7 +98,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     df = pd.read_csv(CITY_DATA[city])
-<<<<<<< HEAD
+
     """
     Steps
     Convert the Start Time column to datetime
@@ -106,48 +106,35 @@ def load_data(city, month, day):
     Filter by month if applicable
     Use the index of the months list to get the corresponding int
     """
-||||||| merged common ancestors
+
     # convert the Start Time column to datetime
-=======
+
     """
     convert the Start Time column to datetime
     """
->>>>>>> 4025ee742c2b7b5b04a172e651875c9af0c918e7
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-<<<<<<< HEAD
-||||||| merged common ancestors
 
     # extract month and day of week from Start Time to create new columns
-=======
+
     """
     extract month and day of week from Start Time to create new columns
     """
->>>>>>> 4025ee742c2b7b5b04a172e651875c9af0c918e7
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
-<<<<<<< HEAD
-
-||||||| merged common ancestors
 
     # filter by month if applicable
-=======
+
     """
     filter by month if applicable
     """
->>>>>>> 4025ee742c2b7b5b04a172e651875c9af0c918e7
     if month != 'all':
-<<<<<<< HEAD
-||||||| merged common ancestors
-
     # use the index of the months list to get the corresponding int
-=======
     """
     use the index of the months list to get the corresponding int
     filter by month to create the new dataframe
     filter by day of week if applicable
     filter by day of week to create the new dataframe
     """
->>>>>>> 4025ee742c2b7b5b04a172e651875c9af0c918e7
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month.lower()) + 1
         df = df[df['month'] == month]
