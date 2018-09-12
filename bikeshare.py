@@ -112,15 +112,15 @@ def load_data(city, month, day):
     """
     if month != 'all':
     """
-    # use the index of the months list to get the corresponding int
+    use the index of the months list to get the corresponding int
+    filter by month to create the new dataframe
+    filter by day of week if applicable
+    filter by day of week to create the new dataframe
     """
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month.lower()) + 1
-        # filter by month to create the new dataframe
         df = df[df['month'] == month]
-        # filter by day of week if applicable
         if day != 'all':
-        # filter by day of week to create the new dataframe
             df = df[df['day_of_week'] == day.title()]
 
     print('\nRun some analysis of user statistics...\n')
