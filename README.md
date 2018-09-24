@@ -1,5 +1,5 @@
 ### Date created
-Include the date you created this project and README file.
+created the project/README.md file on: 24/09/2018
 
 ### Project Title
 Replace the Project Title
@@ -12,4 +12,3 @@ Include the files used
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
