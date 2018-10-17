@@ -1,3 +1,4 @@
+#import packages
 import time
 import pandas as pd
 import numpy as np
@@ -40,7 +41,8 @@ def get_filters():
         else:
             print('Sorry, I do not understand your input. Please input either '
                         'January, February, March, April, May, June or All')
-        # get user input for day of week (all, mondasy, tuesday, ... sunday)
+
+    # get user input for day of week (all, mondasy, tuesday, ... sunday)
     day = ''
     while day.lower() not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
         day = input('Which days would you like to explore the data by Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or All?\n')
@@ -50,11 +52,8 @@ def get_filters():
             print('Sorry, I do not understand your input. Please input either '
                         'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or All\n')
 
-
-
     print('-'*40)
     return city, month, day
-
 
 def load_data(city, month, day):
     """
@@ -75,8 +74,6 @@ def load_data(city, month, day):
 
     if city == 'washington' :
         df['Birth Year'] = 0
-
-
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -101,7 +98,6 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
 
     return df
-
 
 
 def time_stats(df):
@@ -163,7 +159,6 @@ def trip_duration_stats(df):
     datediff = df['datediff'].mean()
     print('Mean Travel Time:\n', datediff)
 
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
     return df
@@ -183,7 +178,6 @@ def user_stats(df):
     women = df.query('Gender == "Female"').Gender.count()
     print('There are {} male users and {} female users.'.format(men, women))
 
-
     # Display earliest, most recent, and most common year of birth
     birth_year_min =df['Birth Year'].min()
     print('Earliest Birth Year:\n', int(birth_year_min))
@@ -191,8 +185,6 @@ def user_stats(df):
     print('Most Recent Birth Year:\n', int(birth_year_max))
     birth_year_mode = df['Birth Year'].mode()
     print('Most Popular Birth Year:\n', int(birth_year_mode))
-
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -203,14 +195,11 @@ def display_data(df):
     print('\nCalculating data pull...\n')
     start_time = time.time()
 
-
     data = input('\nWould you like to see the data? Enter yes or no.\n')
     if data.lower() == 'yes':
         print(df)
     else:
         Print('You entered No')
-
-
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
