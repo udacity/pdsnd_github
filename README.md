@@ -4,7 +4,7 @@
 Bikeshare Project
 
 ### Description
-The project allows you to investigate different bikeshare datasets in 3 different cities.
+The project allows you to investigate different bikeshare datasets in 3 cities. The data can be viewed by month and by day. 
 
 ### Files used
 chicago.csv
