@@ -154,7 +154,7 @@ def trip_duration_stats(df):
     df['End Time'] = pd.to_datetime(df['End Time'])
     df['datediff'] =(df['End Time'] - df['Start Time'])
     totaltime = df['datediff'].sum()
-    print('Total Travel Time:\n', totaltime)
+    print('The Total Travel Time is {}.'.format(totaltime
     # display mean travel time
     datediff = df['datediff'].mean()
     print('Mean Travel Time:\n', datediff)
