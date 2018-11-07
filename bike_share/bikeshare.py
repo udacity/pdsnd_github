@@ -129,7 +129,8 @@ def load_data(city, month, day):
         month_day_filter = filter_by_day(filteredDataByMonth, 'Start Time', dayIndex)
         return month_day_filter
     
-""" Calculates the most frequent times of travel.
+""" Calculates the most frequent time of travel for: month, day of week, and start hour
+
 INPUT: 
 df - DataFrame to collect stats off of.
 """
@@ -222,7 +223,9 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-""" Displays user stats for a data frame
+""" Displays the following user statistics:
+    Counts of each type of user
+    Counts of each type of gender
 INPUT: 
 df: DataFrame to collect user data off of.
 """
