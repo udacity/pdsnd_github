@@ -60,7 +60,6 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-
     return df
 
 
@@ -127,8 +126,6 @@ def trip_duration_stats(df):
     # TO DO: display mean travel time
     average_travel_time = df['Trip Duration'].mean()
     print('Average Trip Duration:', average_travel_time)
-
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -151,8 +148,10 @@ def user_stats(df):
     # TO DO: Display earliest, most recent, and most common year of birth
     earliest_year_of_birth = df['Birth Year'].min()
     print('Earliest year of birth:', earliest_year_of_birth)
+    
     most_recent_year_of_birth = df['Birth Year'].max()
     print('Most recent year of birth:', most_recent_year_of_birth)
+    
     most_common_year_of_birth = df['Birth Year'].mode()[0]
     print('Most common year of birth:', most_common_year_of_birth)
 
