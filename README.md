@@ -8,7 +8,7 @@ BikeShare Data Analysis
 This project is a statistical analysis of BikeShare system in 3 major cities in the US namely Washington, NYC and Chicago. Python was used for providing statistical insights into the sharing system based on data provided by "Motivate".
 
 ### Files used
-Files include- Bikeshare.py
+Files include- washington.csv , new_york_city.csv and chicago.csv
 
 ### Credits
 Resources used:
