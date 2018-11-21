@@ -12,6 +12,16 @@ Files include- Bikeshare.py
 
 ### Credits
 Resources used:
+
 https://help.github.com/articles/removing-a-remote/
+
+
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+
+### Software used:
+
+Python Programming Language, Atom Text Editor and Git Version Control System
