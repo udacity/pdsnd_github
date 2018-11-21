@@ -21,6 +21,8 @@ https://help.github.com/articles/adding-an-existing-project-to-github-using-the-
 
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
+https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
 
 ### Software used:
 
