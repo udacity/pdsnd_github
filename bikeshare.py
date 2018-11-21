@@ -1,6 +1,6 @@
-import time
-import pandas as pd
-import numpy as np
+import time  #used for datetime manipulation
+import pandas as pd  #used for data handling
+import numpy as np #used for numerical and statistical analysis
 
 CHICAGO = 'Chicago'
 NYC = 'New York City'
@@ -16,19 +16,19 @@ hours = [ '11 PM' , '10 PM' , '9 PM' , '8 PM' , '7 PM' , '6 PM' , '5 PM' , '4 PM
 
 seconds_in_minute = 60
 seconds_in_hour = 60 * seconds_in_minute
-seconds_in_days = 24 * seconds_in_hour 
+seconds_in_days = 24 * seconds_in_hour
 seconds_in_week = 7 * seconds_in_days
 
 #print(CITY_DATA)
 START_TIME = 'Start Time'
 END_TIME = 'End Time'
-BIRTH_YEAR = 'Birth Year' 
+BIRTH_YEAR = 'Birth Year'
 START_STATION = 'Start Station'
 END_STATION = 'End Station'
 TRIP_DURATION = 'Trip Duration'
 GENDER = 'Gender'
 
-#colums that are added 
+#colums that are added
 START_MONTH = 'Start Month'
 START_DAY_OF_WEEK = 'Start Day of Week'
 
@@ -49,7 +49,7 @@ def get_filters():
         print("1 - Chicago, 2 - New York, 3 - Washington")
         location = input("> ")
         if location == '1' :
-            city = CHICAGO 
+            city = CHICAGO
             print("You have selected the city of Chicago")
             break
         elif location == '2' :
@@ -86,11 +86,11 @@ def get_filters():
                 continue
             else :
                   print("Sorry, you have entered an invalid choice")
-                  continue    
+                  continue
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        print("Select the number of the month you would like to explore or \"{}\": ".format(ALL))                    
+        print("Select the number of the month you would like to explore or \"{}\": ".format(ALL))
         print("1 as Monday, 2 as Tuesday, 3 as Wednesday, 4 as Thursday, 5 as Friday, 6 as Saturday and 7 as Sunday")
         d = input("> ")
         if d == ALL :
@@ -105,22 +105,22 @@ def get_filters():
             if day >= 1 and day<= 7 :
                 day -= 1
                 print("You have selected " + days_in_week[day])
-                break 
+                break
             else :
                 print("Sorry, you have selected an invalid option")
                 continue
-                    
-    
+
+
     return city, month, day
 
-#added extra 
+#added extra
 
 def convert_date_time_columns(df) :
                     df[START_TIME] = df[START_TIME].apply(pd.to_datetime)
                     df[END_TIME] = df[END_TIME].apply(pd.to_datetime)
                     df[START_MONTH] = df[START_TIME].dt.month
-                    df[START_DAY_OF_WEEK] = df[START_TIME].dt.dayofweek   
-                    
+                    df[START_DAY_OF_WEEK] = df[START_TIME].dt.dayofweek
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -134,12 +134,12 @@ def load_data(city, month, day):
     """
     df = pd.read_csv(CITY_DATA[city])
     convert_date_time_columns(df)
-                    
+
     if month is not None :
                     df = df[df[START_MONTH] == month]
     if day is not None :
                     df = df[df[START_DAY_OF_WEEK] == day]
-           
+
     return df
 
 
@@ -151,14 +151,14 @@ def time_stats(df, display_month, display_day_in_week):
         (bool) display_day_in_week - same as above for day of week
     Returns:
         month, day_of_week, hour (tuple of ints) -
-            Most frequent times of travel - day_of_week and/or hour may be None if already filtered by these   
+            Most frequent times of travel - day_of_week and/or hour may be None if already filtered by these
     """
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-    
+
     month, day_of_week, hour = None, None, None
-                    
+
     # TO DO: display the most common month
     if display_month :
         month = df[START_MONTH].mode()[0]
@@ -168,13 +168,13 @@ def time_stats(df, display_month, display_day_in_week):
     if display_day_in_week :
         day_of_week = df[START_DAY_OF_WEEK].mode()[0]
         print("This tells that the most common start day in the whole week {}".format(days_in_week[day_of_week]))
-                      
+
     # TO DO: display the most common start hour
     hour = df[START_TIME].dt.hour.mode()[0]
     print("This tells us that the most common time {}".format(hours[hour]))
     print("\nThis took %s seconds." % (time.time() - start_time))
-    
-    
+
+
     return month, day_of_week, hour
 
 
@@ -223,13 +223,13 @@ def trip_duration_stats(df):
 
 def user_stats(df):
     """Displays statistics on bikeshare users.
-    
+
     Returns:
         user_dict - key type of user, value is count
         gender_dict - same as above, for gender
         earliest_year (int) of birth
         the_most_recent_year (int) "
-        the_most_common_year (int) "   
+        the_most_common_year (int) "
     """
 
     print('\nCalculating User Stats...\n')
@@ -241,17 +241,17 @@ def user_stats(df):
     for index, row in user_type.iterrows():
         user_dict[index] = row[0]
         print("{}: {}".format(index, row[0]))
-        
+
     gender_dict = {}
     if GENDER in df.columns:
-    
+
     # TO DO: Display counts of gender
         gender = df.groupby(GENDER).count()
         print()
         for index, row in gender.iterrows():
             gender_dict[index] = row[0]
             print("{}: {}".format(index, row[0]))
-        
+
     the_earliest_year = None
     the_most_recent_year = None
     the_most_common_year = None
@@ -269,7 +269,7 @@ def user_stats(df):
 
 def main():
     line_number = 0
-    
+
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
@@ -283,11 +283,11 @@ def main():
         if restart.lower() != 'no':
             print(df.iloc[line_number : line_number + 5])
             line_number += 5
-            
+
         if restart.lower() != 'yes':
             print("Have a great day. Goodbye!")
             break
-   
-            
+
+
 if __name__ == "__main__":
 	main()
