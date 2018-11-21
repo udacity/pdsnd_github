@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on 21/11/2018
 
 ### Project Title
-Replace the Project Title
+BikeShare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project is a statistical analysis of BikeShare system in 3 major cities in the US namely Washington, NYC and Chicago. Python was used for providing statistical insights into the sharing system based on data provided by "Motivate".
 
 ### Files used
-Include the files used
+Files include- Bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Resources used:
+https://help.github.com/articles/removing-a-remote/
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
