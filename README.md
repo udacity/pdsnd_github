@@ -19,4 +19,8 @@ readme.txt
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://de.wikipedia.org/wiki/GitHub
+https://guides.github.com/activities/hello-world/
+https://rogerdudler.github.io/git-guide/index.de.html
+https://praxistipps.chip.de/github-tutorial-diese-basics-muessen-sie-koennen_50784
 
