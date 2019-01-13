@@ -1,15 +1,17 @@
-### Date created
-Include the date you created this project and README file.
+January 13, 2018
 
-### Project Title
-Replace the Project Title
+bikeshare.py
 
-### Description
-Describe what your project is about and what it does
+Description
+bikeshare.py is a python program to call bike ride data for New York, Chicago & Washington D.C.
 
-### Files used
-Include the files used
+This program is best used when filtering by any of the above cities, months, and days of the week. However, you can also just type "all" to see all available data that is pertinent to your query or information.
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Files used
+new_york_city.csv
+chicago.csv
+washington.csv
+bikeshare.py
 
+Credits
+Udacity for the raw data
