@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+January 30, 2019
 
 ### Project Title
-Replace the Project Title
+Bikeshare project
 
 ### Description
-Describe what your project is about and what it does
+Udacity Programming for Data Science Python Final project
 
 ### Files used
-Include the files used
+shannon_mosher_bikeshare_project.py
+washington.csv
+new_york_city.csv
+chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity lessons, knowledge base and student hub used to create this project.
