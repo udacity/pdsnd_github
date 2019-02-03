@@ -1,0 +1,6 @@
+# gitignore file for bikeshare project
+# do not include any data files
+
+chicago.csv
+new_york_city.csv
+washington.csv
