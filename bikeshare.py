@@ -44,7 +44,7 @@ def get_filters():
                 print('Please enter valid city. Chicago or New York City or Washington\n')
             else:
                 break
-        except ValuError:
+        except ValueError:
             print('Value Error')
         except KeyboardInterrupt:
             print("Pressed Control key")
@@ -67,7 +67,7 @@ def get_filters():
                 print('Please enter valid month OR all for no month filter\n')
             else:
                 break
-        except ValuError:
+        except ValueError:
             print('Value Error')
         except KeyboardInterrupt:
             print("Pressed Control key")
@@ -87,7 +87,7 @@ def get_filters():
                 print('Please enter valid day of the week or all for no day filter\n')
             else:
                 break
-        except ValuError:
+        except ValueError:
             print('Value Error')
         except KeyboardInterrupt:
             print("Pressed Control key")
@@ -333,7 +333,7 @@ def main():
         df = load_data(city, month, day)
 
         #Check if the DataFrame contains data for the specified city, month and day
-        
+
         if df.empty:
             print('There is no data for combination of city: {}, month: {}, day: {}'.format(city,month,day))
         else:
