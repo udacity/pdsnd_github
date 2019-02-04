@@ -30,9 +30,9 @@ def get_filters():
          -If wrong day of the week is entered, error is prompted to enter valid day of the week until correct city is entered
 
     """
-    print()
-    print('Hello! Let\'s explore some US bikeshare data!')
-    print()
+
+    print('\nHello! Let\'s explore some US bikeshare data!\n')
+
 
     while True:
         # get user input for city (chicago, new york city, washington).
