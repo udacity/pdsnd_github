@@ -85,7 +85,7 @@ def raw_data_prompt(df):
     print_raw_data = \
     input("""Would you like to see 5 lines of your selection?
     \nEnter yes or no.\n>>> """)
-    
+
     # print data based on user input
     while print_raw_data.lower() == 'yes':
         # loop to add 5 lines of data every time the user chooses to continue
@@ -104,7 +104,8 @@ def time_stats(df):
 
     # display the most common month
     common_month = df['month'].mode()[0]
-    print("Most common month: ",months[common_month-1].title())
+    print("Most common month: {}"\
+    .format(months[common_month-1].title()))
 
     # display the most common day of week
     print("Most popular day of the week: {}"\
