@@ -85,11 +85,11 @@ def raw_data_prompt(df):
     print_raw_data = \
     input("""Would you like to see 5 lines of your selection?
     \nEnter yes or no.\n>>> """)
-
-    # loop to add 5 lines of data every time the user chooses to continue
-    n = 5
+    
     # print data based on user input
     while print_raw_data.lower() == 'yes':
+        # loop to add 5 lines of data every time the user chooses to continue
+        n = 5
         print(df.iloc[:n])
         n += 5
         print_raw_data = input("""
