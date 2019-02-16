@@ -14,7 +14,7 @@ To complete this project, you'll require the following softwares:
     Python
     A text editor, like Sublime or Atom
     A terminal application
-    
+
 ### Files used
 Files
 This project contains 1 file
@@ -25,6 +25,19 @@ This project contains 3 Dataset file
     chicago.csv
     new_york_city.csv
     washington.csv
+    
+### Loading Project
+Requirements
+This project requires Python 3 and the following Python libraries installed:
+    Python 3
+    NumPy
+    Pandas
+
+If you do not have Python installed yet, it is highly recommended that you install the Anaconda distribution of Python, which already has the above packages and more included.
+
+Execution
+In a terminal or command window, navigate to the top-level project directory and run the following command:
+    python bikeshare.py
 
 ### Credits
 Assess datetime series:
