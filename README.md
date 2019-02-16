@@ -8,6 +8,13 @@ Udacity Programming in Data Science - Project II
 ### Description
 In this project , I have used Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. The script is written so that it takes in raw input to create an interactive experience in the terminal to import the data and answer interesting questions  about descriptive statistics .
 
+### Software's used
+To complete this project, you'll require the following softwares:
+
+    Python
+    A text editor, like Sublime or Atom
+    A terminal application
+    
 ### Files used
 Files
 This project contains 1 file
