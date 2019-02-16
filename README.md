@@ -19,4 +19,11 @@ This project contains 3 Dataset file
     washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Assess datetime series:
+https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.html
+
+Read day of week, month, hour etc.:
+https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.html.
+
+Convert seconds to hours, minutes and seconds:
+https://stackoverflow.com/questions/775049/how-to-convert-seconds-to-hours-minutes-and-seconds
