@@ -45,8 +45,6 @@ def display_data(df):
         none
     '''"""
 
-    #print('\nDisplaying the 5 lines of raw data..\n')
-    #start_time = time.time()
     row_length = df.shape[0]
     start = 0
     for i in range(start,row_length,5):
@@ -57,7 +55,6 @@ def display_data(df):
 
         print(row_data)
 
-    #print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
