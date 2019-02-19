@@ -4,10 +4,10 @@
 This python project is part of the Udacity education course.
 
 ### Description
-This program is using Python to understand US bikeshare data.
+This program is using Python to understand US bikeshare data. The user can filter by city name and time frame.
 
 ### Files used
-Include the files used
+CSV files provided by Udacity.
 
 ### Credits
 Following resources supported and helped me to complete the project, additonal to the Udacity Course Material, Student Hub and Knowledge Database.
