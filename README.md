@@ -4,7 +4,7 @@
 This python project is part of the Udacity education course.
 
 ### Description
-xxxxx
+This program is using Python to understand US bikeshare data.
 
 ### Files used
 Include the files used
