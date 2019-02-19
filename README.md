@@ -1,11 +1,10 @@
-### Date created
-Include the date you created this project and README file.
+### 02/19/2019
 
-### Project Title
-Replace the Project Title
+### Explore US Bikeshare Data
+This python project is part of the Udacity education course.
 
 ### Description
-Describe what your project is about and what it does
+xxxxx
 
 ### Files used
 Include the files used
