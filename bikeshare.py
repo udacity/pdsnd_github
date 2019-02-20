@@ -34,7 +34,7 @@ def get_filters():
 
 
 
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # TO DO: get user input for day of week (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday)
     day=''
     while day.lower() not in ['all','monday','tuesday','wednesday','thursday','friday','saturday','sunday']:
         day=str(input ('Which day of the week e.g. Monday or all? \n'))
