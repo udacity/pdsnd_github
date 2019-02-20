@@ -6,9 +6,9 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-cities=['chicago', 'new york city', 'washington']
-months=['january', 'february', 'march', 'april', 'may', 'june','july','august','september','october','november','december']
-days=['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+cities = ['chicago', 'new york city', 'washington']
+months = ['january', 'february', 'march', 'april', 'may', 'june','july','august','september','october','november','december']
+days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 def get_filters():
 #    """
@@ -25,7 +25,7 @@ def get_filters():
 # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         try:
-            city=input('Would you like to see data for {}?\n'.format(cities)).lower()
+            city = input('Would you like to see data for {}?\n'.format(cities)).lower()
         except Exception as e:
             print("Exception occurred: {}".format(e))
         else:
@@ -35,7 +35,7 @@ def get_filters():
                 print('Incorrect input, please input again!')
     while True:
         try:
-            i=input('Would you like to filter the data by month, day, both or not at all? Enter none for no time filter?\n').lower()
+            i = input('Would you like to filter the data by month, day, both or not at all? Enter none for no time filter?\n').lower()
         except Exception as e:
             print("Exception occurred: {}".format(e))
         else:
@@ -43,10 +43,10 @@ def get_filters():
                 break
             else:
                 print('Incorrect input, please input again!')
-    if i=='month':
+    if i == 'month':
         while True:
             try:
-                month=input('Which month? {}?\n'.format(months)).lower()
+                month = input('Which month? {}?\n'.format(months)).lower()
                 day = 'all'
             except Exception as e:
                 print("Exception occurred: {}".format(e))
@@ -55,11 +55,11 @@ def get_filters():
                     break
                 else:
                     print('Incorrect input, please input again!')
-    elif i=='day':
+    elif i == 'day':
         while True:
             try:
                 month = 'all'
-                day=input('Which day of week? {}?\n'.format(days)).lower()
+                day = input('Which day of week? {}?\n'.format(days)).lower()
             except Exception as e:
                 print("Exception occurred: {}".format(e))
             else:
@@ -67,10 +67,10 @@ def get_filters():
                     break
                 else:
                     print('Incorrect input, please input again!')
-    elif i=='both':
+    elif i == 'both':
         while True:
             try:
-                month=input('Which month? {}?\n'.format(months)).lower()
+                month = input('Which month? {}?\n'.format(months)).lower()
             except Exception as e:
                 print("Exception occurred: {}".format(e))
             else:
@@ -81,7 +81,7 @@ def get_filters():
         while True:
             try:
                 month = 'all'
-                day=input('Which day of week? {}?\n'.format(days)).lower()
+                day = input('Which day of week? {}?\n'.format(days)).lower()
             except Exception as e:
                 print("Exception occurred: {}".format(e))
             else:
@@ -89,7 +89,7 @@ def get_filters():
                     break
                 else:
                     print('Incorrect input, please input again!')
-    elif i=='none':
+    elif i == 'none':
         month = 'all'
         day = 'all'
     else:
@@ -110,7 +110,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    df=pd.read_csv(CITY_DATA[city])
+    df = pd.read_csv(CITY_DATA[city])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
@@ -161,10 +161,10 @@ def station_stats(df):
     print('\nThe most commonly used end_station is: {} with {} times'.format(end_station_fmax,end_station_fmax_num))
 
     # display most frequent combination of start station and end station trip
-    combine_group=df.groupby(['Start Station','End Station']).groups
-    combine_f={}
+    combine_group = df.groupby(['Start Station','End Station']).groups
+    combine_f = {}
     for key,value in combine_group.items():
-        combine_f[key]=len(value)
+        combine_f[key] = len(value)
     combine_fmax_num = pd.Series(combine_f).max()
     combine_fmax = [key for key, value in combine_f.items() if value == combine_fmax_num]
     print('\nThe most frequent combination of start station and end station trip is: {} with {} times'.format(combine_fmax,combine_fmax_num))
@@ -181,7 +181,7 @@ def trip_duration_stats(df):
     # display total travel time (hours)
     trip_duration_total = df['Trip Duration'].sum()
     trip_duration_total_h,trip_duration_total_h_remainder = divmod(trip_duration_total,3600)
-    trip_duration_total_m,trip_duration_total_s= divmod(trip_duration_total_h_remainder,60)
+    trip_duration_total_m,trip_duration_total_s = divmod(trip_duration_total_h_remainder,60)
 
     print('The total travel time is: {} hours {} minute {} seconds'.format(trip_duration_total_h,trip_duration_total_m,trip_duration_total_s))
 
@@ -189,7 +189,7 @@ def trip_duration_stats(df):
     trip_duration_mean = df['Trip Duration'].mean()
     trip_duration_mean_h,trip_duration_mean_h_remainder = div(trip_duration_mean,3600)
     trip_duration_mean_m,trip_duration_mean_s = div(trip_duration_mean_h_remainder,60)
-    
+
     print('\nThe mean travel time is: {} hours {} minute {} seconds'.format(trip_duration_mean_h,trip_duration_mean_m,trip_duration_mean_s))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -202,24 +202,24 @@ def user_stats(df,city):
     start_time = time.time()
 
     # Display counts of user types
-    user_group=df.groupby(['User Type']).groups
-    user_counts={}
+    user_group = df.groupby(['User Type']).groups
+    user_counts = {}
     for key,value in user_group.items():
-        user_counts[key]=len(value)
+        user_counts[key] = len(value)
     print('Counts of user types:\n{}'.format(pd.Series(user_counts)))
 
     # Display counts of gender
     if city != 'washington':
-        gender_group=df.groupby(['Gender']).groups
-        gender_counts={}
+        gender_group = df.groupby(['Gender']).groups
+        gender_counts = {}
         for key,value in gender_group.items():
-            gender_counts[key]=len(value)
+            gender_counts[key] = len(value)
         print('\nCounts of gender types:\n{}'.format(pd.Series(gender_counts)))
 
     # Display earliest, most recent, and most common year of birth
         birth_year_earliest = df['Birth Year'].min()
         birth_year_recent = df['Birth Year'].max()
-        birth_year_fmax=df['Birth Year'].value_counts().idxmax(skipna=False)
+        birth_year_fmax = df['Birth Year'].value_counts().idxmax(skipna=False)
         if math.isnan(float(birth_year_earliest)):
             print('\nThe earliest year of birth: {}'.format(birth_year_earliest))
         else:
@@ -253,16 +253,16 @@ def main():
         if raw == 'yes':
             while True:
                 try:
-                    n=input('\nHow many rows do you want to view? Please enter an integer.\n')
+                    n = input('\nHow many rows do you want to view? Please enter an integer.\n')
                 except Exception as e:
                     print("Exception occurred: {}".format(e))
                 else:
                     while True:
                         try:
-                            m=0
+                            m = 0
                             if float(n).is_integer:
                                 print(df.head(int(n)))
-                                m='Yeah!'
+                                m = 'Yeah!'
                             else:
                                 print('Incorrect enter, please input again!')
                         except Exception as e:
@@ -271,18 +271,18 @@ def main():
                         else:
                             while True:
                                 try:
-                                    a=input('\nWould you like to reinput the the row number? Enter yes or no\n')
+                                    a = input('\nWould you like to reinput the the row number? Enter yes or no\n')
                                 except Exception as e:
                                     print("Exception occurred: {}".format(e))
                                     break
                                 else:
-                                    if a=='yes' or a=='no':
+                                    if a == 'yes' or a == 'no':
                                         break
                                     else:
                                         print('\nyes or no?\n')
-                            if a=='yes' or a=='no':
+                            if a == 'yes' or a == 'no':
                                 break
-                    if m=='Yeah!' and a=='no':
+                    if m == 'Yeah!' and a == 'no':
                         break
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
