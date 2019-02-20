@@ -3,9 +3,11 @@ import time
 import math
 import pandas as pd
 import numpy as np
+# define the dataset for each city.
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+# define the set for cities, months and days.              
 cities=['chicago', 'new york city', 'washington']
 months=['january', 'february', 'march', 'april', 'may', 'june','july','august','september','october','november','december']
 days=['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
