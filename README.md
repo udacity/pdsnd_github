@@ -1,13 +1,28 @@
-### 02/19/2019
+### 02/21/2019
 
 ### Explore US Bikeshare Data
 This python project is part of the Udacity education course.
 
 ### Description
-This program is using Python to understand US bikeshare data. The user can filter by city name and time frame.
+This program is using Python to understand US bikeshare data. The user can filter by city name and time frame. Output is the most frequent time by travel, most popular stations and trip, trip duration and more user stats.
 
 ### Files used
-CSV files provided by Udacity, part of course material.
+CSV files chicago.csv, new_york_city.csv and washington.csv provided by Udacity, part of course material.
+
+### Required Software
+Python 3.7.1, Pandas 0.23.4, Numpy 1.16.1 
+
+### Respositoy Content
+
+bikeshare.py
+Main program, written in Python
+
+README.md
+This file. Contains Description, Required Software and Credits
+
+.gitignore
+To exclude chicago.csv, new_york_city.csv and washington.csv from upload from local respository
+
 
 ### Credits
 Following resources supported and helped me to complete the project, additonal to the Udacity Course Material, Student Hub and Knowledge Database.
