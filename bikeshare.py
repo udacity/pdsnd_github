@@ -203,6 +203,7 @@ def user_stats(df):
 
 
 def main():
+    """Asks user if they're interested in seeing raw data, if so data is fead 5 lines at a time. """
     while True:
             
         city, month, day = get_filters()
