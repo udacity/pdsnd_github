@@ -226,7 +226,7 @@ def main():
             else:
                 raise ValueError            
         except ValueError:
-            print('Invalid option') 
+            print('Invalid option, please try again.') 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
