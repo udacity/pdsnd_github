@@ -204,6 +204,7 @@ def user_stats(df):
 
 
 def main():
+    """Asks user if they're interested in seeing raw data, if so data is fead 5 lines at a time. """
     while True:
             
         city, month, day = get_filters()
@@ -226,7 +227,7 @@ def main():
             else:
                 raise ValueError            
         except ValueError:
-            print('Invalid option') 
+            print('Invalid option, please try again.') 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
