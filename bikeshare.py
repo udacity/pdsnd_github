@@ -231,7 +231,7 @@ def main():
         user_stats_birth(df)
         display_data(df)
 
-        restart = input('\nWould you like to do it again? Enter yes or no.\n')
+        restart = input('\nWould you like to do it again or not? Please enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
