@@ -202,10 +202,10 @@ def user_stats_birth(df):
     birth_year = df['Birth Year']
 
     earliest_year = birth_year.min()
-    print ('The oldest person is born in:', earliest_year)
+    print ('THE oldest person is born in:', earliest_year)
 
     most_recent = birth_year.max()
-    print ('The youngsest person is born in:', most_recent)
+    print ('The youngest person is born in:', most_recent)
 
     most_common_year = birth_year.value_counts().idxmax()
     print ('The most common birth year is:', most_common_year)
