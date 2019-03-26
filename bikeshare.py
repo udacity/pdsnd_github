@@ -1,7 +1,10 @@
 import time
 import pandas as pd
 import numpy as np
-#I am adding this for the github project
+
+#I am adding this for the github project in bikeshare.py
+#I am testing my work.
+
 City_Data = { 'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
