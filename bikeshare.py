@@ -40,7 +40,7 @@ def get_filters():
         if city in Cities:
             break
         else:
-            print ('For now, these are the only cities available. Please only select one of them').lower()
+            print ('At present, these are the only cities available. Please only select one of them').lower()
             city = raw_input()
 
     while True:
