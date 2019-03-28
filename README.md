@@ -11,4 +11,6 @@ Use of Python to explore data related to bikeshare systems for three major citie
 chicago.csv new_york_city.csv washington.csv
 
 ### Credits
-Udacity staff and mentors
+Udacity staff, mentors and classmates
+
+really enjoyed this course.
