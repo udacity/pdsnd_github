@@ -21,20 +21,22 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input('\nWhich city would you like to explore?\nChicago?\nNew York?\nWashington?\n').lower()
-        if city in ('new york', 'chicago', 'washington'):
-           break
+        if city not in ('new york', 'chicago', 'washington'):
+            print(city.title() + " is not one of the three cities")
+            continue
         else:
-            print(f'Sorry, please input "Chicago", "New York", or "Washington" only.')
+            break
 
 
 
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input('\nWhich month would you like to analyze from January to June?\nUse "All" for no filter:\n').lower()
-        if month in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
-            break
+        if month not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
+            print(month.title() + " is not one of the prescribed months...")
+            continue
         else:
-            print(f'Sorry, "{month}" is not a valid answer, please choose between\nJanuary, February, March, April, May, June, All (no filter)')
+            break
 
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
