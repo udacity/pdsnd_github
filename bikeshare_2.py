@@ -31,10 +31,11 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input('\nWhich month would you like to analyze from January to June?\nUse "All" for no filter:\n').lower()
-        if month in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
-            break
+        if month not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
+            print(month.title() + " is not one of the prescribed months...")
+            continue
         else:
-            print(f'Sorry, "{month}" is not a valid answer, please choose between\nJanuary, February, March, April, May, June, All (no filter)')
+            break
 
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
