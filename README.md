@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### April 1, 2019
 
 ### Udacity US Bikeshare Project - Post Your Work on GitHub including minor changes
@@ -101,4 +100,3 @@
 =======
 ### Fix-typo Code Change
 ### Another Fix-typo Code Change 
->>>>>>> refactoring
