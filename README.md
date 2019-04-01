@@ -1,6 +1,6 @@
 ### April 1, 2019
 
-### Udacity US Bikeshare Project - Post Your Work on GitHub
+### Udacity US Bikeshare Project - Post Your Work on GitHub including minor changes
 
 ### Using Python to display/interact with Chicago, DC and New York City US Bikeshare Data
 
