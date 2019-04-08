@@ -285,7 +285,7 @@ def main():
         print(birth_year_data[0])
         print(birth_year_data[1])
         print(birth_year_data[2])
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThese statistics were calculated in %s seconds." % (time.time() - start_time))
     print('-'*40)
 
     display_data(filtered_df, 0)
