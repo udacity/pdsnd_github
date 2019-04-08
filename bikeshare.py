@@ -298,7 +298,7 @@ def main():
         elif restart() == 'no' or restart() == 'n':
             return
         else:
-            print("\nI'm sorry, I did not catch that.")
+            print("\nPlease re-enter your response.")
             return restart_question()
 
     restart_question()
