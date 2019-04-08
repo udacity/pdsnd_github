@@ -20,7 +20,9 @@ chicago.csv
 washington.csv
 ### Credits
 So many sources were used!
+
 Udacity course pages
+
 https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
 
 https://stackoverflow.com/questions/7466709/list-all-commits-across-all-branches-for-a-given-file/41650645
