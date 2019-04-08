@@ -285,7 +285,7 @@ def main():
         print(birth_year_data[0])
         print(birth_year_data[1])
         print(birth_year_data[2])
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThese statistics were calculated in %s seconds." % (time.time() - start_time))
     print('-'*40)
 
     display_data(filtered_df, 0)
@@ -298,7 +298,7 @@ def main():
         elif restart() == 'no' or restart() == 'n':
             return
         else:
-            print("\nI'm sorry, I did not catch that.")
+            print("\nPlease re-enter your response.")
             return restart_question()
 
     restart_question()
