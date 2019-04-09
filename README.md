@@ -1,8 +1,8 @@
-April 7, 2019 Date Created
+Date Created: April 7, 2019
 
-Github Project 3 Bikeshare Project Title
+Project Title: Explore US Bikeshare Data
 
-To improve documentation, have other members of team to contribute to documentation branch, refactor code, and merge branches.  Description
+Description: Users can view information per city, month, and day to display most frequent times of travel, popular stations and trip, total and average trip duration, and statistics on bikeshare users.
 
 chicago.csv, new_york_city.csv, washington.csv Files used
 
