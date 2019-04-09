@@ -7,5 +7,5 @@ Description: Users can view information per city, month, and day to display most
 chicago.csv, new_york_city.csv, washington.csv Files used
 
 Credits:
-Development of this project guided primarily by Udacity’s Nanodegree Program, Programming for Data Science. I consulted stockoverflow.com and pythonforbeginners.com to help resolved my coding errors.
-https://stackoverflow.com/search?q=indentation+error , https://stackoverflow.com/questions/42755006/nonetype-object-is-not-iterable, https://www.pythonforbeginners.com/error-handling/python-try-and-except
+Additional credit: github bugfix
+https://stackoverflow.com/questions/32877834/how-do-i-reset-my-local-repo-back-to-origin-master-in-sourcetree
