@@ -6,6 +6,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 filename = 'chicago.csv','new_york_city.csv','washington.csv'
 print('Hello! Let/s explore some US bikeshare data!\n')
+#code was changed to except an error
+#restarting the code
 while True:
     try:
         city = input ('What City would you like to analyze Bikeshare data for? Enter city\n')
