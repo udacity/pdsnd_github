@@ -6,6 +6,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 filename = 'chicago.csv','new_york_city.csv','washington.csv'
 print('Hello! Let/s explore some US bikeshare data!\n')
+<<<<<<< HEAD
 #code was changed to except an error
 #restarting the code
 while True:
@@ -19,6 +20,27 @@ while True:
         print("Please pick city on list")
 
 
+=======
+city = []
+list1 = ('chicago','new york city', 'washington')
+# request user input to create an interactive experience with user
+# program does not work as intended. requested asssitance- never received a response - submitted as is.
+answer_city = input ('What City would you like to analyze Bikeshare data for? Enter city\n')
+while answer_city.lower() not in list1:
+    if answer_city.lower() == 'chicago':
+     city = ['chicago']
+     pass
+    elif answer_city.lower() == 'new york city':
+     city = ['new_york_city']
+     pass
+    elif answer_city.lower() == 'washington':
+     city = ['washington']
+    else: input('you have entered an invalid response. please enter a city on the list\n')
+    while True:
+        if answer_city.lower() not in l:
+         input('\nWould you like to see data for chicago, new York City, or washington?\n')
+         break
+>>>>>>> documentation
 
 month = ('january','february','march','april','may','june')
 list2 = ('january','february','march','april','may','june')
