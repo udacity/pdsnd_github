@@ -7,5 +7,4 @@ Description: Users can view information per city, month, and day to display most
 chicago.csv, new_york_city.csv, washington.csv Files used
 
 Credits:
-Additional credit: github bugfix
-https://stackoverflow.com/questions/32877834/how-do-i-reset-my-local-repo-back-to-origin-master-in-sourcetree
+
