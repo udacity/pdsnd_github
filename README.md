@@ -12,3 +12,6 @@ bikeshare.py
 
 ### Credits
 [Udacity Programming for Data Science Nanodegree Program](https://classroom.udacity.com/nanodegrees/nd104/dashboard/overview).
+
+### Version
+version 0.0.1
