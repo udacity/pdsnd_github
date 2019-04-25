@@ -1,13 +1,13 @@
-### Date created
+### April 24, 2019
 Include the date you created this project and README file.
 
-### Project Title
+### Udacity: Data Science Project 3
 Replace the Project Title
 
-### Description
+### Description: Using Git and GitHub to complete Project 3
 Describe what your project is about and what it does
 
-### Files used
+### Files used: Final Project 2 Submission.py
 Include the files used
 
 ### Credits
