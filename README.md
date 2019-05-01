@@ -1,15 +1,14 @@
-### April 24, 2019
-Include the date you created this project and README file.
+## Created on April 30, 2019
 
-### Udacity: Data Science Project 3
-Replace the Project Title
+## Udacity: Version Control - Project 3
 
-### Description: Using Git and GitHub to complete Project 3
-Describe what your project is about and what it does
+##Description:
+Using Git and GitHub to complete the Version Control (project 3)
 
-### Files used: Final Project 2 Submission.py
-Include the files used
+## Files Used:
+washington.csv
+new_york_city.csv
+chicago.csv
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+##Credits:
+https://stockoverflow.com/
