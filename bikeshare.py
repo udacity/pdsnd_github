@@ -21,7 +21,7 @@ def get_filters():
         city=input("Which city would you like to explore?(Data available for chicago, new york city, washington):").lower()
         if city in CITY_DATA:
             break
-            
+
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month=input("Enter month:").lower()
@@ -49,16 +49,16 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
-    
+
     if month != 'all':
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
-        
+
         df = df[df['month']==month]
 
-    
+
     if day != 'all':
-        
+
          df = df[df['day_of_week'] == day.title()]
 
 
@@ -81,7 +81,7 @@ def time_stats(df):
     popular_day=df['day'].mode()[0]
     print('Most Frequent Start day:', popular_day)
 
-    
+
 
 
     # TO DO: display the most common start hour
@@ -101,11 +101,11 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-   
+
     popular_start_station = df['Start Station'].mode()[0]
     print('The most commonly used start station:', popular_start_station)
-    
-    
+
+
 
 
     # TO DO: display most commonly used end station
@@ -153,9 +153,9 @@ def user_stats(df):
     print('Count of user types:',user_types)
 
 
-    # TO DO: Display counts of gender
-    gender = df['Gender'].value_counts()
-    print('Count of gender:',gender)
+    # TO DO: Display counts of gen
+    gen = df['gen'].value_counts()
+    print('Count of gen:',gen)
 
 
     # TO DO: Display earliest, most recent, and most common year of birth
