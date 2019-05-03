@@ -7,7 +7,7 @@ Using Git and GitHub to complete the Version Control (project 3)
 
 ## Files Used:
 washington.csv - Add print statement warning regarding Washington's lack of user data.
-new_york_city.csv
+new_york_city.csv - New York City is located in the state of New York.
 chicago.csv
 
 ##Credits:
