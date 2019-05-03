@@ -6,7 +6,7 @@
 Using Git and GitHub to complete the Version Control (project 3)
 
 ## Files Used:
-washington.csv
+washington.csv - Add print statement warning regarding Washington's lack of user data.
 new_york_city.csv
 chicago.csv
 
