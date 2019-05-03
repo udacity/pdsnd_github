@@ -13,3 +13,4 @@ new_york_city.csv chicago.csv washington.csv
 
 ### Credits
 I first read about bikeshare here https://nycdotbikeshare.info/
+github inspiration: https://github.com/udacity/course-collaboration-travel-plans.git
