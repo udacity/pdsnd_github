@@ -12,4 +12,4 @@ City, and Washington.
 new_york_city.csv chicago.csv washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I first read about bikeshare here https://nycdotbikeshare.info/
