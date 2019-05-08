@@ -5,7 +5,8 @@ Project and initial README.md created on May 8th 2019
 Explore US Bikeshare Data
 
 ### Description
-Descriptive statistics about bike share use in the cities Washington, New York City and Chicago
+Descriptive statistics about bike share use in the cities Washington,
+New York City and Chicago.
 Code provide following information about bike share use in the mentioned cities
     Popular times of travel
     • most common month
@@ -22,6 +23,8 @@ Code provide following information about bike share use in the mentioned cities
     • counts of each user type
   	• counts of each gender (only available for NYC and Chicago)
   earliest, most recent, most common year of birth (only available for NYC and Chicago)
+
+Hint: Data only available for the first six months of 2017.
 
 ### Files used
 washington.csv
