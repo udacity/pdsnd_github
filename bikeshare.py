@@ -10,6 +10,8 @@ def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
 
+    Hint: data available for cities Chicago, New York City and Washington only
+          data available for the first six months of 2017 only
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -18,7 +20,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-        city = input('Would you like to see data for Chicago, New York City or Washington?\n').lower()
+        city = input('Would you like to see data for Chicago, New York City or Washington for the first six months of 2017?\n').lower()
         if city not in ('chicago', 'new york city', 'washington'):
 
             print('Incorrect city. Please try again!\n')
@@ -29,7 +31,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
-        month = input('For which month would you like to filter the data all, january, february, march, april, may or june?\n').lower()
+        month = input('For which of the first 6 months of 2017 would you like to filter the data all, january, february, march, april, may or june?\n').lower()
         if month not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
 
             print('Incorrect filter selection. Please try again!\n')
