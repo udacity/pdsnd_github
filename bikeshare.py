@@ -233,15 +233,19 @@ def user_stats(df,city):
     print('-'*40)
 
 def raw_data(df):
-    """Displays rows of raw data city table at one time. Per each order 5 more rows"""
-    i=0
+    """Displays rows of raw data city table at one time. Per each order 5 more rows.
+    Index 'num_rows' for number of rows to be displayed"""
+
+    num_rows=0
+
     while True:
         raw_data_request = input('If you would like to see raw data for' +
         ' the city selected, answer with yes or no.\n').lower()
 
-        i+=5
+        num_rows+=5
+
         if raw_data_request == 'yes':
-            display_raw_data = df.head(i)
+            display_raw_data = df.head(num_rows)
             print(display_raw_data)
             print('\nFor further data answer with yes to break answer with no!\n')
             continue
