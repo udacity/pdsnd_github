@@ -9,7 +9,7 @@ Analyse bikeshare data from [Motivate]( https://www.motivateco.com/) using pytho
 
 ### Files used
 Bikeshare files (https://s3.amazonaws.com/video.udacity-data.com/topher/2018/March/5aab379c_bikeshare-2/bikeshare-2.zip)
-Includes `bikeshare.py`, a udacity template to assist students with their project. Data files in csv format, `chicago.csv`, `washington.csv`, 'new_york_city.csv`
+Includes `bikeshare.py`, a udacity template to assist students with their project. Data files in csv format, `chicago.csv`, `washington.csv`, `new_york_city.csv`
 
 ### Credits
 I used many examples from pandas and numpy documentation.  
