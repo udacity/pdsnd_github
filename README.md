@@ -12,7 +12,7 @@ Bikeshare files (https://s3.amazonaws.com/video.udacity-data.com/topher/2018/Mar
 Includes `bikeshare.py`, a udacity template to assist students with their project. Data files in csv format, `chicago.csv`, `washington.csv`, `new_york_city.csv`
 
 ### Credits
-I used many examples from (pandas)(https://pandas.pydata.org/pandas-docs/stable/] and (numpy)[https://docs.scipy.org/doc/numpy-1.13.0/contents.html] documentation.  
+I used many examples from [pandas](https://pandas.pydata.org/pandas-docs/stable/) and [numpy][https://docs.scipy.org/doc/numpy-1.13.0/contents.html] documentation.  
 I explored questions already asked in [Stackoverflow](https://stackoverflow.com/) to find examples.
 [Jonathonsoma.com](http://jonathansoma.com/), classnotes on replacing values and strings helped with filling in missing values from washington.csv, on bikeshare lines 121 to 127.
 [towardsdatascience.com](towardsdatascience.com), data cleaning with python and pandas:detecting missing values. An article on Oct 5, 2018, helped me explore data and missing values
