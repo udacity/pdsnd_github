@@ -8,9 +8,15 @@ Explore US Bikeshare Data
 Descriptive statistics about bike share use in the cities Washington,
 New York City and Chicago
 
+Code provide following information about bike share use in the mentioned cities
+    Popular times of travel,
+    Popular stations and trips
+    Trip duration
+
+
 ### Files used
-washington.csv
-new_york_city.csv
+washington.csv,
+new_york_city.csv,
 chicago.csv
 
 
