@@ -10,6 +10,9 @@ def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
 
+    Hint: data for cities Chicago, New York City and Washington available only
+          data available for the first six month of 2017
+          
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
