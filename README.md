@@ -26,3 +26,8 @@ I used many examples from [pandas](https://pandas.pydata.org/pandas-docs/stable/
 I explored questions already asked in [Stackoverflow](https://stackoverflow.com/) to find examples.
 [Jonathonsoma.com](http://jonathansoma.com/), classnotes on replacing values and strings helped with filling in missing values from washington.csv, on bikeshare lines 121 to 127.
 [towardsdatascience.com](towardsdatascience.com), data cleaning with python and pandas:detecting missing values. An article on Oct 5, 2018, helped me explore data and missing values
+
+#### Future Features
+1. add plots
+2. run in html window
+3. compare multiple city data
