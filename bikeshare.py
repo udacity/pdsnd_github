@@ -12,7 +12,8 @@ def get_filters():
 
     Hint: data for cities Chicago, New York City and Washington available only
           data available for the first six month of 2017
-          
+          gender and birth data not available for Washington
+
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
