@@ -78,7 +78,7 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
     return df
 
-    # in this section calculate the most common month, day, hour and then count the number of them 
+    # in this section calculate the most common month, day, hour and then count the number of them
 def time_stats(df, month, day):
     """Displays statistics on the most frequent times of travel."""
 
@@ -198,7 +198,7 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
+    # Define a display_data function to ask the user about seeing row data
 def display_data(df):
     restart = input('\nDo you like to display 5 records of raw data ? Enter yes or no.\n')
     if restart.lower() == 'yes':
