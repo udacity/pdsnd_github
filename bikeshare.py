@@ -20,7 +20,7 @@ def get_filters():
     city_list = ['chicago', 'new york city', 'washington']
     city = input('Would you like to see data for chicago, new york city, or washington? ').lower()
     print(city)
-    
+
     while city not in city_list:
         print('That\'s not a valid city name')
         try:
@@ -28,7 +28,7 @@ def get_filters():
             print(city)
         except:
             break
-    
+
     month_list = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     month = input('Would you like to filter by which month- all, january, february, march, april, may, or june? ').lower()
     print(month)
@@ -39,10 +39,10 @@ def get_filters():
             print(month)
         except:
             break
-            
+
     day_list = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     day = input('Would you like to filter by which day- all, monday, tuesday, wednesday, thursday, friday, saturday, or sunday? ').lower()
-    
+
     while day not in day_list:
         print('That\'s not a valid day name')
         try:
@@ -50,7 +50,7 @@ def get_filters():
             print(day)
         except:
             break
-          
+
     print('-'*40)
     return city, month, day
 
@@ -78,13 +78,13 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
     return df
 
-
+    # in this section calculate the most common month, day, hour and then count the number of them 
 def time_stats(df, month, day):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n') 
+    print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-    
+
     # display the most common month
     if month == 'all':
         most_common_month = df['month'].mode()[0]
@@ -92,8 +92,8 @@ def time_stats(df, month, day):
         print('the most common month:', most_common_month)
         print('Count:', len(df_most_common_month))
     else:
-        print("There is no the most common month since you have selected one specific month!") 
-        
+        print("There is no the most common month since you have selected one specific month!")
+
     # display the most common day of week
     if day == 'all':
         most_common_day = df['day_of_week'].mode()[0]
@@ -102,14 +102,14 @@ def time_stats(df, month, day):
         print('Count:', len(df_most_common_day))
     else:
         print("There is no the most common day since you have selected one specific day!")
-      
+
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     common_hour = df['hour'].mode()[0]
     df_common_hour = df[df['hour']==common_hour]
     print('the most common start hour:', common_hour)
     print('Count:', len(df_common_hour))
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -125,11 +125,11 @@ def station_stats(df):
     df_common_start_station = df[df['Start Station']==common_start_station]
     print('the most common start station:', common_start_station)
     print('Count:', len(df_common_start_station))
-    
+
     # display most commonly used end station
     common_end_station = df['End Station'].mode()[0]
     df_common_end_station = df[df['End Station']==common_end_station]
-    
+
     print('the most common end station:', common_start_station)
     print('Count:', len(df_common_end_station))
 
@@ -152,13 +152,13 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_duration = df['Trip Duration'].sum()
-    
-    print('total travel time:', total_duration) 
+
+    print('total travel time:', total_duration)
 
 
     # display mean travel time
     mean_duration = df['Trip Duration'].mean()
-    print('the mean of travel time:', mean_duration) 
+    print('the mean of travel time:', mean_duration)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -221,7 +221,7 @@ def display_data(df):
                 print('That\'s not an integer value')
                 ending_row_index = int(input('\nWhat is the ending row indiex you like to display.\n'))
                 #print(ending_row_index)
-            print(df.iloc[staring_row_index:ending_row_index,:])  
+            print(df.iloc[staring_row_index:ending_row_index,:])
 
 def main():
     while True:
@@ -231,7 +231,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_data(df)         
+        display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
