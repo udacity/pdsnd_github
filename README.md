@@ -19,10 +19,14 @@ In this project, we used data provided by [Motivate](https://www.motivateco.com/
 * chicago.csv
 * new_york_city.csv
 * Washington.csv
+* bikeshare.py
 
 
 ### Credits
 * https://www.motivateco.com
 * https://pandas.pydata.org/pandas-docs/stable
+* https://docs.scipy.org/doc/numpy-1.13.0/user/index.html
 * https://stackoverflow.com
+* https://en.wikipedia.org/wiki/Data_wrangling
+* https://atom.io
 * https://github.com/udacity/pdsnd_github
