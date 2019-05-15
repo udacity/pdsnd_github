@@ -1,8 +1,8 @@
 ### Date created
-*13-May-2019*
+5/13/2019
 
 ### Project Title
- **Bicycle-sharing systems**
+ **Explore US Bikeshare Data**
 
 ### Description
 Over the past decade, *bicycle-sharing systems* have been growing in number and popularity in cities across the world. *Bicycle-sharing systems* allow users to rent bicycles on a very short-term basis for a price. This allows people to borrow a bike from point A and return it at point B, though they can also return it to the same location if they'd like to just go for a ride. Regardless, each bike can serve several users per day.
@@ -24,5 +24,3 @@ In this project, you will use data provided by [Motivate](https://www.motivateco
 * https://pandas.pydata.org/pandas-docs/stable
 * https://stackoverflow.com
 * https://github.com/udacity/pdsnd_github
-
- 
