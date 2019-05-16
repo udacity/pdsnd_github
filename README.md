@@ -1,5 +1,5 @@
 ### Date created
-This bikeshare.py was created on 14th April 2019 and the README file was created on 16th May'19 
+This bikeshare.py was created on 14th April 2019 along with README file
 ### Project Title
 Explore US Bikeshare Data
 ### Description
