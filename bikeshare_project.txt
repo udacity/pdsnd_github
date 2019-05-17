@@ -2,9 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = { 'CHICAGO': 'chicago.csv',
+              'NEW YORK CITY': 'new_york_city.csv',
+              'WASHINGTON': 'washington.csv' }
 
 def get_filters():
     """
@@ -20,8 +20,8 @@ def get_filters():
     while True:
  
         city = input('Which city would you like to analyse the  data for?(chicago, new york city, washington): ')
-        city = city.lower()
-        if city in ('chicago', 'new york city', 'washington'):
+        city = city.upper()
+        if city in ('CHICAGO', 'NEW YORK CITY', 'WASHINGTON'):
             print('thank you')  
             break
         else:
