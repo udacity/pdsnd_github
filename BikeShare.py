@@ -20,6 +20,7 @@ def reset_everthing():
         return
     else:
         print('{} is not reconized, please try again.'.format(desire.title()))
+        print('Come on, it is not that hard to type yes or no.')
 
 #Set the filters that will be used. City, month, or day
 def data_set():
@@ -57,6 +58,7 @@ def data_set():
                   "Washington, Washington DC, DC, or W.")
         else:
             print('\n{} is not reconized, please try again.'.format(city))
+            print('Do you not know how to spell?')
 
     #Set if no filter or filter by month or day will be used
     while True:
@@ -73,6 +75,7 @@ def data_set():
             break
         else:
             print('{} is not reconized, plese select month, day, or no filter.'.format(date_narrow))
+            print('This is most important. Well not really, but here we are.')
 
     #Verify city and no time filter
     while date_narrow == 'no filter':
@@ -86,6 +89,7 @@ def data_set():
             return data_set()
         else:
             print('{} is not reconized, please try again.'.format(reset))
+            print('You suck at this.')
 
     #Specify the month that will be used
     while date_narrow == 'month':
@@ -117,6 +121,7 @@ def data_set():
             break
         else:
             print('{} is not reconized, please try again.'.format(reset))
+            print('I gave the spelling to you. Just copy and paste.')
 
     #Specify the day that will be used
     while date_narrow == 'day':
@@ -152,6 +157,7 @@ def data_set():
             break
         else:
             print('{} is not reconized, please try again.'.format(reset))
+            print('I gave the days to you. Just copy and paste.')
 
     #Verify selections for month
     while date_narrow == 'month':
@@ -167,6 +173,7 @@ def data_set():
             return data_set()
         else:
             print('{} is not reconized, please try again.'.format(f_reset))
+            print('This is a yes or no question. Only William Barr can screw it up more than you.')
 
     #Verify selections for day
     while date_narrow == 'day':
@@ -182,6 +189,7 @@ def data_set():
             return data_set()
         else:
             print('{} is not reconized, please try again.'.format(f_reset))
+            print('Do you not know how a keyboard works?')
 
 #Return raw data based on filters
 def more(city_file, line):
