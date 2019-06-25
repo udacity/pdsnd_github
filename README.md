@@ -8,13 +8,13 @@ US Bikeshare Project
 The US Bikeshare project makes use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. 
 
 ### Files used
-bikeshare.py 
+a. bikeshare.py 
 
-chicago.csv
+b. chicago.csv
 
-new_york_city.csv
+c. new_york_city.csv
 
-washington.csv
+d. washington.csv
 
 ### Credits
 Lectures on Programming for Data Science by Udacity
