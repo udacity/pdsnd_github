@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+20190701
 
 ### Project Title
-Replace the Project Title
+Git Project
 
 ### Description
-Describe what your project is about and what it does
+This will practice setting up the git repository
 
 ### Files used
-Include the files used
+To be determined
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+to be determined.
