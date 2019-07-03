@@ -11,4 +11,4 @@ This is the code from the bikeshare data using python
 bike_wip09.py
 
 ### Credits
-udacity
+udacity, myself
