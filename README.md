@@ -1,14 +1,14 @@
 ### Date created
-20190701
+20190613
 
 ### Project Title
-Git Project
+Bikeshare Data
 
 ### Description
-This will practice setting up the git repository
+This is the code from the bikeshare data
 
 ### Files used
-To be determined
+bike_wip09.py
 
 ### Credits
-to be determined.
+udacity
