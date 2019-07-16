@@ -10,6 +10,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 repeat = False
 
+# prompt user to make selections that will determine which filters are applied
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -24,6 +25,7 @@ def get_filters():
     cities = ['chicago', 'new york city', 'washington']
     city_test=False
 
+    # Tests to make sure the user's section is valid
     while city_test==False:
         city = input("Enter the city you want to see data for. Valid options are Chicago, New York City, and Washington. ")
         if city.lower() in cities:
