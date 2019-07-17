@@ -1,19 +1,17 @@
 ### Date created
-7/06/2019
+07/13/2019
+updated on 7/16th
 
 ### Project Title
-This project is for bikeshare python program.
+Udacity Git project
+for bikeshare
 
 ### Description
-Describe what your project is about and what it does
+This is a Udacity Git project for bikeshare python project. 
 
 ### Files used
-bikeshare.py
-README.md
-gitignore
+Include the files used
 
 ### Credits
-This project is forked from www.udacity/pdsnd_github
-
-
+https://github.com/udacity/pdsnd_github/
 
