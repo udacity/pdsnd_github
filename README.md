@@ -5,10 +5,10 @@ This project and and README file was created on August 6th, 2019
 Explore US Bikeshare Data
 
 ### Description
-This bikeshare Data project is to provide useful analysis based on the data csv files of three cities including Chicago, New York, and Washington
+This bikeshare Data project is to provide useful analysis based on the data csv files of three cities including Chicago, New York, and Washington. Through the usage of Python and Pandas, it can provide useful information such as user type.  
 
 ### Files used
-The bikeshare data for Chicago, New York City, and Washington in csv files were  used in data analysis through python platform
+The bikeshare data for Chicago, New York City, and Washington in csv files were  used in data analysis through python platform. In addition, Pandas was used with Python
 
 ### Credit
 Following resources were referred in completing the project:
