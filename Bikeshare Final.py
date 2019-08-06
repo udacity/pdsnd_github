@@ -17,32 +17,32 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    while True: 
+    while True:
         city = input('Please enter city you like to filter by (chicago, new york city or washington): ')
         if city in ('chicago', 'new york city', 'washington'):
-             break 
+             break
         else:
              print('Invalid city name')
              continue
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    while True: 
+    while True:
         month = input('Please enter specific month to filter by: ')
         if month in ('all','january', 'february','march','april','may','june'):
             print
             break
         else:
-            print('Invalid month input') 
+            print('Invalid month input')
             continue
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    while True: 
+    while True:
         day = input('Please enter day of week to filter by: ')
         if day in ('all','monday','tuesday','wednesday','thursday','friday','saturday','sunday'):
          break
         else:
          print('Invalid day input')
          continue
-        
+
         print('-'*40)
     return city, month, day
 
@@ -60,20 +60,20 @@ def load_data(city, month, day):
      """
     df = pd.read_csv(CITY_DATA[city])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-                                     
+
     df['Month'] = df['Start Time'].dt.month
     df['Day'] = df['Start Time'].dt.weekday_name
-                                     
+
     if month != 'all':
         months = ['january','february','march','april','may','june']
         month = months.index(month)+1
 
         df = df[df['Month'] == month]
-    
+
     if day != 'all':
         df = df[df['Day'] == day.title()]
 
-    
+
     return df
 
 
@@ -106,12 +106,12 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    Common_Start_Station = df['Start Station'].mode()[0]
-    print('Most Popular Start Station: ', Common_Start_Station)
+    Popular_Start_Station = df['Start Station'].mode()[0]
+    print('Most Popular Start Station: ', Popular_Start_Station)
 
     # TO DO: display most commonly used end station
-    Common_End_Station = df['End Station'].mode()[0]
-    print('Most Popular End Station: ', Common_End_Station)
+    Popular_End_Station = df['End Station'].mode()[0]
+    print('Most Popular End Station: ', Popular_End_Station)
 
     # TO DO: display most frequent combination of start station and end station trip
     df['Start_to_end'] = df['Start Station'].astype(str) + 'and' + df['End Station']
@@ -131,11 +131,11 @@ def trip_duration_stats(df):
     # TO DO: display total travel time
     Total_Travel_Time = df['Trip Duration'].sum()
     print('Total Travel Time: ',Total_Travel_Time)
-    
+
 
     # TO DO: display mean travel time
-    Mean_Travel_Time = df['Trip Duration'].mean()
-    print('Mean Travel Time: ', Mean_Travel_Time)
+    Travel_Time_Mean = df['Trip Duration'].mean()
+    print('Mean Travel Time: ', Travel_Time_Mean)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -150,13 +150,13 @@ def user_stats(df):
     # TO DO: Display counts of user types
     Count_of_User_Type = df['User Type'].value_counts()
     print('Counts of User Types: ', Count_of_User_Type)
-    
+
     # TO DO: Display counts of gender
     Count_of_Gender = df['User Type'].value_counts()
     print('Counts of User Types: ', Count_of_Gender)
 
     # TO DO: Display earliest, most recent, and most common year of birth
- 
+
     try:
         Oldest= df['Birth Year'].max()
         Youngest= df['Birth Year'].min()
@@ -186,4 +186,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
