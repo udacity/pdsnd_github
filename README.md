@@ -12,4 +12,5 @@ It also output the most popular hour, station and most typical user for the bike
 file used include: new_york_city.cvs, washington.csv, chicago.csv
 
 ### Credits
-thanks to Udacity project which inspired me and guided me through this process!
+thanks to Udacity project which inspired me and guided me through this process! 
+I really enjoyed it!~~~~~
