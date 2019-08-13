@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+08.12.2019
 
 ### Project Title
-Replace the Project Title
+Analyze US Bikeshare data
 
 ### Description
-Describe what your project is about and what it does
+this file can filter data based on user input month, city and week of day. 
+It also output the most popular hour, station and most typical user for the bikeshare
 
 ### Files used
-Include the files used
+file used include: new_york_city.cvs, washington.csv, chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+thanks to Udacity project which inspired me and guided me through this process!
