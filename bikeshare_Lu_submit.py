@@ -1,4 +1,6 @@
-# never stop improving my codes!
+# Bike share data analysis
+# Calculate the statistics of bike share data, such as most important hours and stations
+# Author: Lu Chen
 
 import pandas as pd
 
@@ -13,7 +15,7 @@ def get_filters():
             break
 
 
-        # TO DO: get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june)
     while True:
         month=input('which month would you like to explore?\n')
         if month.lower() not in ('all','january','febrary','march','april','may','june'):
@@ -22,7 +24,7 @@ def get_filters():
         else:
             break
 
-        # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day=input('which day of week would you like to explore?\n')
         if day.lower() not in ('all','monday','tuesday','wednesday','thursday','friday','saturday','sunday'):
@@ -58,7 +60,7 @@ def load_data(city,month,day):
         months=['january','february','march','april','may','june']
         month=months.index(month)+1
 
-        #filter by month:
+        #fidaylter by month:
         df=df[df['month']==month]
 
     if day !='all':
@@ -76,15 +78,14 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+    # display the most common month
     df['hour']=df['Start Time'].dt.hour
     popular_hour=df['hour'].mode()[0]
     print('most popular_hour is: ',popular_hour)
 
-    # TO DO: display the most common day of week
+    # display the most common day of week
 
-
-    # TO DO: display the most common start hour
+    # display the most common start hour
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -98,14 +99,14 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # TO DO: display most commonly used start station
+    # display most commonly used start station
     popular_start_station=df['Start Station'].mode()[0]
 
-    # TO DO: display most commonly used end station
+    # display most commonly used end station
     popular_end_station=df['End Station'].mode()[0]
 
 
-    # TO DO: display most frequent combination of start station and end station trip
+    # display most frequent combination of start station and end station trip
 
     print('the most popular start station is: ',popular_start_station)
     print('the most popular end station is: ',popular_end_station)
