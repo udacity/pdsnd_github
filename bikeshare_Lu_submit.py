@@ -15,7 +15,7 @@ def get_filters():
             break
 
 
-        # get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june)
     while True:
         month=input('which month would you like to explore?\n')
         if month.lower() not in ('all','january','febrary','march','april','may','june'):
@@ -24,7 +24,7 @@ def get_filters():
         else:
             break
 
-        # get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day=input('which day of week would you like to explore?\n')
         if day.lower() not in ('all','monday','tuesday','wednesday','thursday','friday','saturday','sunday'):
