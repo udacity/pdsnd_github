@@ -9,7 +9,8 @@ this file can filter data based on user input month, city and week of day.
 It also output the most popular hour, station and most typical user for the bikeshare
 
 ### Files used
-file used include: new_york_city.cvs, washington.csv, chicago.csv
+program file: bikeshare_Lu_submit.py
+data files: new_york_city.cvs, washington.csv, chicago.csv
 
 ### Credits
 thanks to Udacity project which inspired me and guided me through this process! 
