@@ -16,6 +16,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
+    # city, month, and day variables declaration
     city = ''
     month =''
     day = ''
@@ -29,7 +30,7 @@ def get_filters():
     while data_filter not in ['none','month','day','both']:
         data_filter = str(input('Invalid input, type the correct filter by : ')).lower()
      
-  
+    # validation on how to filter the data
     if data_filter == 'none':
         print('#'*70)
         month='all'
@@ -93,7 +94,7 @@ def load_data(city, month, day):
     # generate new dataframe base on a given day
     if day !='all':
             df = df[df['day_of_week'] == day.title()]
-    
+    # return the generated dataframe for further analysis
     return df
 
 def time_stats(df):

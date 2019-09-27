@@ -5,10 +5,10 @@
 Bikeshare Project
 
 ### Description
-is a python script for bikeshare statistical analysis, it receive input from the user for which city to make analysis on, day and month of the data records to be use in the analysis if filtering the data is needed.
+is a python script for bikeshare statistical analysis, it receive input from the user for which city to make analysis on. Day and month of the data records to be use in the analysis if data filtering  is needed.
 
 ### Files used
-the files used in the bikeshare project are 3 files for 3 USA cities, the files are chicago.csv, washington.csv, and new_york_city.csv which contains the bikeshare data records for chicago, wahington, and new york city respectivly.
+there are 3 files used in the bikeshare project for 3 USA cities, the files are chicago.csv, washington.csv, and new_york_city.csv which contains the bikeshare data records for chicago, wahington, and new york city respectivly.
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
