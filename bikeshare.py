@@ -114,7 +114,8 @@ def time_stats(df):
     df['hour'] = df['Start Time'].dt.hour
     print('the most common start hour is: {}'.format(df['hour'].mode()[0]))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    running_time = time.time() - start_time
+    print("\nThis took %s seconds." % (running_time))
     print('#'*70)
 
 def station_stats(df):
@@ -135,7 +136,8 @@ def station_stats(df):
     freq_start_and_end_station = (df['Start Station'] +' "&" '+df['End Station']).mode()[0]
     print('The most frequent start "&" end station trip is : {}'.format(freq_start_and_end_station))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    running_time = time.time() - start_time
+    print("\nThis took %s seconds." % (running_time))
     print('#'*70)
     
 def trip_duration_stats(df):
@@ -152,7 +154,8 @@ def trip_duration_stats(df):
     mean_of_travel = df['Trip Duration'].mean()
     print('Mean of travel time is: {}'.format(mean_of_travel))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    running_time = time.time() - start_time
+    print("\nThis took %s seconds." % (running_time))
     print('#'*70)
     
 def user_stats(df):
@@ -185,7 +188,8 @@ def user_stats(df):
     except KeyError:
         print('Gender & DOB column is not available for the current city selected')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    running_time = time.time() - start_time
+    print("\nThis took %s seconds." % (running_time))
     print('#'*70)
 def display_data(df):
     """
