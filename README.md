@@ -11,5 +11,6 @@ is a python script for bikeshare statistical analysis, it receive input from the
 there are 3 files used in the bikeshare project for 3 USA cities, the files are chicago.csv, washington.csv, and new_york_city.csv which contains the bikeshare data records for chicago, wahington, and new york city respectivly.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://github.com/udacity/pdsnd_github
+https://help.github.com/articles/about-readmes/
 
