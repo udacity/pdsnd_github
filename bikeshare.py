@@ -24,7 +24,7 @@ def get_filters():
     while city not in ['chicago','new york city','washington']:
         city = str(input('Invalid city name, type the correct city name : ')).lower()
         
-    #Specify on how to filter the data
+    #Specify on how to filter the data either by months, day, or none
     data_filter = str(input('Would you like to filter the data by month, day, both, or not at all? Type "none" for no time filter. \n')).lower()
     while data_filter not in ['none','month','day','both']:
         data_filter = str(input('Invalid input, type the correct filter by : ')).lower()
@@ -36,7 +36,7 @@ def get_filters():
         day='all'
         return city, month, day
     elif data_filter == 'month':
-    #get user input for month (all, january, february, ... , june)
+    #get user input for month (january, february, ... , june)
         month = str(input('Which month? January, February, March, April, May, or June? \n')).lower()
         while month not in ['january','february','march','april','may','june']:
             month = str(input('Invalid month, type the correct month: ')).lower() 
@@ -52,7 +52,7 @@ def get_filters():
         print('#'*70)
         return city, month, day
     else:
-    #get user input for month (all, january, february, ... , june)
+    #get user input for month (january, february, ... , june)
         month = str(input('Which month? January, February, March, April, May, or June? \n')).lower()
         while month not in ['january','february','march','april','may','june']:
             month = str(input('Invalid month, type the correct month: ')).lower()
@@ -77,10 +77,10 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    #generate dataframe for a particular city given by a user
+    # generate dataframe for a particular city given by a user
     df = pd.read_csv(CITY_DATA[city])
     
-    # extract month and day of week from Start Time to create new columns
+    # extract month and day of week from Start Time column to create new columns
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
