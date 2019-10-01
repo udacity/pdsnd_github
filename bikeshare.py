@@ -5,6 +5,9 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+# month and day list variables
+month_list = ['january','february','march','april','may','june']
+day_list = ['monday','tuesday','wednessday','thursday','friday','saturday','sunday']
 
 def get_filters():
     """
@@ -36,7 +39,7 @@ def get_filters():
     elif data_filter == 'month':
     #get user input for month (january, february, ... , june)
         month = str(input('Which month? January, February, March, April, May, or June? \n')).lower()
-        while month not in ['january','february','march','april','may','june']:
+        while month not in month_list:
             month = str(input('Invalid month, type the correct month: ')).lower() 
         day = 'all'
         print('#'*70)
@@ -44,7 +47,7 @@ def get_filters():
     elif data_filter == 'day':
     #get user input for day of week (monday, tuesday, ... sunday)
         day = str(input('Which day? Monday, Tuesday, Wednesday, Tuesday, Friday, Saturday, or Sunday? \n')).lower()
-        while day not in ['monday','tuesday','wednessday','thursday','friday','saturday','sunday']:
+        while day not in day_list:
             day = str(input('Invalid day, type the correct day: ')).lower()
         month = 'all'
         print('#'*70)
@@ -52,12 +55,12 @@ def get_filters():
     else:
     #get user input for month (january, february, ... , june)
         month = str(input('Which month? January, February, March, April, May, or June? \n')).lower()
-        while month not in ['january','february','march','april','may','june']:
+        while month not in month_list:
             month = str(input('Invalid month, type the correct month: ')).lower()
             
         #get user input for day of week (monday, tuesday, ... sunday)
         day = str(input('Which day? Monday, Tuesday, Wednesday, Tuesday, Friday, Saturday, or Sunday? \n')).lower()
-        while day not in ['monday','tuesday','wednessday','thursday','friday','saturday','sunday']:
+        while day not in day_list:
             day = str(input('Invalid day, type the correct day: ')).lower()
             
         print('#'*70)
@@ -85,8 +88,7 @@ def load_data(city, month, day):
     
     # generate new dataframe base on a given month
     if month !='all':
-            months = ['all','january','february','march','april','may','june']
-            month = months.index(month)
+            month = month_list.index(month)
             df = df[df['month'] == month]
     # generate new dataframe base on a given day
     if day !='all':
@@ -102,8 +104,7 @@ def time_stats(df):
 
     # display the most common month
     month = df['month'].mode()[0]
-    months = ['all','january','february','march','april','may','june']
-    print('the most common month is: {}'.format(months[month].title()))
+    print('the most common month is: {}'.format(month_list[month].title()))
     print('-'*40)
     # display the most common day of week
     print('the most common day of week is: {}'.format(df['day_of_week'].mode()[0]))
