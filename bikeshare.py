@@ -159,19 +159,19 @@ def time_stats(df, month=0, day=0):
     start_time = time.time()
 
     # display the most common month
-    monthsofyear = []
+    months = []
     for i in range(1, 13):
-        monthsofyear.append(datetime.date(2019, i, 1).strftime('%B'))
+        months.append(datetime.date(2019, i, 1).strftime('%B'))
     if month == 0:
-        common_month = monthsofyear[int(df['start_time'].dt.month.mode().values[0])]
+        common_month = months[int(df['start_time'].dt.month.mode().values[0])]
         print('The most common month for starting trips is ' + common_month)
 
     # display the most common day of week
-    daysofweek = []
+    days = []
     for i in range(1, 8):
-        daysofweek.append(datetime.date(2019, 4, i).strftime('%A'))
+        days.append(datetime.date(2019, 4, i).strftime('%A'))
     if day == 0:
-        common_day = daysofweek[int(df['start_time'].dt.dayofweek.mode().values[0])]
+        common_day = days[int(df['start_time'].dt.dayofweek.mode().values[0])]
         print('The most common day for starting trips is ' + common_day)
 
     # display the most common start hour
