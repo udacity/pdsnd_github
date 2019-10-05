@@ -304,13 +304,13 @@ def user_stats(df):
 
     # Calculate earliest, most recent, and most common year of birth
     if 'birth_year' in df:
-        youngest = int(df['birth_year'].dropna(axis=0).max())
-        oldest = int(df['birth_year'].dropna(axis=0).min())
-        commonest = int(df['birth_year'].dropna(axis=0).mode()[0])
+        birthyear_max = int(df['birth_year'].dropna(axis=0).max())
+        birthyear_min = int(df['birth_year'].dropna(axis=0).min())
+        birthyear_mode = int(df['birth_year'].dropna(axis=0).mode()[0])
         print('\nBirth Year Statistics\n' + '-'*40)
-        print('Oldest Birth Year is     : {}'.format(str(oldest)))
-        print('Youngest Birth Year is   : {}'.format(str(youngest)))
-        print('Most Common Birth Year is: {}'.format(str(commonest)))
+        print('Oldest Birth Year is     : {}'.format(str(birthyear_min)))
+        print('Youngest Birth Year is   : {}'.format(str(birthyear_max)))
+        print('Most Common Birth Year is: {}'.format(str(birthyear_mode)))
     else:
         print('Sorry, no birth year data available for this city')
 
