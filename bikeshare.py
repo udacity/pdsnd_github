@@ -255,15 +255,15 @@ def trip_duration_stats(df):
 
     # Print trip statistics
     print('Trip Duration Statistics\n' + '-' * 40)
-    spacing = 17
-    print('Mean:'.ljust(spacing) + duration_mean.rjust(42))
-    print('Standard Dev:'.ljust(spacing) + duration_std.rjust(42))
-    print('Maximum:'.ljust(spacing) + duration_max.rjust(42))
-    print('Minimum:'.ljust(spacing) + duration_min.rjust(42))
-    print('25th Percentile:'.ljust(spacing) + duration_25.rjust(42))
-    print('50th Percentile:'.ljust(spacing) + duration_50.rjust(42))
-    print('75th Percentile:'.ljust(spacing) + duration_75.rjust(42))
-    print('All Trips Sum:'.ljust(spacing) + duration_sum.rjust(42))
+    text_width = 17
+    print('Mean:'.ljust(text_width) + duration_mean.rjust(42))
+    print('Standard Dev:'.ljust(text_width) + duration_std.rjust(42))
+    print('Maximum:'.ljust(text_width) + duration_max.rjust(42))
+    print('Minimum:'.ljust(text_width) + duration_min.rjust(42))
+    print('25th Percentile:'.ljust(text_width) + duration_25.rjust(42))
+    print('50th Percentile:'.ljust(text_width) + duration_50.rjust(42))
+    print('75th Percentile:'.ljust(text_width) + duration_75.rjust(42))
+    print('All Trips Sum:'.ljust(text_width) + duration_sum.rjust(42))
 
     print("\nThis took %s seconds." % round(time.time() - start_time, 3))
     print('-'*40)
