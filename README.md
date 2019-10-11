@@ -19,3 +19,4 @@ https://python-forum.io
 https://docs.python.org/3/index.html
 https://pandas.pydata.org
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.count.html
+https://www.tutorialspoint.com/python.html
