@@ -27,7 +27,7 @@ def get_filters():
     
     while True:  #While loop to get city
         try:
-            city = input('What city?')
+            city = input('Which city would you like to see?')
             city = city.lower()
 
         except ValueError:
