@@ -27,7 +27,7 @@ def get_filters():
     
     while True:  #While loop to get city
         try:
-            city = input('What city?')
+            city = input('Which city would you like to see?')
             city = city.lower()
 
         except ValueError:
@@ -162,8 +162,8 @@ def station_stats(df):
     popular_end_station = df['End Station'].mode()[0]
     print('Most Popular End Station:', popular_end_station) 
     
-    frequent_combination = df.groupby(['Start Station', 'End Station']).size().idxmax()
-    print("The most common combination of stations is: ", frequent_combination)  
+    popular_combination = df.groupby(['Start Station', 'End Station']).size().idxmax()
+    print("The most popular combination of stations is: ", popular_combination)  
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
