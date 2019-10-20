@@ -2,10 +2,10 @@
 Include the date you created this project and README file.
 
 ### Project Title
-Replace the Project Title
+Mybikeshare333.py
 
 ### Description
-Describe what your project is about and what it does
+This project retrieves data from local cities using bikeshare services
 
 ### Files used
 chicago.csv
