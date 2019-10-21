@@ -1,4 +1,4 @@
-import datetime 
+import datetime
 import time
 import pandas as pd
 import numpy as np
@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    city = input('''\nwhich city you want to explore its data Chicago, New York, or Washington?\n''') 
+    city = input('''\nwhich city you want to explore its data Chicago, New York, or Washington?\n''')
     city = city.lower()
     city = city.replace(" ", "")
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
@@ -59,33 +59,33 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    #load data into pandas dataframe 
+    #load data into pandas dataframe
     df = pd.read_csv(CITY_DATA[city])
-    print(df.head()) 
+    print(df.head())
     n   = 2
     while True:
-        answer  = input('\n Would you like to display 5 more row of the raw data ? Press [yes/no] ')
+        answer  = input('\n Would you like to display 10 more row of the raw data ? Press [yes/no] ')
         if answer == 'y' :
-            print(df.head(5 * n))
+            print(df.head(10 * n))
             n += 1
         else :
             break
-    
+
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # extract month ,day of week and hour from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     df['hour'] = df['Start Time'].dt.hour
-    
-    
+
+
     if month != 'all':
         # use the index of the months list to get the corresponding int
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
         df = df[df['month'] == month]
 
-   
+
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
@@ -128,7 +128,7 @@ def time_stats(df,month,day):
     if day == "all" :
     	print("The most popular day of the week is :  ",popular_day)
     else :
-    	print("The filter for {} day is applied".format(day))  
+    	print("The filter for {} day is applied".format(day))
     # TO DO: display the most common start hour
     popular_hour = df['hour'].mode()[0]
     print("The most popular hour is :  ",popular_hour)
@@ -211,7 +211,7 @@ def user_stats(df,city):
 
 
 def main():
-    
+
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
