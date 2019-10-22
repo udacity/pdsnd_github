@@ -64,9 +64,9 @@ def load_data(city, month, day):
     print(df.head())
     n   = 2
     while True:
-        answer  = input('\n Would you like to display 10 more row of the raw data ? Press [yes/no] ')
+        answer  = input('\n Would you like to display 5 more row of the raw data ? Press [yes/no] ')
         if answer == 'y' :
-            print(df.head(10 * n))
+            print(df.head(5 * n))
             n += 1
         else :
             break
