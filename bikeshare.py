@@ -254,7 +254,7 @@ def show_five(df):
         fn += 5
         ans = input('Show 5 more? (y/n): ').lower()
         if ans != 'y':
-            print('Okay Bye!')
+            print('Bye!')
             break
         else:
             continue
