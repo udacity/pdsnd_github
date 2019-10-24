@@ -13,8 +13,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
 
 
 def run_programs(program):
-    """ The only way I could think of to make this work was to return a string value back and forth
-    Captures an input and runs corresponding programs"""
+    """now works"""
     inp = ''  # I have to set it each call? This seems weird but forcing it to blank each time seems to work?
     while inp != 'y':
         inp = input('Would you like me to run {} ? (Y/N):'.format(program)).lower()
@@ -112,7 +111,7 @@ def num_month(month):
 
 
 def num_day(day):
-    # converts string day to integer value for return to lambda
+    # this was used in lambda but runs much faster without it
     if day == "Monday":
         return 0
     elif day == "Tuesday":
