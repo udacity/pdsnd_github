@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+######Created .gitignore file to exclude non essential data files, also to sav time while uploading final project on github.
 
 ### Project Title
-Replace the Project Title
+######Nanodegres data science github project
 
 ### Description
-Describe what your project is about and what it does
+######This project will use python code of the bikeshare project to upload it on github
 
 ### Files used
-Include the files used
+######bikeshare.py
+######chicago.csv
+######new_york_city.csv
+######washington.csv
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+just using nanodegree data science course materials on udacity.
 
