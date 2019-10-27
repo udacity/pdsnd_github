@@ -1,13 +1,16 @@
-### Date created
+### Created .gitignore file to exclude large data
 Include the date you created this project and README file.
 
-### Project Title
+### Post your work with github
 Replace the Project Title
 
-### Description
+### will use bikeshare data of second project to upload on github
 Describe what your project is about and what it does
 
-### Files used
+### bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 Include the files used
 
 ### Credits
