@@ -4,7 +4,7 @@ Include the date you created this project and README file.
 ### Post your work with github
 Replace the Project Title
 
-### will use bikeshare data of second project to upload on github
+### will use bikeshare data of second project to upload on github, but excluding the csv files
 Describe what your project is about and what it does
 
 ### bikeshare.py
