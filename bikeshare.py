@@ -171,6 +171,31 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
+    print('\nCalculating User Stats...\n')
+    start_time = time.time()
+
+    # Display counts of user types
+    subscribers_count = df['User Type'].str.count('Subscriber').sum()
+    customers_count = df['User Type'].str.count('Customer').sum()
+    print('\nNumber of subscribers is: {}\n'.format(int(subscribers_count)))
+    print('\nNumber of customers is: {}\n'.format(int(customers_count)))
+
+    # Display counts of gender
+    if('Gender' in df):
+        male_count = df['Gender'].str.count('Male').sum()
+        female_count = df['Gender'].str.count('Female').sum()
+        print('\nNumber of male users is: {}\n'.format(int(male_count)))
+        print('\nNumber of female users is: {}\n'.format(int(female_count)))
+
+    # Display earliest, most recent, and most common year of birth
+    if('Birth Year' in df):
+        earliest_year = df['Birth Year'].min()
+        print('\n Oldest Birth Year is: {}\n '.format(int(earliest_year)))
+        recent_year = df['Birth Year'].max()
+        print('\n Youngest Birth Year is: {}\n'.format(int(recent_year)))
+        common_year = df['Birth Year'].value_counts().idxmax()
+        print('\n Most popular Birth Year is: {}\n'.format(int(common_year)))
+
     print("\nThis took %s seconds." % (time.time() - start_time))    
     print('-'*40)
   
