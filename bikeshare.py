@@ -60,7 +60,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     file_name = CITY_DATA[city]
-    print ("\nAccessing data from: " + file_name)
+    print ('\nAccessing data from: {}\n'.format(file_name))
     df = pd.read_csv(file_name)
     
      # convert the Start Time column to datetime
@@ -90,7 +90,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
-        print('\nMost Frequent Times of Travel...\n')
+    print('\nMost Frequent Times of Travel...\n')
     start_time = time.time()
 
     # Convert the Start Time column to datetime
@@ -132,7 +132,7 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     combine_stations = df['Start Station'] + "*" + df['End Station']
     common_station = combine_stations.value_counts().idxmax()
-    print('\nMost frequent used combinations are:\n{} \nto\n{}'.format(common_station.split('*')[0], common_station.split('*')[1]))
+    print('\nMost frequent used combinations are:{} to {}\n'.format(common_station.split('*')[0], common_station.split('*')[1]))
 
     print('-'*40)
 
