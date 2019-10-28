@@ -90,6 +90,28 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
+        print('\nMost Frequent Times of Travel...\n')
+    start_time = time.time()
+
+    # Convert the Start Time column to datetime
+    df['Start Time'] = pd.to_datetime(arg = df['Start Time'], format = '%Y-%m-%d %H:%M:%S')
+
+    # Create new columns for month, weekday, hour
+    month = df['Start Time'].dt.month
+    week_day = df['Start Time'].dt.weekday_name
+    hour = df['Start Time'].dt.hour
+    
+    # TO DO: display the most common month
+    popular_month = month.mode()[0]
+    print('\nMost common month is: {}\n'.format(popular_month))
+
+    # TO DO: display the most common day of week
+    popular_day = week_day.mode()[0]
+    print('\nMost common day of week is: {}\n'.format(popular_day))
+
+    # TO DO: display the most common start hour
+    popular_hour = hour.mode()[0]
+    print('\nMost frequent start hour is: {}\n'.format(popular_hour))
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
