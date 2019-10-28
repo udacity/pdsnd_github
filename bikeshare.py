@@ -49,7 +49,7 @@ def get_filters():
       else:
         break
     print("\n")
-    print('*'*40)
+    print('-'*40)
     return city, month, day
 
 
@@ -120,7 +120,7 @@ def time_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print("\n")
-    print('*'*40)
+    print('-'*40)
 
 
 def station_stats(df):
@@ -148,7 +148,7 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print("\n")
-    print('*'*40)
+    print('-'*40)
 
     
 def trip_duration_stats(df):
@@ -171,7 +171,7 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print("\n")
-    print('*'*40)
+    print('-'*40)
 
 
 def user_stats(df):
@@ -216,8 +216,7 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print("\n")
-    print('*'*40)
-    print('_'*40)
+    print('-'*40)
 
 def raw_data(df):
     i = 0
@@ -227,7 +226,7 @@ def raw_data(df):
         i += 5
         show_data = input("Will you like to see 5 more lines of raw data?"
                     "Input (Yes or No): \n")
-        print('*'*40)
+        print('-'*40)
 
 def main():
     while True:
