@@ -18,7 +18,7 @@ def get_filters():
     
         invalid_inputs = "Sorry, Invalid input. Please try again" 
     
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data!\n')
    
     # TO DO: get user raw_input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True :
@@ -60,7 +60,7 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     file_name = CITY_DATA[city]
-    print ("Accessing data from: " + file_name)
+    print ("\nAccessing data from: " + file_name)
     df = pd.read_csv(file_name)
     
      # convert the Start Time column to datetime
@@ -111,7 +111,7 @@ def time_stats(df):
 
     # TO DO: display the most common start hour
     popular_hour = hour.mode()[0]
-    print('\nMost frequent start hour is: {}\n'.format(popular_hour))
+    print('Most frequent start hour is: {}\n'.format(popular_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -124,15 +124,15 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    print('Most commonly used start station is: ',df['Start Station'].value_counts().idxmax())
+    print('\nMost commonly used start station is: ',df['Start Station'].value_counts().idxmax())
 
     # TO DO: display most commonly used end station
-    print('Most commonly used end station is: ',df['End Station'].value_counts().idxmax())
+    print('\nMost commonly used end station is: ',df['End Station'].value_counts().idxmax())
 
     # TO DO: display most frequent combination of start station and end station trip
     combine_stations = df['Start Station'] + "*" + df['End Station']
     common_station = combine_stations.value_counts().idxmax()
-    print('Most frequent used combinations are:\n{} \nto\n{}'.format(common_station.split('*')[0], common_station.split('*')[1]))
+    print('\nMost frequent used combinations are:\n{} \nto\n{}'.format(common_station.split('*')[0], common_station.split('*')[1]))
 
     print('-'*40)
 
@@ -156,7 +156,7 @@ def trip_duration_stats(df):
 
     # TO DO: display total travel time
     total_time = df['Trip Duration'].sum()
-    print('Total travel time is: ')
+    print('\nTotal travel time is: ')
     calculate_time(total_time)
 
     # TO DO: display mean travel time
@@ -200,7 +200,7 @@ def user_stats(df):
     print('-'*40)
   
 def raw_data(df):
-    user_input = input('Do you want to see raw data? Enter yes or no.\n')
+    user_input = input('\nDo you want to see raw data? Enter yes or no.\n')
     line_number = 0
 
     while True :
