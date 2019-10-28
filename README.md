@@ -1,6 +1,5 @@
 ### Date created
-The project has been created: 18/10/2019
-the README file has been updated: 28/10/2019
+Updated: 28/10/2019
 
 ### Explore US Bikeshare Data
 Programming for Data Science Nanodegree Program
