@@ -9,7 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-
+    also see below
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -29,7 +29,7 @@ def get_filters():
         month = input("which month would you like to explore?")
         if month.lower() not in months:
             print('Sorry', 'please enter month between jan. and june')
-            
+
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input("enter day to filter? " ).lower()
 
@@ -141,9 +141,9 @@ def user_stats(df):
     print(user_types)
 
     # TO DO: Display counts of gender
-    
+
     if 'Gender' in df.columns:
-        print('gender_counts are: ', df['Gender'].value_counts()) 
+        print('gender_counts are: ', df['Gender'].value_counts())
     else:
         print('No gender data available')
     # TO DO: Display earliest, most recent, and most common year of birth
@@ -153,7 +153,7 @@ def user_stats(df):
         print('most_common_year_of_birth is: ', df['Birth Year'].value_counts().idxmax())
     else:
         print('No birth year data available')
-        
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -167,7 +167,7 @@ def display_raw_data(df):
             more_data = input('Want to see more data: ').lower()
             if more_data in ('no', 'n'):
                 break
-    
+
 def main():
     while True:
         city, month, day = get_filters()
