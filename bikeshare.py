@@ -234,7 +234,7 @@ def main():
             display_data = input()
             display_data = display_data.lower()
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nRestart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 

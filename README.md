@@ -12,3 +12,4 @@ bikeshare.py
 
 ### Credits
 Python, Pandas, Numpy and Udacity
+Stackoverflow
