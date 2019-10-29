@@ -11,4 +11,4 @@ data anaysis of bikeshare in US
 bikeshare.py
 
 ### Credits
-Python, Pandas, Numpy
+Python, Pandas, Numpy and Udacity
