@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 #ignore all .csv files
 *.csv
+||||||| merged common ancestors
+=======
+*.csv
+>>>>>>> 947629a1b928eda756424e9d10ca5ce0c45588cb
