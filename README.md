@@ -1,15 +1,31 @@
-### Date created
-Include the date you created this project and README file.
+TAHIROU CLAUDE DIAMBEDO 
 
-### Project Title
-Replace the Project Title
+This repository contains ( Second Project: Bike-Share Project ) For Programming For Data Science For Enterprise Nanodegree Program That offered by Udacity.
+Date created
 
-### Description
-Describe what your project is about and what it does
+01/11/2019
+Project Title
 
-### Files used
-Include the files used
+Udacity Bike-Share Project.
+Description
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+In this project, I made a use of Python to explore data related to bike share systems for three major cities in the United States, Which is Chicago, New York City, and Washington, Also to Run statistics on multiple data pools related to bicycle sharing.
+Files used
 
+new_york_city.csv
+
+chicago.csv
+
+washington.csv
+Requirements
+
+This program was written in Python ( version 3.7.1 ) and relies on the following libraries:
+
+pandas==0.23.4
+
+numpy==1.15.4
+
+Click==7.0
+Credits
+
+Thanks to Udacity for giving me this opportunity to create this wonderful project.
