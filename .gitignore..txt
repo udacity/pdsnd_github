@@ -1,0 +1,2 @@
+# ignore generated CSV file
+*.csv
