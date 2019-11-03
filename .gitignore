@@ -1,4 +1,5 @@
 #  file ignore list
-*.csv
-#ignore hidden file
-.*
+
+'chicago.csv',
+'new_york_city.csv',
+'washington.csv'
