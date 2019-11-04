@@ -31,4 +31,16 @@ numpy==1.15.4
 Click==7.0
 Credits
 
+Udacity Commit Message Style Guide
+
+$ git commit -m" feat:   Move your bikeshare.py and data files into your local repository " $ git add README.md
+
+$ git commit -m"  test: this is README.md update file"
+On branch documentation
+nothing to commit, working tree clean
+
+$ git commit -m" test :  changes more in refactoring code "
+On branch refactoring
+nothing to commit, working tree clean
+
 Thanks to Udacity for giving me this opportunity to create this wonderful project.
