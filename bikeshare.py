@@ -166,29 +166,44 @@ def user_stats(df):
     print(user_types)
 
     # TO DO: Display counts of gender
-    gender = df['Gender'].value_counts()
-    print(gender)
+    if 'Gender' in df.columns:
+        gender = df['Gender'].value_counts()
+        print(gender)
+    else:
+        print("Gender column does not exists")
 
     # TO DO: Display earliest, most recent, and most common year of birth
-    earliest_yob = df['Birth Year'].min()
-    earliest_year = int(earliest_yob)
-    print ("\nEarliest year of birth ")
-    print (earliest_year)
+    if 'Birth Year' in df.columns:
+        earliest_yob = df['Birth Year'].min()
+        earliest_year = int(earliest_yob)
+        print ("\nEarliest year of birth ")
+        print (earliest_year)
 
-    recent_yob = df['Birth Year'].max()
-    recent_year = int(recent_yob)
-    print ("\nMost Recent year of birth ")
-    print (recent_year)
+        recent_yob = df['Birth Year'].max()
+        recent_year = int(recent_yob)
+        print ("\nMost Recent year of birth ")
+        print (recent_year)
     
-    common_yob = df['Birth Year'].mode()[0]
-    common_year = int(common_yob)
-    print ("\nMost Common year of birth ")
-    print (common_year)
+        common_yob = df['Birth Year'].mode()[0]
+        common_year = int(common_yob)
+        print ("\nMost Common year of birth ")
+        print (common_year)
+    else:
+        print("Birth Year column does not exists")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+def raw_data(df):
+    """Displays raw data"""
+    restart1 = input('\nWould you like to display raw data? Enter yes or no.\n')
+    i = 0
+    while restart1 != 'no':
+        print(df[df.columns[0:-1]].iloc[i:i+5])
+        restart1 = input('\nWould you like to display raw data? Enter yes or no.\n')
+        i = i+5
+    
+    
 def main():
     while True:
         city, month, day = get_filters()
@@ -198,7 +213,9 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
+        raw_data(df)
+        
+              
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
