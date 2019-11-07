@@ -20,7 +20,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    
+
     while True :
         city = input('You need to select a city: Chicago, New York City or Washington\n').lower()
         if city.lower() not in cities:
@@ -30,7 +30,7 @@ def get_filters():
             break
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    while True :    
+    while True :
         month = input('You need to select Which month would you like to explore?\n').lower()
         if month.lower() not in cal_months:
             print("Please try again or type - all.")
@@ -72,7 +72,7 @@ def load_data(city, month, day):
         df = df[df['month'] == month]
     if day != 'all':
             df = df[df['day_of_week'] == day.title()]
-    
+
     return df
 
 def time_stats(df):
@@ -163,36 +163,36 @@ def user_stats(df, city):
     subscriber=count['Subscriber']
     customer=count['Customer']
     print("Subscriber:",subscriber," Customer:",customer)
-    
+
     if city != "washington" :
     # TO DO: Display counts of gender
         gender = df['Gender'].value_counts()
         print("Gender counts are\n{}\n".format(gender))
 
     # TO DO: Display earliest, most recent, and most common year of birth
-   
+
         earliest = df['Birth Year'].min()
         recent = df['Birth Year'].max()
         common_year = df['Birth Year'].mode()[0]
         earliest , recent , common_year = int(earliest),int(recent),int(common_year)
         print("\n\nEarliest Birth Year :  {} \nMost Recent Birth Year :  {} \nMost Common Birth Year :  {}  ".format(earliest,recent,common_year))
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def raw_data(df):
     row_index = 1
     view_data = input("\nWould you like to view the raw data? Type 'Yes' or 'No' \n").lower()
-    
+
     while True:
         if view_data == 'no':
             return
         if view_data == 'yes':
             print(df[row_index: row_index + 5])
             row_index = row_index + 5
-        view_data = input("\n Would you like to see an extra 5 rows of the raw data? Type 'Yes' or 'No' \n").lower()     
-        
-        
+        view_data = input("\n Would you like to see an extra 5 rows of the raw data? Type 'Yes' or 'No' \n").lower()
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -203,14 +203,12 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
         raw_data(df)
-               
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-            
+
 
 if __name__ == "__main__":
     main()
-
-
-
+#not going to change the code
