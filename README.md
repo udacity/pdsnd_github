@@ -5,7 +5,7 @@
 Udacity Github Project
 
 ### Description
-This project is the bikeshare project done for the udacity course. 
+This project is the bikeshare project done for the udacity course. This is the last part of the course
 
 ### Files used
 bikeshare.py
