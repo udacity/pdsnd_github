@@ -191,8 +191,8 @@ def display_raw_data(df):
         if display5.lower() != 'yes':
             break
         print(df[start:end])
-        start+=5
-        end+=5
+        start += 5
+        end += 5
 
 def main():
     while True:
