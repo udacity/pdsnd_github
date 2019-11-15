@@ -269,10 +269,6 @@ def user_stats(df):
         print('Earliest Birth Year: ', df['Birth Year'].min())
         print('Recent Birth Year:t', df['Birth Year'].max())
         print('Most Common Birth Year: ', df['Birth Year'].mode()[0])
-    else:
-        print('Earliest Birth Year: NaN')
-        print('Recent Birth Year: NaN', )
-        print('Most Common Birth Year: NaN')
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
