@@ -127,8 +127,7 @@ def load_data(city, month, day):
             while True:
                 describe_answer = input('Display Statistics of Raw Data(yes//y or no/n)?: ').lower()
                 if describe_answer == 'yes' or describe_answer == 'y':
-                    print('\t_____Raw Data Statistics of ' + city.title() + '_____')
-                    print(df.describe())
+                    print('\t_____Raw Data Statistics of ' + city.title() + '_____\n', df.describe())
                     break
                 elif describe_answer == 'no' or describe_answer == 'n':
                     break
