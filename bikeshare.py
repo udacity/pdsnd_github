@@ -102,10 +102,8 @@ def load_data(city, month, day):
             while True:
                 answer_2 = input("Include Raw Data statistics (Yes/No): ").lower()
                 if answer_2 == 'yes' or answer_2 == 'y':
-                    print('\t_____Top 5 Overview of Raw Data of ' + city.title()+ '_______ ')
-                    print(df.head(5))
-                    print('\t_____Bottom 5 Overview of Raw Data of ' + city.title() + '______')
-                    print(df.tail(5))
+                    print('\t_____Top 5 Overview of Raw Data of ' + city.title()+ '_______ \n', df.head(5))
+                    print('\t_____Bottom 5 Overview of Raw Data of ' + city.title() + '______\n', df.tail(5))
                     print('\t_____Raw Data Statistics of'+ city.title() +'_____')
                     print(df.describe())
 
@@ -129,8 +127,7 @@ def load_data(city, month, day):
             while True:
                 describe_answer = input('Display Statistics of Raw Data(yes//y or no/n)?: ').lower()
                 if describe_answer == 'yes' or describe_answer == 'y':
-                    print('\t_____Raw Data Statistics of ' + city.title() + '_____')
-                    print(df.describe())
+                    print('\t_____Raw Data Statistics of ' + city.title() + '_____\n', df.describe())
                     break
                 elif describe_answer == 'no' or describe_answer == 'n':
                     break
@@ -143,8 +140,6 @@ def load_data(city, month, day):
     else:
         Print('Please Enter yes/y or no/n')
         True
-
-
 
 
     # convert the Start Time column to datetime
@@ -234,8 +229,6 @@ def trip_duration_stats(df):
     total_travel_time = df['Trip Duration'].sum()
     print('Total Travel Time: {} minutes'.format(total_travel_time))
 
-
-
     # display mean travel time
     print('Mean Travel Time: {} minutes'. format(df['Trip Duration'].mean()))
 
@@ -269,11 +262,6 @@ def user_stats(df):
         print('Earliest Birth Year: ', df['Birth Year'].min())
         print('Recent Birth Year:t', df['Birth Year'].max())
         print('Most Common Birth Year: ', df['Birth Year'].mode()[0])
-    else:
-        print('Earliest Birth Year: NaN')
-        print('Recent Birth Year: NaN', )
-        print('Most Common Birth Year: NaN')
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
