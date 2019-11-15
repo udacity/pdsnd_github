@@ -12,4 +12,15 @@
 * new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+1. **Names and Groups**
+* Udacity and their team
+* AAL (Africa App Launch)
+* Google
+* Stack Overflow
+2. **Links**
+* Repo
+  https://github.com/udacity/pdsnd_github
+* Stack Overflow
+  https://stackoverflow.com/
+* Google Search
+https://www.google.co.za/
