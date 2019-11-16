@@ -1,15 +1,24 @@
 ### Date created
-Include the date you created this project and README file.
+16-11-2019
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This Python script to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. It imports data from CSV files and computes descriptive statistics. It also takes in raw input to create an interactive experience in the terminal to present these statistics.
 
 ### Files used
-Include the files used
+- chicago.csv
+- new_york_city.csv
+- washington.csv
+
+### Software requirements
+- You should have Python 3, NumPy, and pandas installed using Anaconda
+- A text editor, like Sublime or Atom.
+- A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- Lessons in  Udacity
+- [link][1]
 
+[1]: https://pandas.pydata.org/pandas-docs/stable/reference/index.html
