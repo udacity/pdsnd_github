@@ -18,12 +18,14 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington).
     city=input("Would you like to see data for Chicago, New York, or Washington?\n").lower()
+    #if input in any format, it converts it to lower case
     #Use a while loop to handle invalid inputs
     while(True):
         if(city in CITY_DATA):
             break
         else:
             city=input('Enter correct city: ').lower()
+            
 
     check=input("Would you like to filter the data by month, day, both, or not at all? Type \"none\" for no time filter.\n").lower()
     months = ['january', 'february', 'march', 'april', 'may', 'june']
