@@ -15,10 +15,11 @@ valid_city = [ 'chicago' , 'new york city' , 'washington' ]
 valid_month = [ 'ALL' , 'january' , 'february' , 'march' , 'april' , 'may' ,
                 'june' , 'july' , 'august' , 'september' , 'october' , 'november' , 'december' ]
 valid_day = [ 'ALL' , 1 , 2 , 3 , 4 , 5 , 6 , 7 ]
-cnum , dnum , mnum = [ 1 , 2 , 3 ] , [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 ] , [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 ,
-                                                                           11 , 12 ]
-city_df = pd.DataFrame ( [ ] )
+cnum = [ 1 , 2 , 3 ]
+dnum = [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 ]
+mnum = [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 ]
 
+city_df = pd.DataFrame ( [ ] )
 
 def display_cht( df2 , cht_col , cht_title , cht_y ):
     fig , ax = plt.subplots ()
@@ -31,14 +32,12 @@ def display_cht( df2 , cht_col , cht_title , cht_y ):
     df2[ cht_col ].value_counts ().sort_index ().plot.barh ( x='Values' , y=cht_y )
     plt.show
 
-
 def output2( df2 , colid , pr_msg , pr_msg2 ):
     df2[ colid ] = df2.index
     print ( pr_msg2.format ( df2[ colid ].iloc[ 0 ] ) )
     msg2 = 'The 10 Most ' + pr_msg
     df2[ 'Amt' ].plot.barh ( x='Values' , y='Amt' , title=msg2 )
     plt.show ()
-
 
 def get_selection( gnum , gval ):
     while True:
@@ -60,7 +59,6 @@ def get_selection( gnum , gval ):
             print ( '\nAttempted Input\n' )
     return (x)
 
-
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -70,7 +68,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print ( 'Hello! Let\'s explore some US bikeshare data!' )
+    print ( 'Hello and Good Day! Let\'s explore some US bikeshare data!' )
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = valid_city[ get_selection ( cnum , valid_city ) - 1 ]
     city_df = pd.read_csv ( CITY_DATA[ city ] )
@@ -95,13 +93,11 @@ def get_filters():
     print ( '-' * 40 )
     return city , month , day , city_df
 
-
 def load_city( city ):
     city_df = pd.read_csv ( CITY_DATA[ city ] )
     city_df[ 'Start Time' ] = pd.to_datetime ( city_df[ 'Start Time' ] )
     city_df[ 'month' ] = city_df[ 'Start Time' ].dt.month
     return city_df
-
 
 def all_mth( city_df ):
     # filter by month if applicable
@@ -114,7 +110,6 @@ def all_mth( city_df ):
         city_df = df[ df[ 'month' ] == month ]
     return city_df
 
-
 def all_day( city_df ):
     # filter by day of week if applicable
     if day == 'all':
@@ -122,7 +117,6 @@ def all_day( city_df ):
         city_df = city_df[ city_df[ 'day_of_week' ] == day.title () ]
 
     return city_df
-
 
 def time_stats( city_df ):
     """Displays statistics on the most frequent times of travel."""
