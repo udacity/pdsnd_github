@@ -13,8 +13,10 @@ valid_city = [ 'chicago' , 'new york city' , 'washington' ]
 valid_month = [ 'ALL' , 'january' , 'february' , 'march' , 'april' , 'may' ,
                 'june' , 'july' , 'august' , 'september' , 'october' , 'november' , 'december' ]
 valid_day = [ 'ALL' , 1 , 2 , 3 , 4 , 5 , 6 , 7 ]
-cnum , dnum , mnum = [ 1 , 2 , 3 ] , [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 ] , [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 ,
-                                                                           11 , 12 ]
+cnum = [ 1 , 2 , 3 ]
+dnum = [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 ]
+mnum = [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 ]
+
 city_df = pd.DataFrame ( [ ] )
 
 
