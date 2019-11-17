@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 CITY_DATA = {'chicago': 'chicago.csv',
              'new york city': 'new_york_city.csv',
              'washington': 'washington.csv'}
+# General comment - added as general overview of the document
+#  original filename is bikeshare.py - allows interactive review of data
 
 # Given that these are static calendar type values - defining them here
 valid_city = [ 'chicago' , 'new york city' , 'washington' ]
