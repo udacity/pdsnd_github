@@ -19,7 +19,6 @@ mnum = [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 ]
 
 city_df = pd.DataFrame ( [ ] )
 
-
 def display_cht( df2 , cht_col , cht_title , cht_y ):
     fig , ax = plt.subplots ()
     data = df2[ cht_col ].value_counts ()
@@ -31,14 +30,12 @@ def display_cht( df2 , cht_col , cht_title , cht_y ):
     df2[ cht_col ].value_counts ().sort_index ().plot.barh ( x='Values' , y=cht_y )
     plt.show
 
-
 def output2( df2 , colid , pr_msg , pr_msg2 ):
     df2[ colid ] = df2.index
     print ( pr_msg2.format ( df2[ colid ].iloc[ 0 ] ) )
     msg2 = 'The 10 Most ' + pr_msg
     df2[ 'Amt' ].plot.barh ( x='Values' , y='Amt' , title=msg2 )
     plt.show ()
-
 
 def get_selection( gnum , gval ):
     while True:
@@ -59,7 +56,6 @@ def get_selection( gnum , gval ):
         finally:
             print ( '\nAttempted Input\n' )
     return (x)
-
 
 def get_filters():
     """
@@ -95,13 +91,11 @@ def get_filters():
     print ( '-' * 40 )
     return city , month , day , city_df
 
-
 def load_city( city ):
     city_df = pd.read_csv ( CITY_DATA[ city ] )
     city_df[ 'Start Time' ] = pd.to_datetime ( city_df[ 'Start Time' ] )
     city_df[ 'month' ] = city_df[ 'Start Time' ].dt.month
     return city_df
-
 
 def all_mth( city_df ):
     # filter by month if applicable
@@ -114,7 +108,6 @@ def all_mth( city_df ):
         city_df = df[ df[ 'month' ] == month ]
     return city_df
 
-
 def all_day( city_df ):
     # filter by day of week if applicable
     if day == 'all':
@@ -122,7 +115,6 @@ def all_day( city_df ):
         city_df = city_df[ city_df[ 'day_of_week' ] == day.title () ]
 
     return city_df
-
 
 def time_stats( city_df ):
     """Displays statistics on the most frequent times of travel."""
