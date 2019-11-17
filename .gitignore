@@ -1,2 +1,5 @@
-#The following files will be ignore
+#Ignore all the .csv files
 *.csv
+chicago.csv
+washington.csv
+new_york_city.csv
