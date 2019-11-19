@@ -133,7 +133,7 @@ def time_stats(df):
     print('\nCalculating Frequent Travel Times...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month  (number 000)
+    # TO DO: display the most common month  (number 00)
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -148,7 +148,7 @@ def time_stats(df):
     print('Busiest month of the year: ', popular_month, ' (', MONTHS[popular_month], ')', sep='')
 
 
-    # TO DO: display the most common day of the week (number 001)
+    # TO DO: display the most common day of the week (number 01)
 
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -235,7 +235,7 @@ def trip_duration_stats(df):
     # no 06 display total travel time in days
     print('Cumulative pedal time:', Total_Travel_Time/86400, "Days")
 
-    # TO DO: display mean travel time (number 007)
+    # TO DO: display mean travel time (number 07)
     
     # calculate the mean travel time in minutes
     Mean_Travel_Time = df['Trip Duration'].mean()
