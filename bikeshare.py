@@ -26,20 +26,20 @@ def get_filters():
     city = input('''Would you like to look at the data for Chicago, New York or Washington from the US Bikeshare data?\n''')
     city = city.lower()
     city = city.replace(" ", "")
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # Taking the user input for city (chicago, new york city, washington)
     while city not in ['chicago','newyorkcity','newyork','nyc','washington'] :
     	city = input("You have entered an invalid input.\nCheck the correct spelling of the city and enter here ")
     	city = city.lower()
     	city = city.replace(" ", "")
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # Taking the user input for month of the year starting from January to June
     month = input("\nSince we only have the bikesharing data starting from the month of January till the June,\nEnter a month from 'January to June' in case you want to filter by a specific month or enter 'all' to apply no filter\n")
     month = month.lower()
     while month not in ['january','february','march','april','may','june','all']:
     	month = input("\nYou have entered an invalid input.\nCheck the correct spelling of the month and enter month only from 'January to June' or 'all' :  ")
     	month = month.lower()
 
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # Taking the user input for the day of the week
     day = input("\nWould you want us to filter the data by any particular day of the week?\nIf yes, enter the day you want to filter your data by and if you do not want to filter the data by day, enter 'all' :\n")
     day = day.lower()
     while  day.lower() not in ['sunday','monday','tuesday','wednesday','thursday','friday','saturday','all']:
