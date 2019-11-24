@@ -14,6 +14,4 @@
      break:
    else:
     print('Invalid input! . Plase try again :) ')
-    
-    print('-'*40)
-    return city, month, day 
+
