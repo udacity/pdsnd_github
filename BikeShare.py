@@ -1,4 +1,4 @@
- #Including part of the solution!
+ #Including part of the solution !
  # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
  while True :
     day = raw_input("\n Enter name of the  day\n Monday,\n Tuesday,\n Wednesday,\n Thursday,"
