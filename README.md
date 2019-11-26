@@ -1,15 +1,26 @@
 ### Date created
-Include the date you created this project and README file.
+ project :Dec 20 2019
+ README file :Nov 25 2019
 
 ### Project Title
-Replace the Project Title
+ bikeshare
 
 ### Description
-Describe what your project is about and what it does
+explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington
 
 ### Files used
-Include the files used
+README.md
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
+.gitignore
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+udacity.com
+geeksforgeeks.org
+stackoverflow.com
+github.com
+githowto.com
+youtube channle The Coding Train
