@@ -26,7 +26,7 @@ def get_filters():
         city+= " city"
       
     #  get user input for month (all, january, february, ... , june)
-    month=input('Enter the month to filter by between January to June or not and make sure that the first letter in the upper case :')
+    month=input('Enter the month to filter by between January to June or not  :')
     while month not in ['January', 'February', 'March', 'April', 'May', 'June','all']:
           month=input('Enter the month to filter by between January to June or not and make sure that the first letter in the upper case :')
 
