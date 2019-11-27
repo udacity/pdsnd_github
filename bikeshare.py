@@ -20,7 +20,7 @@ def get_filters():
 
     city=input('Enter your city:').lower()
     while city not in ['chicago','new york','washington']:
-          city=input('sorry not in the range please pick from these three cities chicago ,new york or washington :').lower()
+          city=input('sorry  we are not in the range please pick from these three cities chicago ,new york city or washington :').lower()
 
     if city.lower() == "new york":
         city+= " city"
@@ -33,7 +33,7 @@ def get_filters():
 
     #  get user input for day of week (all, monday, tuesday, ... sunday)
     day=input('Enter the day to filter by between Monday to Sunday or not:').lower()
-    while day not in ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']:
+    while day not in ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']:
           day=input('Enter the day to filter by between Monday to Sunday or not:').lower()
     print('-'*40)
     return city, month, day
