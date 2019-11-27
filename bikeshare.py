@@ -17,16 +17,16 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     #  get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    
+
     city=input('Enter your city:').lower()
     while city not in ['chicago','new york','washington']:
           city=input('sorry not in the range please pick from these three cities chicago ,new york or washington :').lower()
-    
+
     if city.lower() == "new york":
         city+= " city"
-      
+
     #  get user input for month (all, january, february, ... , june)
-    month=input('Enter the month to filter by between January to June or not  :')
+    month=input('Enter the month to filter by between January to June or not and preas enter :')
     while month not in ['January', 'February', 'March', 'April', 'May', 'June','all']:
           month=input('Enter the month to filter by between January to June or not and make sure that the first letter in the upper case :')
 
@@ -52,16 +52,16 @@ def load_data(city, month, day):
     """
     df = pd.read_csv(CITY_DATA[city])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-    
-    
+
+
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
-   
-    
+
+
     if month != 'all':
-   
+
         months = ['January', 'February', 'March', 'April', 'May', 'June']
-        month = months.index(month) + 1      
+        month = months.index(month) + 1
         df = df[df['month'] == month]
     if day != 'all':
          df = df[df['day_of_week'] == day.title()]
@@ -76,11 +76,11 @@ def time_stats(df):
     start_time = time.time()
 
     #  display the most common month
-    
+
     print("The most common MONTH is: {}".format(str(df['month'].mode()[0])))
-    
+
     #  display the most common day of week
-    
+
     print('The most common DAY is: {}  '.format(str(df['day_of_week'].mode()[0])))
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
@@ -116,11 +116,11 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     #  display total travel time
-    
+
     print('The TOTAL Travel Time is: {} '.format(str(df['Trip Duration'].sum())))
-     
+
     #  display mean travel time
-   
+
     print('The MEAN Travel Time is: {} '.format(str(df['Trip Duration'].mean())))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -142,7 +142,7 @@ def user_stats(df):
        print('the count of GENDER:  {}'.format(df['Gender'].value_counts()))
     except KeyError:
        print('we can not count the gender ')
-    
+
 
     #  Display earliest, most recent, and most common year of birth
     try:
@@ -155,18 +155,18 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 # define a display_data function
-def display_data(df): 
+def display_data(df):
    counter_a=0
    counter_b=5
    dis_q=input(" do you want to see raw data?Enter yes or no ").lower()
    while dis_q =='yes':
-     if dis_q =='yes': 
+     if dis_q =='yes':
         counter_a+=5
         counter_b+=5
         print(df.iloc[counter_a:counter_b])
         dis_q=input(" do you want to see raw data?Enter yes or no ").lower()
-        
-                       
+
+
 def main():
     while True:
         city, month, day = get_filters()
