@@ -13,7 +13,7 @@ def get_filters()
     Returns
         (str) city 'Birth Year' in df1 - name of the city to analyze
     
-    print('nHello! Let's explore some US bikeshare data!')
+    print('nTime to explore some US bikeshare data!')
     # TO DO get user input for city (chicago, new york city, washington). HINT Use a while loop to handle invalid inputs
     
     
