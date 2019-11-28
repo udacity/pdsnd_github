@@ -15,9 +15,17 @@ This project is to prove knowledge of version control using git and github
 bikeshare_final.py (it is not the final version really.  I did not want to post the final version)
 
 ### Credits
-Various website that I used when Udacity did not provide enough information:
-https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
-https://www.google.com/search?q=git+create+a+local+repository&oq=git+create+a+local+repository&aqs=chrome..69i57j0l5.78050j0j7&sourceid=chrome&ie=UTF-8
+Various websites:
+1. https://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+
+2. https://www.google.com/search?q=git+create+a+local+repository&oq=git+create+a+local+repository&aqs=chrome..69i57j0l5.78050j0j7&sourceid=chrome&ie=UTF-8
+
+Used to undo the push and commit.  I forgot to change from master to documentation.
+
+3. https://www.google.com/search?q=git+undo+remote+push&oq=git+undo+remote+push&aqs=chrome..69i57j0l5.31292j0j4&sourceid=chrome&ie=UTF-8
+
+4. https://sethrobertson.github.io/GitFixUm/fixup.html#remove_last
+
 
 
 
