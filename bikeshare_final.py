@@ -64,17 +64,17 @@ def time_stats(df1)
     monthnum = 1
 
     if monthnum == 1
-         monthname = January
+         monthname = Jan
     elif monthnum == 2
-        monthname = February
+        monthname = Febr
     elif monthnum == 3
-        monthname = March  
+        monthname = Mar  
     elif monthnum == 4
-       monthname = April
+       monthname = Apr
     elif monthnum == 5
        monthname = May
     elif monthnum == 6
-       monthname = June
+       monthname = Jun
 
 
         
@@ -99,19 +99,19 @@ def time_stats(df1)
     daynum = 1
 
     if daynum == 1
-        dayname = Sunday
+        dayname = Sun
     elif daynum == 2
-        dayname = Monday
+        dayname = Mon
     elif daynum == 3
-        dayname = Tuesday  
+        dayname = Tue 
     elif daynum == 4
-        dayname = Wednesday
+        dayname = Wed
     elif daynum == 5
-        dayname = Thursday
+        dayname = Thu
     elif daynum == 6
-        dayname = Friday
+        dayname = Fri
     elif daynum == 7
-        dayname = Saturday
+        dayname = Sat
      
 #print(dayname) tested and dayname is correct!
 
