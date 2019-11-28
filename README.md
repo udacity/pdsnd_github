@@ -5,7 +5,7 @@ October 11, 2019
 BikeShare Project 
 
 ### Description
-Project is an assignment from Udacity in the Introduction to Data Science Programming, here we tried analysing a subset of the popular bikeshare dataset
+Project is an assignment from Udacity in the Introduction to Data Science Programming, here we tried analysing a subset of the popular bikeshare dataset.
 
 
 ### Files used
@@ -19,5 +19,5 @@ input_util.py
 both must be in the same folder
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+GeeksforGeeks.com https://pythonprogramming.net
 
