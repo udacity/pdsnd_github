@@ -16,7 +16,7 @@ washington.csv
 ### Source code
 bikeshare.py
 input_util.py 
-both must be in the same folder
+
 
 ### Credits
 GeeksforGeeks.com https://pythonprogramming.net
