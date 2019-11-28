@@ -64,17 +64,17 @@ def time_stats(df1)
     monthnum = 1
 
     if monthnum == 1
-         monthname = January
+         monthname = Jan
     elif monthnum == 2
-        monthname = February
+        monthname = Febr
     elif monthnum == 3
-        monthname = March  
+        monthname = Mar  
     elif monthnum == 4
-       monthname = April
+       monthname = Apr
     elif monthnum == 5
        monthname = May
     elif monthnum == 6
-       monthname = June
+       monthname = Jun
 
 
         
