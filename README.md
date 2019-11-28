@@ -9,6 +9,7 @@ This project is to prove knowledge of version control using git and github
 1. This is the first of three updates to this readme file.  I will stage it, the commit with a descriptive message.
 2. This is the second of three updates to this readme file.  I will stage it, then commit with a descriptive message.
 3. This is the third of three updates to this readme file. I will stage it, then commit with a descriptive message.
+Updating the master branch README.md file description field with this sentence.
 
 
 ### Files used
