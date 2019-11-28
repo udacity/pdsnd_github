@@ -99,19 +99,19 @@ def time_stats(df1)
     daynum = 1
 
     if daynum == 1
-        dayname = Sunday
+        dayname = Sun
     elif daynum == 2
-        dayname = Monday
+        dayname = Mon
     elif daynum == 3
-        dayname = Tuesday  
+        dayname = Tue 
     elif daynum == 4
-        dayname = Wednesday
+        dayname = Wed
     elif daynum == 5
-        dayname = Thursday
+        dayname = Thu
     elif daynum == 6
-        dayname = Friday
+        dayname = Fri
     elif daynum == 7
-        dayname = Saturday
+        dayname = Sat
      
 #print(dayname) tested and dayname is correct!
 
