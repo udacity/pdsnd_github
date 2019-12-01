@@ -1,0 +1,4 @@
+#Ignore data files from git
+chicago.csv
+washington.csv
+new_york_city.csv
