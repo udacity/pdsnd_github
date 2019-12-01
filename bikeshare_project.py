@@ -18,9 +18,9 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
 
+    # get user input for city chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input("What city would you like to analyze? Name city - Chicago, New York City or Washington: \n").lower()
     while city not in('chicago', 'new york city', 'washington'):
         print("That's not a valid entry please try again\n")
@@ -86,14 +86,11 @@ def time_stats(df):
 
     """Displays statistics on the most frequent times of travel."""
 
-    ##clean up column headings
-    #df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('(', '').str.replace(')', '')
-
+    #output 'holding message' and calculationo time
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
     # display the most common month
-
     print("\nThe most common month for bike hire is: ")
 
     df['month'] = df['month'].apply(lambda x: calendar.month_name[x])
@@ -143,9 +140,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    ##clean up column headings
-    #df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('(', '').str.replace(')', '')
-
+    #print 'holding message' and calculation time
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
@@ -157,6 +152,7 @@ def trip_duration_stats(df):
     print('\nThe average travel time in minutes is: ')
     print(round((df.trip_duration.mean()/60), 2))
 
+    #print calculation time
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -168,9 +164,6 @@ def tidy_data(df):
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
-
-    ##clean up column headings - this has been moved to tidy_data(df) function
-    #df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('(', '').str.replace(')', '')
 
     #set birth_year column as Int64 - Moved to tidy_data(df) function (removed since doesn't work for Washington)
     df['birth_year'] = df['birth_year'].astype(pd.Int64Dtype())
