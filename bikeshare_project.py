@@ -10,10 +10,10 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a city, month, and day to .
 
     Returns:
-        (str) city - name of the city to analyze
+        (str) city - name of the city to analyse
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
@@ -21,23 +21,23 @@ def get_filters():
 
 
     # get user input for city chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input("What city would you like to analyze? Name city - Chicago, New York City or Washington: \n").lower()
+    city = input("What city would you like to analyse? Name city - Chicago, New York City or Washington: \n").lower()
     while city not in('chicago', 'new york city', 'washington'):
         print("That's not a valid entry please try again\n")
-        city = input("What city would you like to analyze? Name city - Chicago, New York City or Washington:   \n").lower()
+        city = input("What city would you like to analyse? Name city - Chicago, New York City or Washington:   \n").lower()
 
 
     # get user input for month (all, january, february, ... , june)
-    month = input("What month would you like to analyze? Name one month, or type 'All'. Only January to June are available:   \n").lower()
+    month = input("What month would you like to analyse? Name one month, or type 'All'. Only January to June are available:   \n").lower()
     while month not in('january', 'febuary', 'march', 'april', 'may', 'june','all'):
         print('That\'s not a valid entry - remember only first 6 month are available\n')
-        month = input("What month would you like to analyze? Name one month, or type 'All'. Only January to June are available:   \n").lower()
+        month = input("What month would you like to analyse? Name one month, or type 'All'. Only January to June are available:   \n").lower()
 
     #get day input
-    day = input("What day of week would you like to analyze? Name one day, or type 'All' \n").lower()
+    day = input("What day of week would you like to analyse? Name one day, or type 'All' \n").lower()
     while day not in('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'):
         print('That\'s not a valid entry: please try again.\n')
-        day = input("What day of the week would you like to analyze? Name on day or type 'all':  \n")
+        day = input("What day of the week would you like to analyse? Name on day or type 'all':  \n")
 
 
     print('-'*40)
@@ -48,7 +48,7 @@ def load_data(city, month, day):
     Loads data for the specified city and filters by month and day if applicable.
 
     Args:
-        (str) city - name of the city to analyze
+        (str) city - name of the city to analyse
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     Returns:
