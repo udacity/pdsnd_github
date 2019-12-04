@@ -4,6 +4,11 @@ December 4, 2019
 ### Project Title
 Bikeshare_Data_Analysis_project
 
+### Prerequisites
+You should have Python 3, NumPy, and pandas installed using Anaconda
+A text editor, like Sublime or Atom.
+A terminal application (Terminal on Mac and Linux or Cygwin on Windows).
+
 ### Description
 In this project, I used data provided by Motivate, a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. You will compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
 
@@ -23,7 +28,6 @@ Birth Year
 
 Statistics Computed
 You will learn about bike share use in Chicago, New York City, and Washington by computing a variety of descriptive statistics. In this project, you'll write code to provide the following information:
-
 #1 Popular times of travel (i.e., occurs most often in the start time)
 
 most common month
@@ -52,5 +56,5 @@ washington.csv
 ### Credits
 https://git-scm.com
 https://www.atlassian.com/
-https://sethrobertson.github.io/GitFixUm/fixup.html
+https://sethrob:ertson.github.io/GitFixUm/fixup.html
 
