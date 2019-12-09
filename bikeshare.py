@@ -60,7 +60,8 @@ def get_filters():
 
     
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs    
-    city=see_datas('cities')   
+    city=see_datas('cities') 
+    print('Fetching interesting data from {} for you...'.format(city))  
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
         enter=input('Would you like to filter the data by month, day, both, or not at all? Type "none" for no time filter.\n').lower()
@@ -192,19 +193,38 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
  
-def display_raw_data(df):
-    """Displays raw data on user request.
-    Args:
-        (DataFrame) df - Pandas DataFrame containing city data filtered by month and day
+def display_data(df):
     """
-    print(df.head())
-    next = 0
-    while True:
-        view_raw_data = input('\nWould you like to view next five row of raw data? Enter yes or no.\n')
-        if view_raw_data.lower() != 'yes':
+    Display individual trip data
+    Args:
+        bikeshare dataframe.
+    Returns:
+        None.
+    """
+    start = 0
+    end = 5
+    choice = ''
+    while choice.lower() not in ['yes', 'no']:
+        choice = input('Do you want to view indiviual trip data? Type \'Yes\' or \'No\'\n')
+        if choice.lower() not in ['yes', 'no']:
+            print('Maybe you made a typo. Please try again\n')
+        elif choice.lower() == "yes":
+            print(df.iloc[start:end])
+            # Write a while loop
+            while True:
+                sec_choice = input('\nDo you want to view more trip data? Type \'Yes\' or \'No\'\n')
+                if sec_choice.lower() not in ['yes', 'no']:
+                    print('Maybe you made a typo. Please try again\n')
+                elif sec_choice.lower() == "yes":
+                    start += 5
+                    end += 5
+                    print(df.iloc[start:end])
+                elif sec_choice == "no":
+                    return
+        elif choice.lower() == "no":
             return
-        next = next + 5
-        print(df.iloc[next:next+5])
+        
+        return
 
 def main():
     while True:
@@ -214,12 +234,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        while True:
-            view_raw_data = input('\nWould you like to view first five row of raw data? Enter yes or no.\n')
-            if view_raw_data.lower() != 'yes':
-                break
-            display_raw_data(df)
-            break
+        display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
