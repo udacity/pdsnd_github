@@ -1,4 +1,4 @@
-##* Date created
+## *Date created
 December 4, 2019
 
 ## *Project Title
@@ -50,5 +50,7 @@ earliest, most recent, most common year of birth (only available for NYC and Chi
 
 ## *Files used
 chicago.csv
+
 new_york_city.csv
 
+washington.csv
