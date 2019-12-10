@@ -5,6 +5,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+months = {'january':1, 'february':2, 'march':3, 'april':4, 'may':5, 'june':6, "not" : "not"}
 
 def get_filters():
     """
@@ -17,16 +18,14 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = str(input('Would you like to see data for Chicago, New York, or Washington? ')).lower()
-    while(city != 'chicago' and city != 'new york' and city != 'washington'):
-        city = str(input('Please choose one of the cities to see data Chicago, New York, or Washington. ')).lower()
-    
-    if(city == 'new york'):
-        city = 'new york city'
+    city = str(input('Would you like to see data for Chicago, New York City, or Washington? ')).lower()
+    while city not in CITY_DATE:
+        city = str(input('Please choose one of the cities to see data Chicago, New York City, or Washington. ')).lower()
+
     # TO DO: get user input for month (all, january, february, ... , june)
     month = str(input('Would you like to filter the data by (January, February, March, April, May, June) or not? ')).lower()
-    months = ['january', 'february', 'march', 'april', 'may', 'june']
-    while(month != 'not' and month not in months):
+    
+    while month not in months:
         month = str(input('Please choose one of the months (January, February, March, April, May, June) or not. ')).lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -63,12 +62,8 @@ def load_data(city, month, day):
 
     # filter by month if applicable
     if month != 'not':
-        # use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
-        month = months.index(month) + 1
-
         # filter by month to create the new dataframe
-        df = df[df['month'] == month]
+        df = df[df['month'] == months[month]]
 
     # filter by day of week if applicable
     if day != 'not':
