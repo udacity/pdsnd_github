@@ -5,6 +5,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+months = ['january', 'february', 'march', 'april', 'may', 'june']
 
 def get_filters():
     """
@@ -23,7 +24,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = str(input('Would you like to filter the data by (January, February, March, April, May, June) or not? ')).lower()
-    months = ['january', 'february', 'march', 'april', 'may', 'june']
+    
     while(month != 'not' and month not in months):
         month = str(input('Please choose one of the months (January, February, March, April, May, June) or not. ')).lower()
 
@@ -60,7 +61,6 @@ def load_data(city, month, day):
     # filter by month if applicable
     if month != 'not':
         # use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
         # filter by month to create the new dataframe
