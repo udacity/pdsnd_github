@@ -40,6 +40,7 @@ def get_filters():
 
 
 def load_data(city, month, day):
+
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -55,8 +56,9 @@ def load_data(city, month, day):
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
-    # extract month and day of week from Start Time to create new columns
+    # extract the month from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
+    # extract the day of week from Start Time to create new columns
     df['day_of_week'] = df['Start Time'].dt.weekday_name
 
     # filter by month if applicable
