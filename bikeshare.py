@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-
+" dictionary variable that saves cities' data files path"
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
