@@ -126,16 +126,18 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('...\nCalculating Trip Duration...\n')
     start_time = time.time()
 
    # TO DO: display total travel time
     total=df['Trip Duration'].sum()
+
     print(total)
+
     # TO DO: dispp mean travel time
     start=0
     end=4
-    user=input("Do you want view data")
+    user=input("Do you want view data -yas or no-")
     
     while(user=="yes"):
         print(df.iloc[start:end+1])
