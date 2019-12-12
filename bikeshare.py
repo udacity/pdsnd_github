@@ -270,14 +270,14 @@ def user_stats(df):
     print('-'*40)
 
 def display_data(df):
-    choice = input('Would you like to read some of the raw data from the files ? Yes/No ').lower()
+    choice = input('Would you like to read some of the raw data ? Yes/No ').lower()
     print()
     if choice=='yes' or choice=='y' or choice=='yus':
         choice=True
     elif choice=='no' or choice=='n' or choice=='nope':
         choice=False
     else:
-        print('You did not enter a valid choice. Let\'s try that again. ')
+        print('You did not enter a valid choice. Let\'s please try again. ')
         display_data(df)
         return
 
