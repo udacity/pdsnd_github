@@ -199,10 +199,10 @@ def user_stats_birth(df):
     print("The most common birth year {}".format(most_common_year))
     # the most recent birth year
     most_recent = birth_year.max()
-    print("The most recent birth year:", most_recent)
+    print("The most recent birth year {}".format(most_recent))
     # the most earliest birth year
     earliest_year = birth_year.min()
-    print("The most earliest birth year:", earliest_year)
+    print("The most earliest birth year {}".format(earliest_year))
 def table_stats(df, city):
     """Displays statistics on bikeshare users."""
     print('\nCalculating Dataset Stats...\n')
