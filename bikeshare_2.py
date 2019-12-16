@@ -254,7 +254,7 @@ def main():
         if restart.lower() != 'yes':
             break
 
-
+# call the main function
 if __name__ == "__main__":
 	main()
 # BY OMAR ELMETWLII
