@@ -26,7 +26,7 @@ def choice(prompt, choices=('y', 'n')):
         elif ',' not in choice:
             if choice in choices:
                 break
-        
+        # if the input has more than one name
         elif ',' in choice:
             choice = [i.strip().lower() for i in choice.split(',')]
             if list(filter(lambda x: x in choices, choice)) == choice:
