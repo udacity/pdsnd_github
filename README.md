@@ -1,5 +1,5 @@
 ### Date created
-Include the date you created this project and README file.
+Include bikeshare.py and README file.
 
 ### Project Title
 project 3
