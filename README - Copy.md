@@ -1,9 +1,9 @@
-### Date created
+### Date created 
 Include the date you created this project and README file.
 
 
 
-### Description
+### Description - this is a description of the file
 Describe what your project is about and what it does
 
 ### Files used
