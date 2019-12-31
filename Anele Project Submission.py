@@ -199,6 +199,25 @@ def get_filter_city():
                 city = input('Please choose the city: ')
                 city = city.lower()
     return city
+def get_filter_city():
+    
+    city = input('Please select a number between 1, 2 and 3 to choose the city: ')
+    city = city.lower()
+    while True:    
+            if city == '1' or city == 'chicago':
+                print("\nChicago\n")
+                return 'chicago'
+            if city == '2' or city == 'new york':
+                print("\nNew York City\n")
+                return 'new york city'
+            elif city == '3' or city == 'washington':
+                print("\nWashington\n")
+                return 'washington'
+            else:
+                print('\nPlease enter 1, 2 or 3\n')
+                city = input('Please choose the city: ')
+                city = city.lower()
+    return city
 
 # TO DO: get user input for month (all, january, february, ... , june)
 
