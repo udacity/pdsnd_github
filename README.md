@@ -1,14 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+31st December 2019.
 
 ### Project Title
-Replace the Project Title
+Git and GitHub for the Bikeshare project.
 
 ### Description
-Describe what your project is about and what it does
+This project consists of using Git and GitHub for the Bikeshare project.
 
 ### Files used
-Include the files used
+Anele Project Submission
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
