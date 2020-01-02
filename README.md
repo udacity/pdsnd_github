@@ -8,7 +8,7 @@ Git and GitHub for the Bikeshare project.
 This project consists of using Git and GitHub for the Bikeshare project.
 
 ### Files used
-Anele Project Submission
+Anele Project Submission python project
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
