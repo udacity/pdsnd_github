@@ -1,5 +1,5 @@
 ### Date created
-Include the date you created this project and README file: created in factoring branch on 01/22/2020
+Include the date you created this project and README file: 01/22/2020
 
 ### Project Title
 Replace the Project Title: refactoring
