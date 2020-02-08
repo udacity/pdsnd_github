@@ -229,7 +229,7 @@ def raw_data(df):
             rows_start += show_rows
             rows_end += show_rows
 
-            print('\nWould you like to see the next 5 rows?'.format(show_rows))
+            print('\nWould you like to view the next 5 rows?'.format(show_rows))
             continue
         else:
             break
