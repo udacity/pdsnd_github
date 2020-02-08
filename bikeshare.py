@@ -211,10 +211,10 @@ def user_stats(df):
 
 def raw_data(df):
     """
-    When user inputs y, displays 5 rows from the filtered dataset, then asks if user would like to see 5 more.
+    When user inputs y, displays 10 rows from the filtered dataset, then asks if user would like to see 10 more.
     Continues asking until user inputs n.
     """
-    show_rows = 5
+    show_rows = 10
     rows_start = 0
     rows_end = show_rows - 1    # use index values for rows
 
@@ -229,7 +229,7 @@ def raw_data(df):
             rows_start += show_rows
             rows_end += show_rows
 
-            print('\nWould you like to see the next 5 rows?'.format(show_rows))
+            print('\nWould you like to see the next 10 rows?'.format(show_rows))
             continue
         else:
             break
