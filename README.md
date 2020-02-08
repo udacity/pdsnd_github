@@ -11,7 +11,6 @@ Files used are:
 bikeshare.py
 chicago.csv
 washington.csv
-new_york_city.csv 
+new_york_city.csv
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+General credit to Udacity, github, and stackoverflow for instruction, guidance and examples.
