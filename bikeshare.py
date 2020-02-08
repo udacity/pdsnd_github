@@ -211,7 +211,7 @@ def user_stats(df):
 
 def raw_data(df):
     """
-    When user inputs y, displays 5 rows from the filtered dataset, then asks if user would like to see 5 more.
+    When user inputs y, displays 5 rows from the filtered dataset, then asks if user would like to see 5 more rows of data.
     Continues asking until user inputs n.
     """
     show_rows = 5
