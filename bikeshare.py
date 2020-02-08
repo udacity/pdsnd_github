@@ -139,7 +139,7 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
 
     Combination_Station = df.groupby(['Start Station', 'End Station']).count()
-    print('\nMost popular bikeshare trip with the same start station and end station trip is:', Start_Station, " & ", End_Station)
+    print('\nThe most popular bikeshare trip with the same start station and end station trip is:', Start_Station, " & ", End_Station)
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -211,10 +211,16 @@ def user_stats(df):
 
 def raw_data(df):
     """
+<<<<<<< HEAD
     When user inputs y, displays 5 rows from the filtered dataset, then asks if user would like to see 5 more rows of data.
+||||||| 72b86f5
+    When user inputs y, displays 5 rows from the filtered dataset, then asks if user would like to see 5 more.
+=======
+    When user inputs y, displays 10 rows from the filtered dataset, then asks if user would like to see 10 more.
+>>>>>>> refactoring
     Continues asking until user inputs n.
     """
-    show_rows = 5
+    show_rows = 10
     rows_start = 0
     rows_end = show_rows - 1    # use index values for rows
 
@@ -229,7 +235,13 @@ def raw_data(df):
             rows_start += show_rows
             rows_end += show_rows
 
+<<<<<<< HEAD
             print('\nWould you like to view the next 5 rows?'.format(show_rows))
+||||||| 72b86f5
+            print('\nWould you like to see the next 5 rows?'.format(show_rows))
+=======
+            print('\nWould you like to see the next 10 rows?'.format(show_rows))
+>>>>>>> refactoring
             continue
         else:
             break
