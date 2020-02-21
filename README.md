@@ -8,6 +8,7 @@ Bikeshare Project for Udacity Programming for Data Science in Python
 This project displays various bikeshare data and calculations from 3 cities within the US.
 The 3 cities are Chicago, New York City and Washington
 It prompts the user on which cities, which month and which day of the week to analyze.
+It also requires the ability for the user to restart or end the program at the end
 
 ### Files used
 3 CSV files containing data of each city
@@ -17,4 +18,3 @@ Washington.CSV
 
 ### Credits
 Google, Stack Overflow, Real Python, Python Documentation and Jupyter Notebook
-
