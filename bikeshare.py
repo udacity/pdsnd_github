@@ -15,6 +15,8 @@ def get_filters():
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
+
+    This function should also require invalid inputs
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
@@ -91,11 +93,11 @@ def time_stats(df):
 
     input('\nPress Enter to display The Most Frequent Times of Travel...\n')
     start_time = time.time()
-    
+
     # TO DO: display the most common month
     common_month = df['month'].mode()[0]
     print('The most Common Month was: ', common_month)
-              
+
 
     # TO DO: display the most common day of week
     common_day = df['day_of_week'].mode()[0]
@@ -166,7 +168,7 @@ def user_stats(df):
         print('\nGender Types:\n', gender_type)
     except KeyError:
         print('\nGender Types: SORRY, this data was not available based on your requested filters')
-        
+
 
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
@@ -174,13 +176,13 @@ def user_stats(df):
         print('\nEarliest Year of Birth: ', round(Earliest_Year,0))
     except KeyError:
         print('\nEarliest Year of Birth: SORRY, this data was not available based on your requested filters')
-    
+
     try:
         Most_Recent_Year = df['Birth Year'].max()
         print('\nMost Recent Year of Birth: ', round(Most_Recent_Year,0))
     except KeyError:
         print('\nMost Recent Year of Birth: SORRY, this data was not available based on your requested filters')
-        
+
     try:
         Most_Common_Year = df['Birth Year'].value_counts().idxmax()
         print('\nMost Common Year of Birth: ', round(Most_Common_Year,0))
@@ -191,14 +193,14 @@ def user_stats(df):
     print('-'*40)
 
 def get_raw_data(df):
-    """ This function is created to display upon request by the user in this manner: 
+    """ This function is created to display upon request by the user in this manner:
         Script should prompt the user if they want to see 5 lines of raw data.
         If the answer is "Yes", continue this prompt and display the raw data until the user says "No"
     """
     start_row = 0
     end_row = 5
-    
-    Show_5 = input('Would you like to see 5 lines of raw data? (Y/N): ').lower()  
+
+    Show_5 = input('Would you like to see 5 lines of raw data? (Y/N): ').lower()
     if Show_5.lower() =='y':
         while True:
             print(df.iloc[start_row:end_row,:])
