@@ -1,1 +1,3 @@
 *.csv
+# added *.csv because then it would not include any of the CSV files
+# also to test the gitignore to see how it works.
