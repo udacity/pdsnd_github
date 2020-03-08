@@ -32,7 +32,9 @@ def get_filters():
         print("option = [january, february, march, april ,may,june]")
         month = input("Enter name of the month to filter by, or \"all\" to apply no month filter: ")
         month =  month.lower()
+        
         if(month in months): break
+
         else: print("Oops! Enter the month name correctly")
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
