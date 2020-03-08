@@ -23,7 +23,9 @@ def get_filters():
     while(1):
         city = input("Which city you want to choose among chicago, new york city, washington: ")
         city = city.lower()
+        
         if city in cities: break
+
         else: print("Ooops! Enter the correct city name ")
 
 
