@@ -12,4 +12,5 @@ Python script and CSV files for 3 cities: Chicago,New York and Washington
 ### Credits
 Github.com, google.com
 
-##Created branch named documentation 10th March 2020
+##Created branch named documentation 10th March 2020. 1st Readme Update
+##2nd Readme Update 
