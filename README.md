@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+10/03/2020 (dd/mm/yyyy)
 
 ### Project Title
-Replace the Project Title
+Data analysis project of data provided by Motivate company
 
 ### Description
-Describe what your project is about and what it does
+Data analysis project of data provided by Motivate company of his bicycle-sharing systems in three Chicago, Newyork and washington using python with pandas and numpy packages 
 
 ### Files used
-Include the files used
+chicago.csv
+washington.csv
+Newyork.csv
+from https://www.divvybikes.com/system-data
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+inspired by : Programming for Data Science for Enterprise Nanodegree Program
