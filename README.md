@@ -2,6 +2,7 @@
 ## Editing header as first 2nd commit exercise 2.E
 ## Editing header as first 3rd commit exercise 2.E
 ## Editing header as first 4th commit exercise 2.E
+## First Additional changes to README for exercise 3.B 
 ### Date created
 5th March 2020
 ### Project Title
