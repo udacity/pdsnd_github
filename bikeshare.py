@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-# TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+#Code to get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 def get_city():
     """
     Asks user to specify a city using colorful keyboard input selection 
