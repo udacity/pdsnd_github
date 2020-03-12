@@ -5,7 +5,7 @@
 US Bikeshare Data Project
 
 ### Description
-In this project, I will make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.Used python code to import the data and answered interesting questions about it by computing descriptive statistics.I was able to also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics. Some of the stats that will be displayed include:
+In this project, I will make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. I used python code to import the data and answered interesting questions about it by computing descriptive statistics.I was able to also write a script that takes in raw input to create an interactive experience in the terminal to present these statistics. Some of the stats that will be displayed include:
 
 1. Popular times of travel (i.e., occurs most often in the start time)
   * most common month,
@@ -36,7 +36,8 @@ In this project, I will make use of Python to explore data related to bike share
 ### Credits
 A. Before running bikeshare.py please run this in terminal
 * $ pip install bullet
-* Menus depend on bullet library and thus the need to install it.
+
+Menus depend on bullet library and thus the need to install it.
 
 Bullet library was gotten from:
 https://github.com/Mckinsey666/bullet/blob/master/examples/star.py
