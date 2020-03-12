@@ -70,7 +70,7 @@ def get_month():
     print('-'*50)
     return month
 
-# TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+# Code to get user input for day of week (all, monday, tuesday, ... sunday)
 def get_day():
     """
     Asks user to specify a day using colorful keyboard input selections and a star 
@@ -156,19 +156,19 @@ def time_stats(df):
     df['hour'] = df['Start Time'].dt.hour
 
 
-    # TO DO: display the most common month
+    #Code to display the most common month
     common_month = df['month'].mode()[0]
     
     print('Most trips happen in the {}st/th month'.format(common_month))
     print()
 
-    # TO DO: display the most common day of week
+    #Code to display the most common day of week
     common_DOW = df['day_of_week'].mode()[0]
     
     print('Most trips happen on {} in the week'.format(common_DOW))
     print()
 
-    # TO DO: display the most common start hour
+    #Code to display the most common start hour
     common_start_hour = df['hour'].mode()[0]
     
     print('Most trips happen at - {}:00 Hours:'.format(common_start_hour))
@@ -183,19 +183,19 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # TO DO: display most commonly used start station
+    #Code to display most commonly used start station
     c_s_stn = df['Start Station'].mode()[0]
     
     print('It appears that {} is the most commonly used start station'.format(c_s_stn))
     print()
 
-    # TO DO: display most commonly used end station
+    #Code to display most commonly used end station
     c_e_stn = df['End Station'].mode()[0]
     
     print('Looks like {} is the most commonly used end station.'.format(c_e_stn))
     print()
 
-    # TO DO: display most frequent combination of start station and end station trip
+    #Code to display most frequent combination of start station and end station trip
     freq_comb = c_e_stn + ''+ c_s_stn
 
     print('Wow the most frequent combination of start station and end station trip is:', print(freq_comb))
@@ -214,13 +214,13 @@ def trip_duration_stats(df):
     pd.set_option('precision', 3)
     
 
-    # TO DO: display total travel time 
+    #Code to display total travel time 
     sum_ttt = df['Trip Duration'].sum()
     
     print('The total travel time is {} Hours, or {} Minutes, or {} seconds'.format(sum_ttt/3600,sum_ttt/60,sum_ttt))
     print()
 
-    # TO DO: display mean travel time
+    #Code to display mean travel time
     mean_ttt = df['Trip Duration'].mean()
     
     print('The Average travel time is {} Hours, or {} Minutes, or {} seconds'.format(mean_ttt/3600,mean_ttt/60,mean_ttt))
@@ -238,13 +238,13 @@ def user_stats(df,city):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
     
-    # TO DO: Display counts of user types
+    #Code to display counts of user types
     user_types = df['User Type'].value_counts()
 
     print('The total number of user types include: \n', user_types)
     print()
     
-    #Display number of entries for user types
+    #Code to display number of entries for user types
 
     print('There are {} of number of entries for user types'.format(len(df['User Type'])))
     print()
@@ -254,17 +254,17 @@ def user_stats(df,city):
     capitals_c = ('chicago','new york city')
 
     if (city in capitals_c):
-        # TO DO: Display counts of Gender
+        # Code to display counts of Gender
         user_gender = df['Gender'].value_counts()
         
         print('The total values by user gender include: \n', user_gender)
         print()
         
-        #Display number of entries for Gender
+        #Code to display number of entries for Gender
         print('There are {} of number of entries for Gender'.format(len(df['Gender'])))
         print()
 
-        #TO DO: Display earliest, most recent, and most common year of birth
+        #Code to display earliest, most recent, and most common year of birth
         c_BY = df['Birth Year'].mode()[0]
 
         print('{} is the most common year of birth.'.format(int(c_BY)))
@@ -278,7 +278,7 @@ def user_stats(df,city):
         print('{} seems to be the most recent year of birth.'.format(int(max_BY)))
         print()
 
-        #Display number of entries for year of birth
+        #Code to display number of entries for year of birth
         print('There are {} of number of entries for year of birth'.format(len(df['Birth Year'])))
         print()
     else:
@@ -308,7 +308,7 @@ def more_stats(df,city):
 
         if user_input == 'yes':
             
-            #To display raw data without NaN values, set na_filter as 'False'
+            #Code to display raw data without NaN values, set na_filter as 'False'
             df = pd.read_csv(CITY_DATA[city],na_filter=False)
             print(df.iloc[index*nrows:nrows*count])
             print("\nThis took %s seconds." % (time.time() - start_time))
