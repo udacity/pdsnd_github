@@ -35,7 +35,7 @@ In this project, I will make use of Python to explore data related to bike share
 
 ### Credits
 A. Before running bikeshare.py please run this in terminal
-* $ pip install bullet
+* '$ pip install bullet'
 
 Menus depend on bullet library and thus the need to install it.
 
