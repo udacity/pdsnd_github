@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-# TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+#Code to get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 def get_city():
     """
     Asks user to specify a city using colorful keyboard input selection 
@@ -40,7 +40,7 @@ def get_city():
     print('-'*50)
     return city
 
-# TO DO: get user input for month (all, january, february, ... , june)
+#Code to get user input for month (all, january, february, ... , june)
 def get_month():
     """
     Asks user to specify a month using colorful keyboard input selections and a star 
@@ -70,7 +70,7 @@ def get_month():
     print('-'*50)
     return month
 
-# TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+#Code to get user input for day of week (all, monday, tuesday, ... sunday)
 def get_day():
     """
     Asks user to specify a day using colorful keyboard input selections and a star 
