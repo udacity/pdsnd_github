@@ -14,7 +14,13 @@ The python script that takes in raw input to create an interactive experience in
 **Data files-**
 3 separate files for data of each city (i.e. New York, Chicago and Washington)
 
-## List of Software Required:
+## List of Softwares Required:
 Python 3, NumPy, and pandas installed using **Anaconda**
+
 **Text editor** - Sublime or Atom
+
 **Terminal application** - (Terminal on Mac and Linux or Cygwin on Windows)
+
+## References:
+Python: Numpy and Pandas Offical Documentation
+Python: Standard Library Documentation
