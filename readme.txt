@@ -13,9 +13,12 @@ Description
 Python code to analyse bikeshare data from 3 American cities.
 
 Files used
+atom text editor
+
 
 
 Credits
 Github for load_data section
 Stackoverflow
 Programiz.com
+w3schools
