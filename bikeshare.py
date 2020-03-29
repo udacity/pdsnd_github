@@ -27,18 +27,12 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, New York City, Washingon)
     city_option=['chicago','new york city','washington']
+   
     while True:
-        city = input('Which city you want to analyze?\n Chicago, New York City or Washington\n').lower()
-        if city.lower() not in ('chicago', 'new york city','washington'):
-            print('Choose a avaliable city')
-            continue
-        else:
-            break
-    """while True:
         city =input('\nPlease choose one of the following cities (chicago, new york city, washington)\n')
         city=city.lower()
         if(city in city_option):
-            break"""
+            break
     # get user input for filters (month, New day, both, not at all)
     while True:
         filter_option=[1,2,3,4]
