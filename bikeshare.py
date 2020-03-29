@@ -6,20 +6,20 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 #definition of input month function.
 def get_month():
-    month_option=['january','february','march','april','may','june','july','august','september','october','november','december']
+    Choose_month=['january','february','march','april','may','june','july','august','september','october','november','december']
     while True:
         month =input('\nWhich month? Choose junuary, february, march, april, may, june, july, august, september, october, november or december\n') 
         month=month.lower()
-        if(month in month_option):
+        if(month in Choose_month):
             break
     return month
 #definition of input day function.
 def get_day():
-    days_option=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+    dayof_week=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
     while True:
         day =input('\nWhich day? Choose sunday, monday, tuesday, wednesday, thursday, friday or saturday\n') 
         day=day.lower()
-        if(day in days_option):
+        if(day in dayof_week):
             break
     return day
 #definition of filters function
@@ -27,6 +27,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, New York City, Washingon)
     city_option=['chicago','new york city','washington']
+   
     while True:
         city =input('\nPlease choose one of the following cities (chicago, new york city, washington)\n')
         city=city.lower()
