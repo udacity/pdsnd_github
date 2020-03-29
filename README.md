@@ -10,3 +10,7 @@ chicago.csv
 new_york_city.csv
 washington.csv
 
+### Credits
+https://github.com/udacity/pdsnd_github
+bikeshare files
+
