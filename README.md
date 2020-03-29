@@ -1,6 +1,5 @@
 ### Date created
-Include the date you created this project and README file.
-
+{"now":1584774364605,"date":"Sat Mar 21 2020 07:06:04 GMT+0000 (UTC)"}
 ### Project Title
 Replace the Project Title
 
