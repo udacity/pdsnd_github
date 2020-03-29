@@ -10,6 +10,3 @@ chicago.csv
 new_york_city.csv
 washington.csv
 
-### Credits
-Github
-
