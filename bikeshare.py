@@ -10,16 +10,16 @@ def get_month():
     while True:
         month =input('\nWhich month? Choose junuary, february, march, april, may, june, july, august, september, october, november or december\n') 
         month=month.lower()
-        if(month in month_option):
+        if(month in Choose_month):
             break
     return month
 #definition of input day function.
 def get_day():
-    days_option=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+    dayof_week=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
     while True:
         day =input('\nWhich day? Choose sunday, monday, tuesday, wednesday, thursday, friday or saturday\n') 
         day=day.lower()
-        if(day in days_option):
+        if(day in dayof_week):
             break
     return day
 #definition of filters function
