@@ -17,6 +17,12 @@ In this project, I will make use of Python to explore data related to bike share
 - Gender
 - Birth Year
 
+### Data Computed
+#1 Popular times of travel
+#2 Popular stations and trip
+#3 Trip duration
+#4 User info
+
 ### Files used
 - chicago.csv 
 - new_york_city.csv
