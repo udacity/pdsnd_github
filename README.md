@@ -9,5 +9,5 @@ In this project, I will make use of Python to explore data related to bike share
 
 ### Files used
 - chicago.csv 
-- new_york_city.csv -
+- new_york_city.csv
 - washington.csv
