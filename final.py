@@ -186,15 +186,15 @@ def trip_duration_stats(df):
         df['time_diff']=df['End Time']-df['Start Time']
         df['time_diff']=df['time_diff']/np.timedelta64(1,'s')
         total_travel_time=df['time_diff'].sum()
-        print("\nThe total travel time in seconds was:\n")
-        print(total_travel_time)
+        print("The total travel time in seconds was {}".format(total_travel_time))
+
 
 
 
         # display mean travel time
         mean_travel_time=df['time_diff'].mean()
         print("The mean travel time was {} seconds.".format(mean_travel_time))
-        #print()
+
 
 
         print("\nThis took %s seconds." % (time.time() - start_time))
@@ -213,15 +213,15 @@ def user_stats(df):
 
         # Display counts of user types
         count_user_type=df['User Type'].value_counts()
-        print("\nBelow are the counts of user types:\n")
-        print(count_user_type)
+        print("Below are the counts of user types {}".format(count_user_type))
+
 
 
         # Display counts of gender
         if 'Gender' in df:
             count_gender =df['Gender'].value_counts()
-            print("\nBelow are the gender counts:\n")
-            print(count_gender)
+            print("Below are the gender counts {}".format(count_gender))
+
         else:
             print("The dataframe has no gender column")
 
@@ -230,13 +230,13 @@ def user_stats(df):
         # Display earliest, most recent, and most common year of birth
         if 'Birth Year' in df:
             common_birth_year =int(df['Birth Year'].mode()[0])
-            print("\nThe most common year of birth was {} \n".format(common_birth_year))
-            #print()
+            print("The most common year of birth was {} ".format(common_birth_year))
+
 
 
             earliest_birth_year =int(df['Birth Year'].min())
-            print("\nThe earliest year of birth was {}\n". format(earliest_birth_year))
-            #print()
+            print("The earliest year of birth was {}". format(earliest_birth_year))
+
 
 
             most_recent_birth_year = int(df['Birth Year'].max())
