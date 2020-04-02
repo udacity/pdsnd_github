@@ -193,8 +193,8 @@ def trip_duration_stats(df):
 
         # display mean travel time
         mean_travel_time=df['time_diff'].mean()
-        print("\nThe mean travel time was:\n")
-        print(mean_travel_time)
+        print("The mean travel time was {} seconds.".format(mean_travel_time))
+        #print()
 
 
         print("\nThis took %s seconds." % (time.time() - start_time))
@@ -230,13 +230,13 @@ def user_stats(df):
         # Display earliest, most recent, and most common year of birth
         if 'Birth Year' in df:
             common_birth_year =int(df['Birth Year'].mode()[0])
-            print("\nThe most common year of birth was:\n")
-            print(common_birth_year)
+            print("\nThe most common year of birth was {} \n".format(common_birth_year))
+            #print()
 
 
             earliest_birth_year =int(df['Birth Year'].min())
-            print("\nThe earliest year of birth was:\n")
-            print(earliest_birth_year)
+            print("\nThe earliest year of birth was {}\n". format(earliest_birth_year))
+            #print()
 
 
             most_recent_birth_year = int(df['Birth Year'].max())
