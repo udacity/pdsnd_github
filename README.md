@@ -1,12 +1,11 @@
 ### Date created
-Include the date you created this project and README file.
 April 5 2020
 
 ### Project Title
 Udacity Project
 
 ### Description
-Describe what your project is about and what it does
+This project is the skeleton for documentation
 
 ### Files used
 bikeshare.py
