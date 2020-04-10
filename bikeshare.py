@@ -49,7 +49,9 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no filter
     """
     print('Hello! Through this interactive sccript you will be able to explore the Udacity  bikeshare data in the US!')
-    print()
+    print( 'Change 1')
+    print( 'Change 2')
+    print( 'Change 3')
     # TO DO: get user input for city (chicago, new york city, washington).
     while 1:
         print('Which city should we look for?')
