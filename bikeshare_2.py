@@ -1,6 +1,7 @@
 # SKJHA Bikeshare Project. Code formatted using Black Playground - https://black.now.sh/
 # Referred to these resources when got stuck on some coding issues- Udacity modules and peer chat, Stackoverflow.com, W3Schools.com
 # Revised version now prints 5 new rows of data everytime the user selects- yes
+
 import time
 import pandas as pd
 import numpy as np
@@ -35,7 +36,6 @@ def get_filters():
             break
 
     # Get user input for month (all, january, february, ... , june)
-
     while True:
         month = input(
             "Thanks! Please enter the month: 'All' for all available months or enter any month from January through June.\n"
@@ -124,8 +124,8 @@ def load_data(city, month, day):
 
     return df
 
-
-# Asks the user if they want to see raw data. If yes, return the  5 new rows of the data everytime.
+# Asks the user if they want to see raw data. If yes, return the  5 rows of the data everytime. Repeats the question till the user replies no
+def display_raw_data(df):
     """
     Asks the user if they want to see raw data. Displays first 5 rows of the raw data
 
@@ -136,21 +136,23 @@ def load_data(city, month, day):
         for no: (str) - prints message that calculations will now be performed
     """
     while True:
-      display_data = input("Do you want to see first 5 lines of the data?. Please type 'yes' or 'no'\n")
-      if display_data not in ('yes', 'no'):
-        print("Not the right choice. Try again.\n")
-      while True:
-          display_data = input(
-      "Do you want to see 5 more lines of the data?. Please type 'yes' or 'no'\n"
-          )
-          if display_data == "yes":
-              df = df.iloc[4:]
-              print(df.head())
+        display_data = input("Do you want to see first 5 lines of the data?. Please type 'yes' or 'no'\n")
+        if display_data not in ('yes', 'no'):
+            print("Not the right choice. Try again.\n")
+        elif display_data == "yes":
+            print(df.head())
+        while True:
+            display_data = input(
+            "Do you want to see 5 more lines of the data?. Please type 'yes' or 'no'\n"
+            )
+            if display_data == "yes":
+                df = df.iloc[4:]
+                print(df.head())
 
-          elif display_data == "no":
-              print("Thanks! Continuing to calculations.\n")
-              break
-      break
+            elif display_data == "no":
+                print("Thanks! Continuing to calculations.\n")
+                break
+        break
 
 def time_stats(df):
     """
@@ -268,6 +270,7 @@ def trip_duration_stats(df):
     # Converts the Trip Duration to datatype int64. Calculates the sum of all the trip durations
     df["Trip Duration"] = df["Trip Duration"].astype(int)
     total_travel_duration = df["Trip Duration"].sum()
+
     # Calls the convert function
     new_total_trip_duration = convert(total_travel_duration)
 
@@ -308,6 +311,11 @@ def user_stats(df):
     # Display counts of user types
     user_types = df["User Type"].value_counts()
 
+    # Get most common combination of User Type and Trip Duration
+    most_common_combination_trip_duration_and_user_type = (
+        df.groupby(["User Type", "Trip Duration"]).size().nlargest()
+    )
+
     # Display counts of gender
     if "Gender" in df:
         gender_types = df["Gender"].value_counts()
@@ -328,6 +336,10 @@ def user_stats(df):
 
     print("\nThe various user types and their counts are:\n", user_types)
     print("\nThe various gender types and their counts are:\n", gender_types)
+    print(
+        "\nThe most common combination of type users and their trip duration in seconds was: \n",
+        most_common_combination_trip_duration_and_user_type.idxmax()
+    )
     print("\nThe earliest birth year was: ", earliest_birth_year)
     print("\nThe most recent birth year was: ", most_recent_birth_year)
     print("\nThe most common birth year was: ", most_common_birth_year)
