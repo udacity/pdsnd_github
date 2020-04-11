@@ -330,6 +330,10 @@ def user_stats(df):
 
     print("\nThe various user types and their counts are:\n", user_types)
     print("\nThe various gender types and their counts are:\n", gender_types)
+    print(
+        "\nThe most common combination of type users and their trip duration in seconds was: \n",
+        most_common_combination_trip_duration_and_user_type.idxmax()
+    )
     print("\nThe earliest birth year was: ", earliest_birth_year)
     print("\nThe most recent birth year was: ", most_recent_birth_year)
     print("\nThe most common birth year was: ", most_common_birth_year)
