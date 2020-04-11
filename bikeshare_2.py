@@ -1,6 +1,6 @@
-## SKJHA Bikeshare Project. Code formatted using Black Playground - https://black.now.sh/
+# SKJHA Bikeshare Project. Code formatted using Black Playground - https://black.now.sh/
 # Referred to these resources when got stuck on some coding issues- Udacity modules and peer chat, Stackoverflow.com, W3Schools.com
-
+# Revised version now prints 5 new rows of data everytime the user selects- yes
 import time
 import pandas as pd
 import numpy as np
@@ -125,7 +125,7 @@ def load_data(city, month, day):
     return df
 
 
-# Asks the user if they want to see raw data. If yes, return the  5 rows of the data everytime.
+# Asks the user if they want to see raw data. If yes, return the  5 new rows of the data everytime.
     """
     Asks the user if they want to see raw data. Displays first 5 rows of the raw data
 
@@ -139,11 +139,18 @@ def load_data(city, month, day):
       display_data = input("Do you want to see first 5 lines of the data?. Please type 'yes' or 'no'\n")
       if display_data not in ('yes', 'no'):
         print("Not the right choice. Try again.\n")
-      elif display_data == 'yes':
-        print(df.head())
-      elif display_data == 'no':
-        print("Thanks! Continuing to calculations.\n")
-        break
+      while True:
+          display_data = input(
+      "Do you want to see 5 more lines of the data?. Please type 'yes' or 'no'\n"
+          )
+          if display_data == "yes":
+              df = df.iloc[4:]
+              print(df.head())
+
+          elif display_data == "no":
+              print("Thanks! Continuing to calculations.\n")
+              break
+      break
 
 def time_stats(df):
     """
