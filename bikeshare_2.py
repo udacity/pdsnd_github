@@ -305,6 +305,11 @@ def user_stats(df):
     # Display counts of user types
     user_types = df["User Type"].value_counts()
 
+    # Get most common combination of User Type and Trip Duration
+    most_common_combination_trip_duration_and_user_type = (
+        df.groupby(["User Type", "Trip Duration"]).size().nlargest()
+    )
+
     # Display counts of gender
     if "Gender" in df:
         gender_types = df["Gender"].value_counts()
