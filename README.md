@@ -45,5 +45,3 @@ The following sites and resources were used to gain knowledge and problem solve 
 - https://hub.udacity.com
 - https://www.w3schools.com
 - https://black.now.sh/
-
-###End
