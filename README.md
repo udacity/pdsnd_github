@@ -1,5 +1,5 @@
 ### Date created
- Project and README file created on 2020-04-10
+ Project and README file created on 2020-04-11
 
 ### Project Title
 Explore US Bikeshare Data
@@ -31,6 +31,8 @@ In this project we will use bike share data from Motivate from three cities- Chi
 - each user type counts
 - each gender type counts (data only available for NYC and Chicago)
 - earliest, most recent, most frequent year of birth (only available for NYC and Chicago)
+- most common combination of trip duration and user type
+
 
 ### Files used
 - chicago.csv
