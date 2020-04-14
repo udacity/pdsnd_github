@@ -27,17 +27,17 @@ def get_filters():
     print('\n{} is the city that you entered'.format(city))
 
     # get user input for month (all, january, february, ... , june)
-    month = input("\nWhich month you would like to see- january, february, march, april, may, june or all?\n").lower()
+    month = input("\nWhich month you would like to see- All, January, February, March, April, May, or June?\n").lower()
     while month not in list_month:
         print("\nSorry the month that you entered is unavaialble. Please re-enter a different month: ")
-        month = input("\nWhich month you would like to see- january, february, march, april, may, june or all?\n").lower()
+        month = input("\nWhich month you would like to see- All, January, February, March, April, May, or June?\n").lower()
     print('\n{} is the month that you entered'.format(month))
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input("\nWhich dat you would like to see- all, monday, tuesday, wedsnesday, thursday, friday, saturday, sunday?\n").lower()
+    day = input("\nWhich dat you would like to see- All, Monday, Tuesday, Wedsnesday, Thursday, Friday, Saturday, or Sunday?\n").lower()
     while day not in list_day_of_week:
         print("Sorry the day that you entered is unavaialble. Please re-enter a different day: ")
-        day = input("\nWhich day you would like to see- all, monday, tuesday, wedsnesday, thursday, friday, saturday, sunday?\n").lower()
+        day = input("\nWhich day you would like to see- All, Monday, Tuesday, Wedsnesday, Thursday, Friday, Saturday, or Sunday?\n").lower()
     print('\n{} is the day that you entered'.format(day))
     print('-'*40)
     return city, month, day
