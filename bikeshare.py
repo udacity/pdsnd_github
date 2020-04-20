@@ -77,13 +77,13 @@ def get_filters():
         """
         print('Please select a day of the week\n 0. All\n 1. Monday\n 2. Tuesday\n 3. Wednesday\n 4. Thursday\n 5. Friday\n 6. Saturday\n 7. Sunday')
         day_dict = {'0' : 'All',
-                   '1' : 'Monday',
-                   '2' : 'Tuesday',
-                   '3' : 'Wednesday',
-                   '4' : 'Thrusday',
-                   '5' : 'Friday',
-                   '6' : 'Saturday',
-                   '7' : 'Sunday'
+                    '1' : 'Monday',
+                    '2' : 'Tuesday',
+                    '3' : 'Wednesday',
+                    '4' : 'Thrusday',
+                    '5' : 'Friday',
+                    '6' : 'Saturday',
+                    '7' : 'Sunday'
                   }
         day_opt = ()
         while day_opt not in day_dict:
