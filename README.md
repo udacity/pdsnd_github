@@ -14,7 +14,7 @@ Thanks to the rise in information technologies, it is easy for a user of the sys
 
 The project is to use python analyzing bikeshare datasets and then using git bash on the local repository and remote repository on github Files used
 
-chicago.csv new_york_city.csv washington.csv
+chicago.csv new_york_city.csv washington.csv  (Csv files used)
 
 ##Credits
 
