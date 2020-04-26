@@ -38,7 +38,7 @@ The project is to use python analyzing bikeshare datasets and then using git bas
 chicago.csv new_york_city.csv washington.csv  (Csv files used)
 ##Credits
 
-Credit to Udacity community for providing the datasets and project information
+Credit to Udacity community for providing the datasets and project information : US BIKESHARE DATASET
 
 
 
