@@ -486,9 +486,9 @@ def main():
         user_stats(df)
         raw_data(df)
 
-        restart = input('Would you like to restart?   y/n :  ')
+        restart = input('Would you like to restart?   y/n :  '.lower())
         
-        if restart.lower() != 'y':
+        if restart != 'y':
             break
 
 
@@ -496,3 +496,10 @@ def main():
 if __name__ == "__main__":
 	main()
     
+refactor:
+
+for day selection starting line 158,
+create variable e_to_c, used for input() to enter to continue.
+
+for filter by month start line 207
+create variable e_to_c and change input() to use variable instead of print command
