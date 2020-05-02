@@ -4,9 +4,9 @@
 
 This repository contains projects for Udacity Programming For Data Science.
 
-## Project 3
+## Project 1
 
-This project consisted in using Git and GitHub with a simulated workflow to refactor Project-2.
+This project consisted in using Git and GitHub with a simulated workflow to refactor Project 2.
 
 ### Overview
 
@@ -19,7 +19,6 @@ The developed CLI program allows the user to explore an US bikeshare system data
 #### Files Used
 
 The required files for running this program are: 
-Files Used
 
 * washington.csv
 * new_york_city.csv
