@@ -2,10 +2,10 @@
 Include the date you created this project and README file.
 On 2nd may 2020. 
 ### Project Title
-git on github
+git on github new changes
 
 ### Description
-Describe what your project is about and what it does
+about the branch refactoring.
 
 ### Files used
 .csv files included.
