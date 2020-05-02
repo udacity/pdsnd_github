@@ -1,6 +1,6 @@
 ### Date created
 Include the date you created this project and README file.
-On 2nd may.
+On 2nd may 2020. 
 ### Project Title
 git on github
 
