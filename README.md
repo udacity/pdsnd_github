@@ -7,6 +7,8 @@ This is the bikeshare project
 ### Description
 You ask a city, a month and a day and you get statistical analysis over the bikeshare data
 Includes analyzer for the most common month, day and start hour of the week
+Includes analyzer for the stations, trips
+Includes analyzer of trip duration
 
 ### Files used
 bikeshare.py
