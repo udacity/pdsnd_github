@@ -16,5 +16,7 @@ chicago.csv
 new_york_city.csv
 washington.csv
 
+WARNING: Some of the files have incomplete datasets
+
 ### Credits
 Thanks a lot to stackoverflow.com and udacity.com for useful tips and use. 
