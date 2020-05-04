@@ -208,10 +208,10 @@ def user_stats(df):
         print('ERROR: Data for gender missing or corrupted !\n')
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
-        earliest_by = int(df['Birth Year'].min())
-        recent_by = int(df['Birth Year'].max())
-        common_by = int(max(df['Birth Year'].mode()))
-        print("The earliest, most recent and most common years of birth are respectively {}, {} and {}\n".format(earliest_by, recent_by, common_by))
+        e_b = int(df['Birth Year'].min())
+        r_b = int(df['Birth Year'].max())
+        c_b = int(max(df['Birth Year'].mode()))
+        print("The earliest, most recent and most common years of birth are respectively {}, {} and {}\n".format(e_b, r_b, c_b))
     except:
         print('ERROR: Data for Birth Year missing or corrupted !\n')
     print("\nStep FINISHED.")
