@@ -214,7 +214,7 @@ def user_stats(df):
         print("The earliest, most recent and most common years of birth are respectively {}, {} and {}\n".format(earliest_by, recent_by, common_by))
     except:
         print('ERROR: Data for Birth Year missing or corrupted !\n')
-    
+    print("\nStep FINISHED.")
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
