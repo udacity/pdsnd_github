@@ -10,6 +10,9 @@ Includes analyzer for the most common month, day and start hour of the week
 Includes analyzer for the stations, trips
 Includes analyzer of trip duration
 
+The project mainly uses NumPy and Pandas libraries.
+
+
 ### Files used
 bikeshare.py
 chicago.csv
