@@ -3,7 +3,7 @@
 Include the date you created this project and README file.
 
  Project Title
-Bikeshare
+ Bikeshare and GIT
 Replace the Project Title
 
  Description
