@@ -6,9 +6,8 @@ Project Title
 Bikeshare 
 
 
-### Description
-Describe what your project is about and what it does
-
+Description
+Bikeshare Data from three major cities.
 Files used
 Python Files
 
