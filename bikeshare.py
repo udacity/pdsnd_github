@@ -175,6 +175,10 @@ def display_data(df):
     """
     Display contents of the CSV file to the display as requested by
     the user.
+
+    Returns:
+        Print five row entries of data to terminal
+        
     """
 
     start_loc = 0
