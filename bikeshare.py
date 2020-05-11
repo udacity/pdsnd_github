@@ -29,13 +29,13 @@ def get_filters():
     
     city = input('Would you like to see data for Chicago, New York, or Washington, Please Enter your city: ').lower()
     while city not in ['chicago','new york city','washington']:
-        city = input('City inputed not valid, Please enter sa valid city: ').lower()
+        city = input('City inputed not valid, Please enter a valid city in the above city provided : ').lower()
     
     # get user input for month (all, january, february, ... , june)    
     month = input('Please the month name: ').lower()
     
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = input('Please enter a day of the week: ')
+    day = input('Please enter a Day of the week: ')
 
 
     print('-'*40)
@@ -85,18 +85,18 @@ def time_stats(df):
     start_time = time.time()
 
      # display the most common month
-    print("The most common month is: {}".format(
+    print("The most common Month is: {}".format(
         str(df['month'].mode().values[0]))
     )
 
     # display the most common day of week
-    print("The most common day of the week: {}".format(
+    print("The most common Day of the Week: {}".format(
         str(df['day_of_week'].mode().values[0]))
     )
 
     # display the most common start hour
     df['start_hour'] = df['Start Time'].dt.hour
-    print("The most common start hour: {}".format(
+    print("The most common Start Hour: {}".format(
         str(df['start_hour'].mode().values[0]))
     )
 
@@ -110,12 +110,12 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-    print('\n The most common Start station: {}'.format(
+    print('\n The most common Start Station: {}'.format(
         df['Start Station'].mode().values[0]
     ))
     
     # display most commonly used end station
-    print('\n The most common End station: {}'.format(
+    print('\n The most common End Station: {}'.format(
         df['End Station'].mode().values[0]
     ))
     # display most frequent combination of start station and end station trip
@@ -159,16 +159,16 @@ def user_stats(df, city):
         print('Gender Counts is: {}'.format(df['Gender'].value_counts()))
         
         #early birthday
-        print('\n The earliest Birth Year is: {}'.format(str(int(df['Birth Year'].min()))))
+        print('\n The Earliest Birth Year is: {}'.format(str(int(df['Birth Year'].min()))))
               
         #Latest birthday
-        print('\n The latest Birth Year is: {}'.format(str(int(df['Birth Year'].max()))))
+        print('\n The Latest Birth Year is: {}'.format(str(int(df['Birth Year'].max()))))
         
         #Common birthday
         print('\n The common Birthday Year is: {}'.format(str(int(df['Birth Year'].mode().values[0]))))      
     
     
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s Seconds." % (time.time() - start_time))
     print('-'*40)
 
 def display_data(df):
@@ -180,7 +180,7 @@ def display_data(df):
     start_loc = 0
     end_loc = 5
 
-    display_active = input("Do you want to see the raw data?: ").lower()
+    display_active = input("\nDo you want to see the raw data? Yes or No. : \n").lower()
 
     if display_active == 'yes':
         while end_loc <= df.shape[0] - 1:
@@ -206,7 +206,7 @@ def main():
         user_stats(df, city)
         display_data(df)
               
-        restart = input('\nWould you like to continue explore US Bikeshare Data with us ? Enter yes or no.\n')
+        restart = input('\nWould you like to continue explore US Bikeshare Data with us ? Yes or No.\n')
         if restart.lower() != 'yes':
             break      
         
