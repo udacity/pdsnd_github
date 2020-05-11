@@ -38,7 +38,7 @@ def get_filters():
     day = input('Please enter a Day of the week: ')
 
 
-    print('-'*40)
+    print('-'*50)
     return city, month, day
 
 
@@ -123,7 +123,7 @@ def station_stats(df):
     print('\n The most frequent Station is: {}'.format(df['routes'].mode().values[0]))
     
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
     
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -139,7 +139,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40) 
+    print('-'*50) 
     
 
 
@@ -169,7 +169,7 @@ def user_stats(df, city):
     
     
     print("\nThis took %s Seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 def display_data(df):
     """
