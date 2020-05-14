@@ -16,6 +16,7 @@ def get_filters(city,month,day):
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
+
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True :
         print('Please slect the city for explore Bikeshare data!')
@@ -25,13 +26,13 @@ def get_filters(city,month,day):
             continue
         else:
             break
-            
+
     print("Please select how to filter data ")
-        
+
     user_input = input('"month","day" or "both": ').lower()
-    
+
     # TO DO: get user input for month (all, january, february, ... , june)
-    
+
     while True :
         if user_input not in ("month","day","both" ):
             print('\nPlease check again how to filter data :')
@@ -39,7 +40,7 @@ def get_filters(city,month,day):
         elif user_input == 'month':
             print('Please select the month to explore :')
             month = input('"all", "january", "february","march","april","may" ,"june":').lower()
-            
+
             day = 'all'
             while True:
                 if month not in ["all", "january", "february","march","april","may" ,"june"]:
@@ -47,14 +48,14 @@ def get_filters(city,month,day):
                     month = input('"all", "january", "february","march","april","may" ,"june":').lower()
                 else:
                     break
-            break                        
-                           
+            break
+
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    
+
         elif user_input == 'day':
             print('Please select the day to explore :')
             day = input('"monday", "tuesday", "wednesday", "thursday", "friday", "saterday", "sunday" or "all":').lower()
-            month = 'all'           
+            month = 'all'
             while True:
                 if day not in ["monday", "tuesday", "wednesday", "thursday", "friday", "saterday", "sunday","all"]:
                     print("Please insert the day like to explore!: ")
@@ -62,31 +63,31 @@ def get_filters(city,month,day):
                 else:
                     break
             break
-            
-            
+    # TO DO: get user input for both (month and day)
+
         elif user_input == 'both':
             print('Please select the month to explore :')
             month = input('"all", "january", "february","march","april","may" ,"june":').lower()
-            
+
             while True:
                 if month not in ["all", "january", "february","march","april","may" ,"june"]:
                     print("Please insert the month like to explore!: ")
                     month = input('"all", "january", "february","march","april","may" ,"june":').lower()
                 else:
                     break
-                    
+
             print('Please select the day to explore :')
             day = input('"monday", "tuesday", "wednesday", "thursday", "friday", "saterday", "sunday" or "all":').lower()
-            
+
             while True:
                 if day not in ["monday", "tuesday", "wednesday", "thursday", "friday", "saterday", "sunday","all"]:
                     print("Please insert the day like to explore!: ")
                     day = input('"monday", "tuesday", "wednesday", "thursday", "friday", "saterday", "sunday" or "all"').lower()
                 else:
                     break
-                    
+
             break
-        
+
     print('Selected City Name: ', city)
     print('Selected Month Name: ',month)
     print('Selected day: ', day)
@@ -123,7 +124,7 @@ def load_data(city, month, day):
         # use the index of the months list to get the corresponding int
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
-    
+
         # filter by month to create the new dataframe
         df = df[df['month']== month]
 
@@ -145,21 +146,21 @@ def time_stats(df):
     # TO DO: display the most common month
     df['month'] = df['Start Time'].dt.month
     popular_month = df['month'].mode()[0]
-    
+
     print('Most Popular Month is: ',popular_month)
 
 
     # TO DO: display the most common day of week
     df['week'] = df['Start Time'].dt.weekday_name
     popular_day_week = df['week'].mode()[0]
-    
+
     print('Most Popular Day of week: ',popular_day_week)
 
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     popular_hour = df['hour'].mode()[0]
-    
+
     print('Most Popular Start Hour: ',popular_hour)
 
 
@@ -201,15 +202,15 @@ def trip_duration_stats(df):
 
     # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    
+
     print('Total Travel Time: ',total_travel_time)
 
 
     # TO DO: display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    
+
     print('Average Travel Time: ',mean_travel_time)
-    
+
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -224,7 +225,7 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     user_types = df['User Type'].value_counts()
-    
+
     print('User Types :', user_types)
 
 
@@ -240,13 +241,13 @@ def user_stats(df):
     if 'Birth Year' in df:
         earliest_birth = df['Birth Year'].min()
         print('Earliest Birth Year: ',earliest_birth)
-        
+
         recent_birth = df['Birth Year'].max()
         print ('Recent Birth Year: ',recent_birth)
-        
+
         common_birth = df['Birth Year'].mode()[0]
         print('Most Common Birth Year: ',common_birth)
-        
+
     else:
         #print('Birth information is not avilable for your select city !!')
         print('no birth information avilable for selcted city!!')
@@ -255,9 +256,10 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+# TO DO: Display the data on csv file
 
 def display_data(df):
-    
+
     dis_data = input('\nDo you want to display csv data? \nPlease select "yes" or "no": ').lower()
     if dis_data in ("yes"):
         i = 0
@@ -270,14 +272,14 @@ def display_data(df):
 
 
 
-    
-    
+
+
 def main():
-    
+
     city = ""
     month = 0
-    day = 0 
-    
+    day = 0
+
     while True:
         city, month, day = get_filters(city,month,day)
         df = load_data(city, month, day)
