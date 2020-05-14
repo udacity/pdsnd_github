@@ -136,7 +136,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def time_status(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -167,7 +167,7 @@ def time_stats(df):
     print('-'*40)
 
 
-def station_stats(df):
+def station_status(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -193,7 +193,7 @@ def station_stats(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
+def trip_duration_status(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -216,7 +216,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 
-def user_stats(df):
+def user_status(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
@@ -258,14 +258,18 @@ def user_stats(df):
 
 def display_data(df):
 
-    dis_data = input('\nDo you want to display csv data? \nPlease select "yes" or "no": ').lower()
-    if dis_data in ("yes"):
+    #TO DO: check for display raw data from csv
+
+    data_display = input('\nDo you want to display csv data? \nPlease select "yes" or "no" y/n: ').lower()
+    if data_display in ("y"):
         i = 0
+        # TO DO : loop for show 5 row data.
         while True:
             print(df.iloc[i:i+5])
             i += 5
-            display_more = input('\nDo you want to display more data? \nPlease select "yes" or "no": ').lower()
-            if display_more not in ("yes"):
+            #To Do : check with user to display more 5 row data
+            display_more = input('\nDo you want to display more data? \nPlease select "yes" or "no" y/n: ').lower()
+            if display_more not in ("y"):
                 break
 
 
@@ -282,10 +286,10 @@ def main():
         city, month, day = get_filters(city,month,day)
         df = load_data(city, month, day)
 
-        time_stats(df)
-        station_stats(df)
-        trip_duration_stats(df)
-        user_stats(df)
+        time_status(df)
+        station_status(df)
+        trip_duration_status(df)
+        user_status(df)
         display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
