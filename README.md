@@ -2,14 +2,15 @@
 2020-05-15
 
 ### Project Title
-bikeshare project
+Bikeshare Project: A dive into the world of data
 
 ### Description
-In this project my task was to make a program that took input from the user and provided information back on request. The data was from bikeshare data from three American cities.
+Author: Elias Nordlinder
+Task: Make program that takes input from user regarding bikeshares in American cities and output data on request.
 
 ### Files used
 bikeshare_update.py
 
 ### Credits
-I give credit to udacity for helping me finishing this course
+I want to give credit to udacity for helping me finishing this course and to my family for always being there.
 
