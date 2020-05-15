@@ -5,7 +5,7 @@
 Bikeshare Project: A big dive into the world of data
 
 ### Description
-Author: Elias Nordlinder
+Author: Elias Nordlinder.
 Task: Make program that takes input from user regarding bikeshares in American cities and output data on request.
 
 ### Files used
