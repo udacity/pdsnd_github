@@ -2,7 +2,7 @@
 2020-05-15
 
 ### Project Title
-Bikeshare Project: A dive into the world of data
+Bikeshare Project: A big dive into the world of data
 
 ### Description
 Author: Elias Nordlinder
