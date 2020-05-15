@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+2020-05-15
 
 ### Project Title
-Replace the Project Title
+bikeshare project
 
 ### Description
-Describe what your project is about and what it does
+In this project my task was to make a program that took input from the user and provided information back on request. The data was from bikeshare data from three American cities.
 
 ### Files used
-Include the files used
+bikeshare_update.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I give credit to udacity for helping me finishing this course
 
