@@ -13,14 +13,14 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html
+[Pandas - Convert argument to datetime.](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html)
 
-https://pandas.pydata.org/pandas-docs/version/0.22.0/generated/pandas.Series.dt.weekday_name.html
+[Pandas - The name of day in a week (ex: Friday)](https://pandas.pydata.org/pandas-docs/version/0.22.0/generated/pandas.Series.dt.weekday_name.html)
 
-https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python
+[Pandas - Purely integer-location based indexing for selection by position.](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
 
-https://dfrieds.com/data-analysis/value-counts-python-pandas.html
+[Stack Overflow - How can I find the most frequent two-column combination in a dataframe in python](https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python)
 
-https://stackoverflow.com/questions/22362165/i-want-to-have-a-yes-no-loop-in-my-code-but-im-having-trouble-doing-it-python
+[Stack Overflow - I want to have a yes/no loop in my code, but I'm having trouble doing it (python 3.3)](https://stackoverflow.com/questions/22362165/i-want-to-have-a-yes-no-loop-in-my-code-but-im-having-trouble-doing-it-python)
 
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html
+[Dan_Friedman - value_counts() Method: Count Unique Occurrences of Values in a Column](https://dfrieds.com/data-analysis/value-counts-python-pandas.html)
