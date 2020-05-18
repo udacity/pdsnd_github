@@ -23,6 +23,7 @@ def get_filters():
       city = input("\nWhich city would you like to filter by? New York City, Chicago or Washington?\n")
       if city,lower() not in ('new york city', 'chicago', 'washington'):
         print("Sorry, I didn't catch that. Try again.")
+        
         continue
       else:
         break
