@@ -1,18 +1,18 @@
-### Date created
+### Date created :date:
 04/28/2020
 
-### Project Title
+### Project Title :sparkles:
 Explore US Bikeshare Data
 
-### Description
+### Description :clipboard:
 Through an interactive experience, this project takes in the user's raw input to compute descriptive statistics on bike share data sets for three major cities in the United States.
 
-### Files used
+### Files used :file_folder:
 * chicago.csv
 * new_york_city.csv
 * washington.csv
 
-### Credits
+### Credits :link:
 * [Pandas - Convert argument to datetime.](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html)
 * [Pandas - The name of day in a week (ex: Friday)](https://pandas.pydata.org/pandas-docs/version/0.22.0/generated/pandas.Series.dt.weekday_name.html)
 * [Pandas - Purely integer-location based indexing for selection by position.](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
