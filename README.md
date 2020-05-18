@@ -18,4 +18,5 @@ Through an interactive experience, this project takes in the user's raw input to
 * [Pandas - Purely integer-location based indexing for selection by position.](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html)
 * [Stack Overflow - How can I find the most frequent two-column combination in a dataframe in python](https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python)
 * [Stack Overflow - I want to have a yes/no loop in my code, but I'm having trouble doing it (python 3.3)](https://stackoverflow.com/questions/22362165/i-want-to-have-a-yes-no-loop-in-my-code-but-im-having-trouble-doing-it-python)
+* [Stack Overflow - Error in reading stock data : 'DatetimeProperties' object has no attribute 'weekday_name' and 'NoneType' object has no attribute 'to_csv'](https://stackoverflow.com/questions/60214194/error-in-reading-stock-data-datetimeproperties-object-has-no-attribute-week)
 * [Dan_Friedman - value_counts() Method: Count Unique Occurrences of Values in a Column](https://dfrieds.com/data-analysis/value-counts-python-pandas.html)
