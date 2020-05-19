@@ -1,7 +1,5 @@
 ### Date created
-washington.csv
-new_york_city.csv
-chicgo.csv
+May 29, 2020
 
 
 ### Project Title
