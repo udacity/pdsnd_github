@@ -2,10 +2,9 @@
 date of modification 2020.05.23
 
 ### Project Title
-Replace the Project Title
+Instructions
 
 ### Description
-Describe what your project is about and what it does
 
 ### Files used
 Include the files used
