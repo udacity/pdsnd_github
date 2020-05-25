@@ -18,20 +18,20 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Would you like to see data for Chicago, New York City or Washington?\n').lower()
-    while city not in CITY_DATA: 
-        print('Sorry, it was not a valid input! Please try again')
+    while city not in CITY_DATA:
+        print('Sorry, your input was not clear! Please try again')
         city = input('Would you like to see data for Chicago, New York or Washington?\n').lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
     accepted_months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'all']
     month = input('Would you like to filter the data by month or not? Please enter: Jan, Feb, Mar, Apr, May or Jun. Type "all" for no month filter.\n').lower()
-    while month not in accepted_months: 
+    while month not in accepted_months:
         print('Sorry, it was not a valid input! Please try again.')
         month = input('Would you like to filter the data by month or not? Please enter: Jan, Feb, Mar, Apr, May or Jun. Type "all" for no month filter.\n').lower()
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     accepted_days = ['mon','tue','wed','thu','fri','sat','sun', 'all']
     day = input ('Would you like to filter the data by day or not? Please enter: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Type "all" for no month filter.\n').lower()
-    while day not in accepted_days: 
+    while day not in accepted_days:
         print('Sorry, it was not a valid input! Please try again.')
         day = input ('Would you like to filter the data by day or not? Please enter: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Type "all" for no month filter.\n').lower()
 
@@ -51,7 +51,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    
+
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
 
@@ -70,7 +70,7 @@ def load_data(city, month, day):
         # use the index of the months list to get the corresponding int
         months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun']
         month = months.index(month)+1
-    
+
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
 
@@ -78,11 +78,11 @@ def load_data(city, month, day):
     if day != 'all':
         # filter by day of week to create the new dataframe
         days = ['mon','tue','wed','thu','fri','sat','sun']
-        day = days.index(day)+1       
+        day = days.index(day)+1
         # filter by day to create the new dataframe
         df = df[df['day_of_week'] == day]
         # df = df[df['day_of_week'] == day.title()]
-        
+
     return df
 
 
@@ -134,7 +134,7 @@ def station_stats(df):
     print('Most Frequent Start Station:', popular_start)
     print('Most Frequent End Station:', popular_end)
     print('Most Frequent Trip Station:', popular_trip)
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -155,7 +155,7 @@ def trip_duration_stats(df):
 
     print("\nTotal Travel Time in seconds is: ", total_time)
     print("\nMean Travel Time in seconds is: ", mean_time)
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -177,28 +177,28 @@ def user_stats(df):
 
     except:
         print('\nSorry, not available to show Gender for WS. Enter another input')
-    
+
     # print('\nThe count of users is:\n',count_users)
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
         popular_byear = df['Birth Year'].mode()[0]
         earliest_byear = df['Birth Year'].min()
         recent_byear = df['Birth Year'].max()
-        
+
         print('\nMost Frequent Year of Birth is: ', popular_byear)
         print('\nEarliest Year of Birth is: ', earliest_byear)
         print('\nMost Recent Year of Birth is: ', recent_byear)
- 
-    except:   
-        print('\nSorry, not available to show year of birth. Enter another input')    
-    
+
+    except:
+        print('\nSorry, not available to show year of birth. Enter another input')
+
     # print('\nMost Frequent Year of Birth is: ', popular_byear)
     # print('\nEarliest Year of Birth is: ', earliest_byear)
     # print('\nMost Recent Year of Birth is: ', recent_byear)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+
 def display_data(df):
     index = 0
     accepted_input = ['yes', 'yeah']
