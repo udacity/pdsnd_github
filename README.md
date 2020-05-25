@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+Date: 25.05.2020
 
 ### Project Title
-Replace the Project Title
+bikeshare with Miguel
 
 ### Description
-Describe what your project is about and what it does
+You can see very helpful details of Chicago, New York City or Washington regarding to bikeshare.
 
 ### Files used
-Include the files used
+For this project we used: bikeshare.py and 3 csv data for Chicago, New York and Washington.
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+For more information, please visit: https://www.python.org/about/gettingstarted/
