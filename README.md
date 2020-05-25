@@ -13,3 +13,5 @@ For this project we used: bikeshare.py and 3 csv data for Chicago, New York and 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 For more information, please visit: https://www.python.org/about/gettingstarted/
+
+It is also importat for you! https://gist.github.com/sloria/7001839
