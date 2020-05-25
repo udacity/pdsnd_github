@@ -26,7 +26,7 @@ def get_filters():
     accepted_months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'all']
     month = input('Would you like to filter the data by month or not? Please enter: Jan, Feb, Mar, Apr, May or Jun. Type "all" for no month filter.\n').lower()
     while month not in accepted_months:
-        print('Sorry, it was not a valid input! Please try again.')
+        print('Sorry, your input was not clear! Please try again.')
         month = input('Would you like to filter the data by month or not? Please enter: Jan, Feb, Mar, Apr, May or Jun. Type "all" for no month filter.\n').lower()
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     accepted_days = ['mon','tue','wed','thu','fri','sat','sun', 'all']
