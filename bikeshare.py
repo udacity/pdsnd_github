@@ -32,7 +32,7 @@ def get_filters():
     accepted_days = ['mon','tue','wed','thu','fri','sat','sun', 'all']
     day = input ('Would you like to filter the data by day or not? Please enter: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Type "all" for no month filter.\n').lower()
     while day not in accepted_days:
-        print('Sorry, it was not a valid input! Please try again.')
+        print('Sorry, your input was not clear! Please try again.')
         day = input ('Would you like to filter the data by day or not? Please enter: Mon, Tue, Wed, Thu, Fri, Sat or Sun. Type "all" for no month filter.\n').lower()
 
 
