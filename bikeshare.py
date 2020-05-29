@@ -32,11 +32,11 @@ def get_filters():
             print("Let's try this again - one of the cities in the list please: chicago, new york city, washington \n")         
         
     # TO DO: get user input for month (all, january, february, ... , june)
-    month_n=''
-    while month_n.lower() not in MONTH_DATA:
-        month_n = input("And month of choice? january through june or 'all' are available  \n")
-        if month_n.lower() in MONTH_DATA:
-            month=month_n.lower()
+    month_name=''
+    while month_name.lower() not in MONTH_DATA:
+        month_name = input("And month of choice? january through june or 'all' are available  \n")
+        if month_name.lower() in MONTH_DATA:
+            month=month_name.lower()
         else:
             print("that month is not in the data buddy, please pick another \n") 
             
