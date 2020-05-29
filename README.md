@@ -16,6 +16,10 @@ In particular, based on user's input of city and dat aggregations, the script wi
 *end station
 *user type
 
+and for cities chicago and new york
+*gender
+*birth year 
+
 ### Files used
 *python script: bikeshare.py
 *3 csv files with city data: chicago, new york, washington
