@@ -2,7 +2,7 @@
 Date of Creation: 5 June 2020
 
 ### Project Title
-Final Udacity Project
+Final Udacity Project associated with US bikeshare data and Git
 
 ### Description
 This project analyses bikeshare data of the US and provides analysis based on user input
