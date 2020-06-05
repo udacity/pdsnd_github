@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+Date of Creation: 5 June 2020
 
 ### Project Title
-Replace the Project Title
+Final Udacity Project
 
 ### Description
-Describe what your project is about and what it does
+This project analyses bikeshare data of the US and provides analysis based on user input
 
 ### Files used
-Include the files used
+Files used are chicago.csv, washington.csv, new_york_city.csv, bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://www.macworld.co.uk/how-to/mac-software/show-hidden-files-mac-3520878/
