@@ -146,6 +146,7 @@ def user_stats(df):
         print('There is no Gender data for this city.')
 
     # TO DO: Display earliest, most recent, and most common year of birth
+    #using if-else for missing columns
     if 'Birth Year' in df.columns:
         print('The earliest date of birth: {}'.format(int(df['Birth Year'].min())))
         print('The recent date of birth: {}'.format(int(df['Birth Year'].max())))
