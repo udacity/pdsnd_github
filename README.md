@@ -12,3 +12,4 @@ Files used are chicago.csv, washington.csv, new_york_city.csv, bikeshare.py
 
 ### Credits
 https://www.macworld.co.uk/how-to/mac-software/show-hidden-files-mac-3520878/
+https://git-scm.com/docs/git-show-branch
