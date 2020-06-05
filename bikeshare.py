@@ -161,6 +161,7 @@ def display_data(df):
     display = input('Do you want to see raw data? Yes or No? \n').lower()
     i = 0
     print (df.iloc[i:i+5])
+    #function for user until until break
     while True:
         more = input('Do you want to see 5 more rows of data? Yes or No? \n').lower()
         if more == 'yes':
