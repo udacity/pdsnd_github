@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+#4th part of assignment change i.e. refactoring
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
