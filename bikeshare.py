@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+# Adding comments according to the 3rd part of assignment
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
