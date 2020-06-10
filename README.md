@@ -2,7 +2,7 @@
 7th June 2020
 
 ### Project Title
-Bike Share Python
+Bike Share Python Project
 
 ### Description
 Udacity Project on Python and GitHub
