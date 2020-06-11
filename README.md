@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+11.06.2020
 
 ### Project Title
-Replace the Project Title
+Git-Hub Project of Giada Sartori
 
 ### Description
-Describe what your project is about and what it does
+Analysis of the Bikeshare data of three cities in the United States
 
 ### Files used
-Include the files used
+Bikeshare_GiadaSartori_3
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+I give credits to the online lessons from Udacity
