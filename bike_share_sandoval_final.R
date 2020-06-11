@@ -383,6 +383,7 @@ summary2a<-summary_2[,c(32,16,6,12,7,13)]
 summary3a<-summary_3[,c(27,16,6,11,5,10)]
 
 
+# Data visualization using ggplot2 
 
 #Mean age with each imputation
 #original dataset
