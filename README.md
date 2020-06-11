@@ -5,7 +5,7 @@
 Git-Hub Project of Giada Sartori
 
 ### Description
-Analysis of the Bikeshare data of three cities in the United States
+Analysis of the Bikeshare data of three cities in the United States, which are Chicago, New York City and Washington
 
 ### Files used
 Bikeshare_GiadaSartori_3
