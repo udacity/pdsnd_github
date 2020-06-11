@@ -26,7 +26,7 @@ library(readr)
 
 
 #reading in chicago dataset
-#For the reviewer, you will need to make sure the file path is consistent with the directories you use. 
+#make sure the file path is consistent with the directories you use. 
 setwd("C:/rdata")
 chi <- read_csv("C:/rdata/chicago.csv")
 View(chi)
