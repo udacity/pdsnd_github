@@ -10,10 +10,11 @@ This data science project takes input about a city name, month (optional) and da
 
 ### Files used
 * 3 database of US Bikeshare data: 
-1. chicago.csv
-2. new_york_city.csv
-3. washington.csv
- * bikeshare_3.py done the total data analysis.
+1. `chicago.csv`
+2. `new_york_city.csv`
+3. `washington.csv`
+ * `bikeshare_3.py` done the total data analysis.
+ * `readme.txt` consists of important helpful links 
 
 ### Credits
 Helpful links I have used during the project: 
