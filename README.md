@@ -1,6 +1,6 @@
 ### Date created : 20th June , 2020
 
-## US Bikeshare Data Project
+# US Bikeshare Data Project
 
 ### Description
 This data science project takes input about a city name, month (optional) and day(optional) and gives us a structured bikeshare data of that city in that specific month and day (if any). For availability of database, the city name is only restricted to --
