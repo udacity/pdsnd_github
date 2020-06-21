@@ -25,6 +25,6 @@ https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduct
 
 https://www.tutorialspoint.com/jupyter/index.htm
 
-https://www.w3schools.com/python/
+https://www.w3schools.com/python/ 
 
 
