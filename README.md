@@ -17,6 +17,7 @@ This data science project takes input about a city name, month (optional) and da
  * `readme.txt` consists of important helpful links 
 
 ### Credits
+
 Helpful links I have used during the project: 
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/tutorials.html
