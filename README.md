@@ -5,6 +5,10 @@
 ### Project Title
 Explore US Bikeshare data
 
+## Project Language
+
+Python
+
 ### Description
 
 The program takes user input for the city (e.g. Chicago), month for which the user wants to view data (e.g. January; also includes an 'all' option), and day for which the user wants to view data (e.g. Monday; also includes an 'all' option).
