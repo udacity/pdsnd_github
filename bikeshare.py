@@ -197,7 +197,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         raw_data(df)
-
+        print("Awsome job! Thanks for checking in.")
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
