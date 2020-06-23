@@ -17,3 +17,7 @@ Washington.csv
 New_york_city.csv
 ### Credits
 https://stackoverflow.com/search?q=exploring+using+pandas&s=f2e0aadc-813d-4272-9de8-6384eb40cd61
+
+### Contacts
+
+alexandrucozma88@gmail.com
