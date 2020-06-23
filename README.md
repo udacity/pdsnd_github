@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
-
+23/06/2020
 ### Project Title
-Replace the Project Title
+bikeshare data exploration
 
 ### Description
-Describe what your project is about and what it does
+This project's main scope is to find insights on the data
+collected from 3 major US cities on bike sharing platforms.
+
+It was helpful to find out how well the established company is
+doing and also to find potential consumer preferences and
+implemet new future strategies
 
 ### Files used
-Include the files used
-
+Chicago.csv
+Washington.csv
+New_york_city.csv
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://stackoverflow.com/search?q=exploring+using+pandas&s=f2e0aadc-813d-4272-9de8-6384eb40cd61
