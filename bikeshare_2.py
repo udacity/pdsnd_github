@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 CITY_DATA = { 'kalamazoo': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
+              'acworth': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
