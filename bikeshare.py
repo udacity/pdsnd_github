@@ -200,9 +200,13 @@ def main():
         user_stats(df,city)
 
 
-        restart = input('\nWould you like to restart with a new search? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
+        raw_data(df)
+	while True: 
+            restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
+            if restart == 'yes' or restart == 'no':
+                break
+            else:
+                print('Please enter yes or no.')
 
 
 if __name__ == "__main__":
