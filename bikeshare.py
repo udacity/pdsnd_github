@@ -33,7 +33,13 @@ def get_filters():
     except Exception as exc:
         print('An error with your inputs occured: {}'.format(exc))
     print('-'*40)
-        
+
+if city == 'washington':
+	print('Warning - Washington lacks user data for Gender and Age.')
+else:
+	print( )
+print('-'*40)	
+
 def load_data(city, month, day):
     try:
         df = pd.read_csv(CITY_DATA[city])
