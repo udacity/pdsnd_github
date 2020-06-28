@@ -331,14 +331,6 @@ def get_dow_title(downum):
 
     return [dowtitle]
 
-    # get weekday number if weekday name is given
-def get_dow_num(dowtitle):
-
-    weekday = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
-    downum = weekday.index(dowtitle) + 1
-
-    return [downum]
-
 
 def main():
     while True:
