@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+The date of creation of this File is 01.07.2020.
 
-### Project Title
-Replace the Project Title
+### Title
+Programming for Data Science with Python Nanodegree Program
 
 ### Description
-Describe what your project is about and what it does
+This Project showcases the projects for completing the Udacity Programming for Data Sciecne with Python Nanodegree Programm
 
 ### Files used
-Include the files used
+.gitignore
+bikeshare.py contains the code which was used for completing the second project
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- https://github.com/udacity/pdsnd_github
+- udacity.com
 
