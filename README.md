@@ -1,15 +1,23 @@
 ### Date created
-Include the date you created this project and README file.
+
+3rd july 2020
 
 ### Project Title
-Replace the Project Title
+
+Us Bikeshare.py
 
 ### Description
-Describe what your project is about and what it does
 
+This project explores data relating to usage of a bikeshare service. In my particular case, I explored the usage solely from New York City, New York. The specific areas I explored are as follows:
+
+Rider Count by Gender
+Average Trip Duration and Duration Distribution by User Type
+Top 5 Trips Taken by Users
 ### Files used
-Include the files used
 
+bikeshare.py
+new_york_city.csv
+chicago.csv
+washington.csv
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity PDSND Github Repository
