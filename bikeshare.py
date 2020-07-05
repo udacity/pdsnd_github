@@ -183,7 +183,7 @@ def display_data(df):
         if userinput.lower() != 'no':
             print(df.iloc[number : number + 5])
             number += 5
-            userinput = input('\nDo you want to see more raw data? Enter yes or no.\n')
+            userinput = input('\nDo you want to see more raw data? [please Enter yes or no.\n')
         else:
             break    
 def main():
