@@ -179,7 +179,7 @@ def display_data(df):
     userinput = input('Do you want to see raw data? Enter yes or no.\n')
     number = 0
 
-    while 1 == 1 :
+    while True : #True to make it readable
         if userinput.lower() != 'no':
             print(df.iloc[number : number + 5])
             number += 5
