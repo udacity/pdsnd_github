@@ -21,6 +21,18 @@ This project include three important files:
 All copyrights to the information in this project are owned by udacity
 ### Acknowledgements and credits for any resources or blogs that helped me create the project.
 All thanks and appreciation to the Udacity team for providing all the information necessary to build this project
+### The Datasets
+The datasets provided by Motivate, a bike share system provider in the US, contains randomly selected data for the first six months of 2017 for all three cities. The data files for all three cities contain the same core six columns:
+- Start Time
+- End Time
+- Trip Duration
+- Start Station
+- End Station
+- User Type
+
+The Chicago and New York City files also have the following two columns:
+- Gender
+- Birth Year
 
 
 
