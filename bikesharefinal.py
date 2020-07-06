@@ -36,7 +36,6 @@ def get_filters():
       else:
         break
 
-
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
       day = input("\nWhich day are you interested in? Please enter the day: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or type 'all' if you prefer not to enter a day.\n")
@@ -49,7 +48,6 @@ def get_filters():
 
     print('-'*40)
     return city, month, day
-
 
 def load_data(city, month, day):
     """
@@ -65,17 +63,12 @@ def load_data(city, month, day):
     # load data file into a dataframe
     df = pd.read_csv(CITY_DATA[city])
 
-
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
-
     # extract month and day of week from Start Time to create new columns
-
-
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.day_name()
-
 
     # filter by month if applicable
     if month != 'all':
@@ -83,19 +76,15 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
-
     	# filter by month to create the new dataframe
         df = df[df['month'] == month]
-
 
         # filter by day of week if applicable
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
 
-
     return df
-
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -107,23 +96,17 @@ def time_stats(df):
     c_month = df['month'].value_counts().idxmax()
     print('This is the most common month:', c_month)
 
-
     # TO DO: display the most common day of week
     c_day = df['day_of_week'].value_counts().idxmax()
     print('This is the most common day:', c_day)
-
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     c_hour = df['hour'].value_counts().idxmax()
     print('This is the most common hour:', c_hour)
 
-
-
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -135,13 +118,9 @@ def station_stats(df):
     S_Station = df['Start Station'].value_counts().idxmax()
     print('This is the most commonly used start station:', S_Station)
 
-
     # TO DO: display most commonly used end station
     E_Station = df['End Station'].value_counts().idxmax()
     print('\nThis is the most commonly used end station:', E_Station)
-
-
-
 
     # TO DO: display most frequent combination of start station and end station trip
     C_Station = df.groupby(['Start Station', 'End Station']).count()
@@ -150,7 +129,6 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -162,13 +140,11 @@ def trip_duration_stats(df):
     T_Time = sum(df['Trip Duration'])
     print('This is the total travel time:', T_Time/86400, " Days")
 
-
     # TO DO: display mean travel time
     M_Time = df['Trip Duration'].mean()
     print('This is the mean travel time:', M_Time/60, " Minutes")
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
@@ -181,9 +157,6 @@ def user_stats(df):
     #print(u_types)
     print('User Types:\n', u_types)
 
-
-
-
     # TO DO: Display counts of gender
     try:
       g_types = df['Gender'].value_counts()
@@ -191,16 +164,12 @@ def user_stats(df):
     except KeyError:
       print("\nGender Types:\nNo data available for this month.")
 
-
     # TO DO: Display earliest, most recent, and most common year of birth
-    
-
     try:
       E_Year = df['Birth Year'].min()
       print('\nThis is the earliest year:', E_Year)
     except KeyError:
       print("\nEarliest Year:\nNo data available for this month.")
-
 
     try:
       MR_Year = df['Birth Year'].max()
