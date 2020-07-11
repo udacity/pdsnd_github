@@ -30,7 +30,7 @@ def get_city():
         elif city.lower() == 'washington':
             return 'washington.csv'
         else:
-            print('Sorry, I do not understand your input. Please input either '
+            print('Sorry, I do not understand your input. Input either '
                   'Chicago, New York, or Washington.')
 
 def get_time_period():
