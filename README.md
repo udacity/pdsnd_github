@@ -7,8 +7,10 @@ push your work on github
 ### Description
 project is all about git and github
 ### Files used
-Include the files used
+bikeshare data
+github documentation page
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+google
+github
 
