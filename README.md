@@ -5,8 +5,7 @@ Include the date you created this project and README file.
 push your work on github
 
 ### Description
-Describe what your project is about and what it does
-
+project is all about git and github
 ### Files used
 Include the files used
 
