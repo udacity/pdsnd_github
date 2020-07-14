@@ -92,6 +92,7 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     print('This is the First Change that I am making')
+    print('This is the second change that I am making')
     start_time = time.time()
 
     # TO DO: display the most common month
