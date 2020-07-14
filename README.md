@@ -9,7 +9,8 @@ This project was used to explore bike systems for 3 major cities. New York, Chic
 ### First Change
 One of the questions that the project answers is what is the most common day of the week that the bikes are ridden.
 
-
+### Second Change
+One of the other questions that the project answers is what is the most end station that is used on the bike rides. 
 
 
 
