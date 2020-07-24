@@ -18,21 +18,9 @@ Explore Bike Share Data
 For this project, your goal is to ask and answer three questions about the available bikeshare data
 from Washington, Chicago, and New York. 
 
-##Below are the details of the work and the codes used
-
-ny = read.csv('new_york_city.csv')
-wash = read.csv('washington.csv')
-chi = read.csv('chicago.csv')
-
-head(ny)
-head(wash)
-head(chi)
-
+##Below are the codes only 
 
 Question 1
-
-Which gender from New York spend the most total time riding? What is the average time spent
-per ride by gender?
 
 ##Loading relevant r-packages
 library(magrittr)
@@ -54,10 +42,6 @@ main="Total Ride Time by Gender")
 
 Question 2
 
-What are the top three start locations that bikers in Chicago frequently start their riding journey?
-Based on the proportion of trips starting from there, are they the favourite starting points for bike
-trips in Chicago?
-
 ##Reading the Chicago bikeshare data
 chi = read.csv('chicago.csv')
 
@@ -77,7 +61,6 @@ barplot(numbik, main = "Top Three Start Points", xlab = "Number of Starts", ylab
 
 
 Question 3
-Which type of rider from Washington rides less?
 
 ##Loading relevant r-packages
 library(magrittr)
@@ -90,5 +73,4 @@ low.rides.wash
 ##Plotting a Bar Graph
 numbik=c(2635,736)
 barplot(numbik, main = "Total Ride Time of User Types", xlab = "User Type", ylab = "Total Time",las=1,names.arg = c("Customer","Subscriber") )
-
 
