@@ -187,6 +187,8 @@ def user_stats(df):
 
 
 def main():
+
+    print("---- Bike Data Analysis ----")
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
