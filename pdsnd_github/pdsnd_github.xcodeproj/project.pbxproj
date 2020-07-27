@@ -16,6 +16,9 @@
 		3673125C24CF500700E2A7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3673125A24CF500700E2A7C2 /* LaunchScreen.storyboard */; };
 		3673126724CF500700E2A7C2 /* pdsnd_githubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673126624CF500700E2A7C2 /* pdsnd_githubTests.swift */; };
 		3673127224CF500700E2A7C2 /* pdsnd_githubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673127124CF500700E2A7C2 /* pdsnd_githubUITests.swift */; };
+		3673128024CF7AFA00E2A7C2 /* pdsnd_github in Resources */ = {isa = PBXBuildFile; fileRef = 3673127F24CF7AFA00E2A7C2 /* pdsnd_github */; };
+		3673128224CF7BDC00E2A7C2 /* bikeshare in Resources */ = {isa = PBXBuildFile; fileRef = 3673128124CF7BDC00E2A7C2 /* bikeshare */; };
+		36F7740524CF7CD9009C5B23 /* dvdrental in Resources */ = {isa = PBXBuildFile; fileRef = 36F7740424CF7CD9009C5B23 /* dvdrental */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3673126D24CF500700E2A7C2 /* pdsnd_githubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pdsnd_githubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3673127124CF500700E2A7C2 /* pdsnd_githubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdsnd_githubUITests.swift; sourceTree = "<group>"; };
 		3673127324CF500700E2A7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3673127F24CF7AFA00E2A7C2 /* pdsnd_github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pdsnd_github; sourceTree = "<group>"; };
+		3673128124CF7BDC00E2A7C2 /* bikeshare */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bikeshare; sourceTree = "<group>"; };
+		36F7740424CF7CD9009C5B23 /* dvdrental */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dvdrental; path = ../dvdrental; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,10 @@
 		3673124024CF500500E2A7C2 = {
 			isa = PBXGroup;
 			children = (
+				36F7740424CF7CD9009C5B23 /* dvdrental */,
+				3673128124CF7BDC00E2A7C2 /* bikeshare */,
 				3673124B24CF500500E2A7C2 /* pdsnd_github */,
+				3673127F24CF7AFA00E2A7C2 /* pdsnd_github */,
 				3673126524CF500700E2A7C2 /* pdsnd_githubTests */,
 				3673127024CF500700E2A7C2 /* pdsnd_githubUITests */,
 				3673124A24CF500500E2A7C2 /* Products */,
@@ -236,8 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3673125C24CF500700E2A7C2 /* LaunchScreen.storyboard in Resources */,
+				36F7740524CF7CD9009C5B23 /* dvdrental in Resources */,
 				3673125924CF500700E2A7C2 /* Assets.xcassets in Resources */,
 				3673125424CF500500E2A7C2 /* Main.storyboard in Resources */,
+				3673128224CF7BDC00E2A7C2 /* bikeshare in Resources */,
+				3673128024CF7AFA00E2A7C2 /* pdsnd_github in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
