@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		365D73A624CF8B2600EF732E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 365D73A524CF8B2500EF732E /* README.md */; };
 		3673124D24CF500500E2A7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673124C24CF500500E2A7C2 /* AppDelegate.swift */; };
 		3673124F24CF500500E2A7C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673124E24CF500500E2A7C2 /* SceneDelegate.swift */; };
 		3673125124CF500500E2A7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673125024CF500500E2A7C2 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		365D73A524CF8B2500EF732E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../Desktop/README.md; sourceTree = "<group>"; };
 		3673124924CF500500E2A7C2 /* pdsnd_github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pdsnd_github.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3673124C24CF500500E2A7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3673124E24CF500500E2A7C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		3673124024CF500500E2A7C2 = {
 			isa = PBXGroup;
 			children = (
+				365D73A524CF8B2500EF732E /* README.md */,
 				36F7740424CF7CD9009C5B23 /* dvdrental */,
 				3673128124CF7BDC00E2A7C2 /* bikeshare */,
 				3673124B24CF500500E2A7C2 /* pdsnd_github */,
@@ -247,6 +250,7 @@
 				3673125C24CF500700E2A7C2 /* LaunchScreen.storyboard in Resources */,
 				36F7740524CF7CD9009C5B23 /* dvdrental in Resources */,
 				3673125924CF500700E2A7C2 /* Assets.xcassets in Resources */,
+				365D73A624CF8B2600EF732E /* README.md in Resources */,
 				3673125424CF500500E2A7C2 /* Main.storyboard in Resources */,
 				3673128224CF7BDC00E2A7C2 /* bikeshare in Resources */,
 				3673128024CF7AFA00E2A7C2 /* pdsnd_github in Resources */,
