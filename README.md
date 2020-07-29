@@ -1,5 +1,5 @@
 ### Date created
-<b>Bikeshare.py</b> created 7 June 2020. 
+<b>Bikeshare.py</b> created 7 June 2020.<br>
 <b>README file</b> created 29 July 2020
 
 ### Project Title
