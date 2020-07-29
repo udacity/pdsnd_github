@@ -29,9 +29,10 @@ def get_filters():
             break
 
     # TO DO: get user input for month (all, january, february, ... , june)
+    # Updated word in input area for simplicity
     months = ['all', 'january', 'february', 'march', 'april', 'may', 'june', ]
     while True:
-        month = input("\n Please choose a month from - {}".format(months)).lower()
+        month = input("\n Please select a month from - {}".format(months)).lower()
         if month not in months:
             print("\n Incorrect Selection")
 
@@ -39,9 +40,10 @@ def get_filters():
             break
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # Upated word in input to make it consistent with the above  
     days = ['all', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday',  ]
     while True:
-        day = input('\n Please choose a day of the week from - {}'.format(days)).lower()
+        day = input('\n Please select a day of the week from - {}'.format(days)).lower()
         if day not in days:
             print("\n Incorrect Selection")
 
