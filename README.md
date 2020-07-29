@@ -6,9 +6,10 @@
 <h1>Bikeshare Data</h1>
 
 ### <h2>Description</h2>
-This Bikeshare project is about the public use of bike hire. this emables the user access information reivew data across 3 major cities. these cities are New York, Chicago and Washington. the user is able to compare and or review data such as, most popular routes, which months / day of week are most popular and or overal information regarding duration calulations.
+<p>This Bikeshare project is about the public use of bike hire. This emables the user to access information and reivew data across 3 major cities. these cities are New York, Chicago and Washington.</p> 
+<p>The user is able to compare and or review data such as, most popular routes, which months / day of week are most popular and or overal information regarding duration calulations.</p>
 
 ### <h2>Files used</h2>
-The files used to complete this project was Python data (Bikeshare.py), <em>new_york_city.csv, chicago.csv and washington.csv</em>
+<p>The files used to complete this project was Python data (Bikeshare.py), <em>new_york_city.csv, chicago.csv and washington.csv</em></p>
 
 
