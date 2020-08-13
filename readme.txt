@@ -1,8 +1,10 @@
-Pandas for Everyone - Daniel Y Chen 2018 change 1
+Pandas for Everyone - Daniel Y Chen 2018 
 https://stackoverflow.com/
+Change 1
 Change 2
 Change 3
 Change 4
+
 Feedback note -  I have made the required correction re user stats, thanks so much for the feedback, very helpful and useful for the future.  I will definitely check out the green tea, hacker earth and runestone links.  And if you can recommend any books, my preferred medium, at base/intro level as I feel like I am missing some fundamentals being much more of an accountant than programmer, I would very much appreciate.
 
 It could just be too much (or too little) coffee on a Sunday morning, but I am having trouble following what you mean by filtering by month or day.  It already does that doesn't it?  Screen shots attached.
