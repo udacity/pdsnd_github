@@ -43,7 +43,7 @@ def get_duration():
         return 'day_of_week'
 
     elif duration == "no":
-        print('\n No duration filter is being applied to the data\n')
+        print('\n No duration filter is being applied to the data...\n')
         return 'none'
     
     input('\n Given input is invalid, do you want to try again...\n')
