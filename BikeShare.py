@@ -276,7 +276,7 @@ def filtered_data(df):
         if show_data == 'y':
             print(df[row_index: row_index + 5])
             row_index = row_index + 5
-        show_data = input("\n Show next 5 rows? Answer 'yes' or 'no' \n").lower()
+        show_data = input("\n Show next 5 rows? Answer 'y' or 'n' \n").lower()
         
 def main():
     while True:
