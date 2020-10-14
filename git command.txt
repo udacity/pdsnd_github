@@ -1,0 +1,19 @@
+Git Clone
+------------
+https://github.com/udacity/pdsnd_github.git
+
+Change Directory
+-----------------
+cd pdsnd_github/
+
+Create New Branch
+---------------------
+git checkout -b "Udacity_Assignment3"
+
+Git Status
+---------------------
+git status
+
+
+
+
