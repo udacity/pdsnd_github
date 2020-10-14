@@ -12,7 +12,7 @@ def get_day():       # Asks the user for a day and returns the specified day
         day = input('\nPlease type a day as a choice from M, Tu, W, Th, F, Sa, Su. \n')
     return day.lower().strip()
     
-def get_month():
+def get_month(): # Asks the user to choose the month between Jan to Jun
     month = input('\nChoose month! January, February, March, April, May, or June? Please type the full month name.\n')
     
     #Validate, if not found correct retry
@@ -265,7 +265,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def filtered_data(df):
+def filtered_data(df): # Display raw data from data file
     """Displays filtered data."""
     
     row_index = 0
