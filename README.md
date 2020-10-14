@@ -1,15 +1,19 @@
 ### Date created
-Include the date you created this project and README file.
+15-Oct-2020.
 
 ### Project Title
-Replace the Project Title
+Bike Share Project
 
 ### Description
-Describe what your project is about and what it does
+This is a python script queries on data collection for bike share database of different cities.
+The out allows user to filter the data according to city, date.
 
 ### Files used
-Include the files used
+BikeShare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The practice queries in the lessons helps to create this project.
 

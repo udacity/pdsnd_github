@@ -1,0 +1,3 @@
+# ignore any file with following extension anywhere
+*.csv
+*.pdf
