@@ -43,7 +43,7 @@ def get_duration():
         return 'day_of_week'
 
     elif duration == "no":
-        print('\n No duration filter is being applied to the data\n')
+        print('\n No duration filter is being applied to the data...\n')
         return 'none'
     
     input('\n Given input is invalid, do you want to try again...\n')
@@ -276,7 +276,7 @@ def filtered_data(df): # Display raw data from data file
         if show_data == 'y':
             print(df[row_index: row_index + 5])
             row_index = row_index + 5
-        show_data = input("\n Show next 5 rows? Answer 'yes' or 'no' \n").lower()
+        show_data = input("\n Show next 5 rows? Answer 'y' or 'n' \n").lower()
         
 def main():
     while True:
