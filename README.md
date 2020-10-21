@@ -1,15 +1,22 @@
 ### Date created
-Include the date you created this project and README file.
+Date: 21/10/2020
 
 ### Project Title
-Replace the Project Title
+Udacity - Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
 
+The project helps to explore an US bikeshare system database and retrieve statistics information from the database. The user will be able to filter the information by city, month and weekday, in order to visualize statistical information related to a specific subset of data.
 ### Files used
-Include the files used
+The required files for running this program are: 
+
+* washington.csv
+* new_york_city.csv
+* chicago.csv
+
+This program was written in Python (version 3.7.1) and relies on the following libraries:
+pandas==0.23.4
+numpy==1.15.4
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity has really helped in completing this project successfully.
