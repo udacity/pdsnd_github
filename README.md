@@ -20,3 +20,4 @@ numpy==1.15.4
 
 ### Credits
 Udacity has really helped in completing this project successfully.
+With the help of https://www.udacity.com/ this project has been created.
