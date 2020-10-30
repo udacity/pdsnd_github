@@ -3,10 +3,12 @@ import pandas as pd
 import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
+	     
               'new york city': 'new_york_city.csv',
+	     
               'washington': 'washington.csv' }
 
-
+# a comment for refactoring the code for github
 
 
 def get_filters():
@@ -19,6 +21,8 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     
+	
+	
     global city, month, day
     print('\n')
     print('\n')
@@ -57,7 +61,8 @@ def get_filters():
     print('-----CALCULATING STATISTICS FOR YOU-----')
     print('-'*40)
     print('-'*40)
-    
+    print('-'*40)
+
     return city, month, day
 
 
