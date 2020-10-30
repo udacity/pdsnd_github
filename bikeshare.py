@@ -61,7 +61,8 @@ def get_filters():
     print('-----CALCULATING STATISTICS FOR YOU-----')
     print('-'*40)
     print('-'*40)
-    
+    print('-'*40)
+
     return city, month, day
 
 
