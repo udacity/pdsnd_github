@@ -31,5 +31,7 @@ bikeshare.py
 README.md
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://www.udacity.com
+
+https://stackoverflow.com/questions/29533098/unboundlocalerror-local-variable-referenced-before-assignment-python
 
