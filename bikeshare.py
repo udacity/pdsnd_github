@@ -278,7 +278,7 @@ def main():
         if restart.lower() != 'yes':
             break
 
-
+#Refactoring code2 : Call all function
 if __name__ == "__main__":
 	main()
 
