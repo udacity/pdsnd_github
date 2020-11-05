@@ -8,6 +8,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 #To get username 
 name = input("please input your name here!: ")
 
+#To state your Github (if there is any)
+
+Github = input("please input your Github user-id if you have one!: ")
+
+
 def get_filters():
     # Define global 2 variables in order to avoid unboundlocalerror!
     month = "march"
