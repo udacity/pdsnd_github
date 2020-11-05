@@ -35,3 +35,4 @@ https://www.udacity.com
 
 https://stackoverflow.com/questions/29533098/unboundlocalerror-local-variable-referenced-before-assignment-python
 
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
