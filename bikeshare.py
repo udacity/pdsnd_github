@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#Refactoring code1 : Dataset from csv 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -282,7 +283,7 @@ def main():
         if restart.lower() != 'yes':
             break
 
-
+#Refactoring code2 : Call all function
 if __name__ == "__main__":
 	main()
 
