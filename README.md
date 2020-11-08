@@ -1,15 +1,25 @@
 ### Date created
-Include the date you created this project and README file.
+
+Project was fully finished in __11/8/2020__.
 
 ### Project Title
-Replace the Project Title
+
+__Udacity Programming for Data science with python.__
 
 ### Description
-Describe what your project is about and what it does
+
+__In this project we explore the US bikershare Data to calculate statistics for three major cities__
+
+* 1: Chicago
+
+* 2: New york city
+
+* 3: Washington
 
 ### Files used
-Include the files used
+
+The main project was written in python which can be found in **bikershare.py**. And pulling the data from the three **.csv** files.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+* Credits for udacity for the great resources and this great opportunity!
