@@ -1,20 +1,20 @@
-### Date created
+## Date created
 
-Project was fully finished in __11/8/2020__.
+### Project was fully finished in __11/8/2020__.
 
-### Project Title
+## Project Title
 
-__Udacity Programming for Data science with python.__
+### __Udacity Programming for Data science with python.__
 
-### Description
+## Description
 
-__In this project we explore the US bikershare Data to calculate statistics for three major cities__
+### __In this project we explore the US bikershare Data to calculate statistics for three major cities__
 
-* 1: Chicago
+* 1: _Chicago_
 
-* 2: New york city
+* 2: _New york city_
 
-* 3: Washington
+* 3: _Washington_
 
 ### Files used
 
