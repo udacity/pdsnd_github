@@ -1,6 +1,8 @@
 # Custom #
 bikershare.py
-
+chicago.csv
+new_york.csv
+washington.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
