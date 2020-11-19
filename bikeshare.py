@@ -160,6 +160,10 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
+    # TO DO: Display number of trips
+    trip_number = df.count()
+    print('Number of trips: ', trip_number)
+
     # TO DO: Display counts of user types
     user_types = df['User Type'].value_counts().values
     print('Counts of user types:\n', 'Subscriber:', user_types[0],'\n', 'Customer:', user_types[1],'\n')
