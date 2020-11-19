@@ -8,6 +8,7 @@ This is an interactive program that makes use of Python to explore data related 
 chicago.csv, washington.csv, new_york_city.csv
 
 ## Credits
+Existing Bikeshare.py template provided by [Udacity](https://www.udacity.com)
 [Stack Overflow users](https://stackoverflow.com)
 [W3Schools Online Web Tutorials](https://www.w3schools.com)
 [Pluralsight](https://www.pluralsight.com)
