@@ -194,6 +194,22 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+def print_data():
+    """
+    Prints 5 rows of raw data
+    """
+    while True:
+        if view_data == 'yes':
+            print(df.iloc[start:count])
+            count += 5
+            start += 5
+            view_data = input("Would you like to see the next 5 rows of raw data? Please type yes or no: ")
+        elif view_data == 'no':
+            break
+        else:
+            view_data=input("Please enter yes or no: ")
+            continue
+
 def raw_data(df):
     """
     Asks user whether they would like to view 5 rows of raw data, and continually displays data in rows of 5 until their answer is 'no'. If yes, it prints the raw data available in rows of 5.
@@ -203,31 +219,11 @@ def raw_data(df):
     try:
         df = df[['Start Time', 'End Time', 'Trip Duration', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year']]
         view_data = input("Would you like to see the first 5 rows of raw data? Please type yes or no: ")
-        while True:
-            if view_data == 'yes':
-                print(df.iloc[start:count])
-                count += 5
-                start += 5
-                view_data = input("Would you like to see the next 5 rows of raw data? Please type yes or no: ")
-            elif view_data == 'no':
-                break
-            else:
-                view_data=input("Please enter yes or no: ")
-                continue
+        print_data()
     except KeyError:
         df = df[['Start Time', 'End Time', 'Trip Duration', 'Start Station', 'End Station', 'User Type']]
         view_data = input("Would you like to see the first 5 rows of raw data? Please type yes or no: ")
-        while True:
-            if view_data == 'yes':
-                print(df.iloc[start:count])
-                count += 5
-                start += 5
-                view_data = input("Would you like to see the next 5 rows of raw data? Please type yes or no: ")
-            elif view_data == 'no':
-                break
-            else:
-                view_data = input("Please enter yes or no: ")
-                continue
+        print_data()
 
 def main():
     while True:
@@ -248,5 +244,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-    
