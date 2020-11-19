@@ -139,7 +139,7 @@ def trip_duration_stats(df):
     hours = (trip_sum_int % 86400) // 3600
     minutes = (trip_sum_int - days*86400 - hours*3600) // 60
     seconds = trip_sum_int - days*86400 - hours*3600 - minutes*60
-    print('Total Duration of All Trips:', days, 'days', hours, 'hours', minutes, 'minutes', seconds, 'seconds')
+    print('Total Duration of All Trips: {} days {} hours {} minutes {} seconds'.format(days,hours,minutes,seconds))
 
     # TO DO: display mean travel time
     trip_mean = df['Trip Duration'].mean()
@@ -148,7 +148,7 @@ def trip_duration_stats(df):
     hours = (trip_mean_int % 86400) // 3600
     minutes = (trip_mean_int - days*86400 - hours*3600) // 60
     seconds = trip_mean_int - days*86400 - hours*3600 - minutes*60
-    print('Mean Duration of All Trips:', days, 'days', hours, 'hours', minutes, 'minutes', seconds, 'seconds')
+    print('Mean Duration of All Trips: {} days {} hours {} minutes {} seconds'.format(days,hours,minutes,seconds))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
