@@ -1,11 +1,13 @@
+# Bikeshare statistics application
+
 ### Date created
 20.11.2020
 
 ### Project Title
-Bikeshare
+Bikeshare Documentation
 
 ### Description
-Python application created to import US bike share data and answer interesting questions about it by computing descriptive statistics. The app takes raw input to create an interactive experience in the terminal to present these statistics.
+Python application has been made to  import US bike share data and filter it to extract wanted statistics results.
 
 ### Files used
 bikeshare.py
