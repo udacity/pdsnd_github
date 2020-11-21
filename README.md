@@ -1,15 +1,14 @@
-### Date created
-Include the date you created this project and README file.
+# Date Created: 11/21/2020 #
 
-### Project Title
-Replace the Project Title
+# Bikeshare Ride Project #
 
-### Description
+# Description #
+## This project provides an overview of bikeshare ride in 3 major cities ## 
 Describe what your project is about and what it does
 
-### Files used
-Include the files used
+# Files Included # 
+1. bikeshare.py - has the code to run the analysis on the datafiles 
+2. csv files for the three cities: Chicago, New York City, and Washington 
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
 
