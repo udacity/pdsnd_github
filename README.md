@@ -4,7 +4,9 @@
 
 ## Description ##
 ### This project provides an overview of bikeshare ride in 3 major cities ### 
-Describe what your project is about and what it does
+Some of the key statistics include: 
+- most frequent, month and day per city 
+- the statistics around the users 
 
 ## Files Included ## 
 1. bikeshare.py - has the code to run the analysis on the datafiles 
