@@ -5,7 +5,7 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-
+#Ensure that the city, month, and days 
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -88,7 +88,7 @@ def load_data(city, month, day):
 
     return df
 
-
+#This shows the statistics per the city, month, and day requested in the inputs 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
