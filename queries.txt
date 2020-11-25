@@ -1,0 +1,106 @@
+/*query use for the first insight*/
+SELECT sub.full_name
+      ,SUM(payment) AS totalpaymenteach
+      ,CASE WHEN SUM(payment) > 150 THEN 'High value cust.'
+      WHEN  SUM(payment) > 70 AND SUM(payment) <= 150 THEN 'Value cust.'
+      ELSE 'General cust.' END AS Customer_grade
+      ,sub.country 
+      FROM  (SELECT CONCAT(c.first_name,' ',c.last_name) AS full_name
+            ,p.amount AS payment
+            ,co.country AS country
+            FROM film f 
+            JOIN inventory i
+            ON f.film_id = i.film_id
+            JOIN rental r 
+            ON i.inventory_id = r.inventory_id
+            JOIN payment p
+            ON r.rental_id = p.rental_id
+            JOIN customer c
+            ON p.customer_id = c.customer_id
+            JOIN address a
+            ON c.address_id = a.address_id
+            JOIN city ci
+            ON a.city_id=ci.city_id
+            JOIN country co
+            ON ci.country_id=co.country_id) sub
+      GROUP BY 1,4
+      ORDER BY 2 DESC
+
+
+/*query use for the second insight*/
+WITH CTE AS (
+              SELECT 
+              f.title AS film_title,
+              c.name AS category_name,
+              r.rental_id AS rentalid_of_eachrent
+              FROM film f
+              JOIN film_category fc
+              ON f.film_id = fc.film_id
+              JOIN category c
+              ON c.category_id = fc.category_id
+              JOIN inventory i 
+              ON f.film_id = i.film_id
+              JOIN rental r 
+              ON r.inventory_id = i.inventory_id
+              WHERE c.name IN ('Animation', 'Children', 'Classics', 'Comedy', 'Family', 'Music') 
+            )
+SELECT 
+CTE.film_title , 
+CTE.category_name , 
+COUNT(CTE.rentalid_of_eachrent) rental_count
+FROM CTE
+GROUP BY 1,2
+ORDER BY 1
+
+
+
+/*query use for the third insight*/
+
+WITH CTE AS (
+              SELECT 
+              f.title AS film_title,
+              c.name AS category_name,
+              f.rentaL_duration AS rentaL_duration
+              FROM film f
+              JOIN film_category fc
+              ON f.film_id = fc.film_id
+              JOIN category c
+              ON c.category_id = fc.category_id
+              JOIN inventory i 
+              ON f.film_id = i.film_id
+              JOIN rental r 
+              ON r.inventory_id = i.inventory_id
+              GROUP BY 1,2,3
+              )
+SELECT
+film_title,
+category_name,
+rentaL_duration, 
+NTILE(4) OVER(ORDER BY rentaL_duration) 
+FROM CTE
+
+
+
+/*query use for the fourth insight*/
+WITH CTE AS (
+          SELECT 
+          CONCAT(s.first_name,' ',s.last_name) AS fullname_staff,
+          s.staff_id staff_id,
+          p.customer_id customerid,
+          p.payment_id,
+          p.amount AS payment_perpaymentid
+          FROM staff s
+          JOIN payment p 
+          ON s.staff_id = p.staff_id
+          JOIN customer c
+          ON p.customer_id = c.customer_id
+          )
+SELECT 
+DISTINCT fullname_staff,
+staff_id,
+SUM(payment_perpaymentid) OVER (PARTITION BY staff_id) AS totalamount, 
+COUNT(customerid) OVER (PARTITION BY staff_id) AS number_of_guess_at_eachstore,
+SUM(payment_perpaymentid)OVER(PARTITION BY staff_id) / COUNT(customerid) OVER(PARTITION BY staff_id) AS KPI_per_staff
+FROM CTE 
+
+
