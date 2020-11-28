@@ -4,8 +4,8 @@
 
  # What is needed?
  1. **Python 3**
- 2. **Pandas**
- 3. **Numpy**
+ 2. *Pandas*
+ 3. *Numpy*
 
  # Description
  This project is used to calculate statistics of bike share usage from three US cities:
@@ -33,6 +33,6 @@ At the start of script you have to choose on console if you want to filter data 
 
 ### Files used
 * **bikeshare.py**
-* __chicago.csv__
-* __new_york_city.csv__
-* __washington.csv__
+* _chicago.csv_
+* _new_york_city.csv_
+* _washington.csv_
