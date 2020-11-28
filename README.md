@@ -1,13 +1,33 @@
-# Bikeshare statistics application
 
-### Date created
-20.11.2020
+#Exploring _US Bike Share Data_
+### 20.11.2020
 
-### Project Title
-Bikeshare Documentation
+ #What is needed?
+ 1. Python 3
+ 2. Pandas
+ 3. Numpy
 
-### Description
-Python application has been made to  import US bike share data and filter it to extract wanted statistics results.
+ #Description
+ This project is used to calculate statistics of bike share usage from tree US cities:
+* New York
+* Chicago
+* Washington
 
+The data source contains corresponding fields:
+* Start time
+* End Time
+* Trip Duration
+* Start Station
+* End Station
+* User Type
+
+Aside from Washington are:
+* Gender
+* Birth year
+
+ 
 ### Files used
-bikeshare.py
+* **bikeshare.py**
+* chicago.csv
+* new_york_city.csv
+* washington.csv
