@@ -1,13 +1,13 @@
 
-#Exploring _US Bike Share Data_
+# Exploring _US Bike Share Data_
 ### 20.11.2020
 
- #What is needed?
- 1. Python 3
- 2. Pandas
- 3. Numpy
+ # What is needed?
+ 1. **Python 3**
+ 2. **Pandas**
+ 3. **Numpy**
 
- #Description
+ # Description
  This project is used to calculate statistics of bike share usage from tree US cities:
 * New York
 * Chicago
@@ -25,9 +25,9 @@ Aside from Washington are:
 * Gender
 * Birth year
 
- 
+
 ### Files used
 * **bikeshare.py**
-* chicago.csv
-* new_york_city.csv
-* washington.csv
+* __chicago.csv__
+* __new_york_city.csv__
+* __washington.csv__
