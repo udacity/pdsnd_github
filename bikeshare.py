@@ -5,9 +5,9 @@ import datetime
 
 
 CITY_DATA  = { 'Chicago': 'chicago.csv','New York City': 'new_york_city.csv',  'Washington': 'washington.csv' }
-cities  = [x[0] for x in CITY_DATA.items()]
-months = [datetime.date(2020, x , 1).strftime('%B') for x in list(range(1,13))]
-days   = [datetime.date(2024, 1 , x).strftime('%A') for x in list(range(1,8))]
+cities  = ['Chicago', 'New York City', 'Washington']
+months  = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+days    = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 def get_input_data(accepted_values):
     while True:
