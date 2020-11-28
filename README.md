@@ -8,7 +8,7 @@
  3. **Numpy**
 
  # Description
- This project is used to calculate statistics of bike share usage from tree US cities:
+ This project is used to calculate statistics of bike share usage from three US cities:
 * New York
 * Chicago
 * Washington
@@ -24,6 +24,11 @@ The data source contains corresponding fields:
 Aside from Washington are:
 * Gender
 * Birth year
+
+At the start of script you have to choose on console if you want to filter data by:
+1. City
+1. Month
+1. Weekday
 
 
 ### Files used
