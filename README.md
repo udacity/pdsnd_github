@@ -3,9 +3,9 @@
 ### 20.11.2020
 
  # What is needed?
- 1. **Python 3**
- 2. *Pandas*
- 3. *Numpy*
+ 1. **[Python 3](https://www.python.org/downloads/)**
+ 2. *[Pandas](https://pandas.pydata.org/)*
+ 3. *[Numpy](https://numpy.org/)*
 
  # Description
  This project is used to calculate statistics of bike share usage from three US cities:
