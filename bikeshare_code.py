@@ -138,7 +138,7 @@ def main():
             y += 5
             raw = input('Would you like to view some more?').lower().strip()
 
-#this should be wrapped in a seperate funtion than the main. 
+#this should be wrapped in a seperate funtion than the main for better seamlessness of the code and ease of eyes. 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
