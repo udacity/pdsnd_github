@@ -6,7 +6,7 @@ import numpy as np
 CITY_DATA = { 'Chicago': 'chicago.csv',
               'New York City': 'new_york_city.csv',
               'Washington': 'washington.csv' }
-
+#try using try and except and function instead of while loop
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
