@@ -1,6 +1,5 @@
-### Date
-NOV 21 2020 (Date Created)
-Python code that uses .csv data from bikesharedata in Chicago, NYC, Washington.
+ 
+Python code .
 
 ### Project Title
 Bikshare-data Interactive experience Programme.
