@@ -8,6 +8,7 @@ CITY_DATA = { 'Chicago': 'chicago.csv',
               'Washington': 'washington.csv' }
 
 def get_filters():
+#while print statement should be shortened for easier code.	
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
         city = input('1. Which city would you like to explore? Chicago, New york  City or Washington?').title().strip()
