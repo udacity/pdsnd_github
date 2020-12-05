@@ -8,6 +8,7 @@ CITY_DATA = { 'Chicago': 'chicago.csv',
               'Washington': 'washington.csv' }
 #try using try and except and function instead of while loop
 def get_filters():
+#while print statement should be shortened for easier code.	
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
         city = input('1. Which city would you like to explore? Chicago, New york  City or Washington?').title().strip()
@@ -138,7 +139,7 @@ def main():
             y += 5
             raw = input('Would you like to view some more?').lower().strip()
 
-#this should be wrapped in a seperate funtion than the main. 
+#this should be wrapped in a seperate funtion than the main for better seamlessness of the code and ease of eyes. 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
