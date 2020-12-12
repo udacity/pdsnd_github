@@ -1,15 +1,20 @@
-### Date created
-Include the date you created this project and README file.
+### Date created:
+12\Dec\2020
 
-### Project Title
-Replace the Project Title
+### Bikeshare.
 
-### Description
-Describe what your project is about and what it does
 
-### Files used
-Include the files used
+### Description:
+Calculate statistics and build an interactive environment where a user chooses the data and filter  for a dataset to analyze by using python.
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+### Files used:
+chicago.csv
+new_york_city.csv
+washington.csv
+
+
+### Requirements:
+Language: Python 3.6 or above
+Libraries: pandas, numpy, time
 
