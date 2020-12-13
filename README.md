@@ -9,12 +9,17 @@ Calculate statistics and build an interactive environment where a user chooses t
 
 
 ### Files used:
-chicago.csv
-new_york_city.csv
-washington.csv
+⋅⋅* chicago.csv
+⋅⋅* new_york_city.csv
+⋅⋅* washington.csv
 
 
 ### Requirements:
 Language: Python 3.6 or above
 Libraries: pandas, numpy, time
 
+### Built with:
+⋅⋅* [Python 3.9.0 ](https://www.python.org/)
+⋅⋅* [pandas ](https://pandas.pydata.org/)
+⋅⋅* [numpy  ](https://numpy.org/)
+⋅⋅* [time ](https://docs.python.org/2/library/time.html)
