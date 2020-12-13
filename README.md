@@ -4,7 +4,7 @@
 ### Project Title
 Explore US Bikeshre Data
 ### Description
-Describe what your project is about and what it does
+This project explore verious data from three cities such as travel time, station & user information. 
 
 ### Files used
 Include the files used
