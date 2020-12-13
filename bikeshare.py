@@ -39,7 +39,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day=' '
     while day.lower() not in WEEK_DATA:
-         day = input("\nEnter the name of the Day of Week : (Enter either 'all' for no filtering or  monday, tuesday, ... sunday)\n")
+         day = input("\nEnter the name of the Day of Week : (Enter either 'all' for no filtering or monday, tuesday, ... sunday)\n")
          if day.lower() in WEEK_DATA:
               day = day.lower()
 
@@ -116,7 +116,7 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """ Displays statistics on the most popular stations and trip. """
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
