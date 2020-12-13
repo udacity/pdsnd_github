@@ -185,10 +185,10 @@ def main():
         user_stats(df, city)
 
 
-        show_row = input('\nWould you like to see five lines of raw data? Enter yes or no.\n').lower()
+        show_row = input('\nWould you like to see ten lines of raw data? Enter yes or no.\n').lower()
         x = 0
         if show_row == 'yes':
-            print(df[x:x + 5])
+            print(df[x:x + 10])
 
             while True:
                 x = x + 5
