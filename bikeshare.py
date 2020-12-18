@@ -180,8 +180,7 @@ def user_stats(df):
     # This Try block is to catch any errot if user choses a city thatn doesnt not the gender column
     if 'Gender' in df.columns:
         genders = df['Gender'].value_counts()
-        print(
-            f"\nThe types of users by gender are given below:\n\n{format(genders)}")
+        print( f"\nThe types of users by gender are given below:\n\n{format(genders)}")
     else:
         print("\nGender information are not avilable for this city.")
 
@@ -225,9 +224,7 @@ def all_data(df):
 def main():
     while True:
         city, month, day = get_filters()
-        print(city, month, day)
         df = load_data(city, month, day)
-        #print(df.columns.values.tolist())
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
@@ -236,7 +233,6 @@ def main():
         restart = input('\nWould you like to restart? Enter "y" for Yes or "n" for no.\n')
         if restart.lower() != 'y':
             break
-
 
 if __name__ == "__main__":
     main()
