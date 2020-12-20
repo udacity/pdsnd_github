@@ -8,8 +8,22 @@ Explore US Bikeshare Data
 In this project, I have used data provided by Motivate, a bike share system provider for many major cities in the United States, to uncover bike share usage patterns. I have written this program to compare the system usage between three large cities: Chicago, New York City, and Washington, DC.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+
+all files provided through Udacity Programming for Data Science in Python course.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Repos referenced:
+https://github.com/beingjainparas/Udacity-Explore_US_Bikeshare_Data
+https://github.com/khaledimad/Explore-US-Bikeshare-Data
+https://github.com/Aritra96/bikeshare-project
+https://github.com/pss2138/Udacity-Programming-for-Data-Science-with-Python-Project2
+
+Additional Resources:
+Udavidy Nanodegree Course Materials
+Pandas Documentation
+StackOverflow
+NumPy Documentation
 
