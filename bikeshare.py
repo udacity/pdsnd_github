@@ -78,7 +78,7 @@ def load_data(city, month, day):
     #Return relevant data as a dataframe
     return df
 
-#Calculate statistics for the chosen data
+#Calculate time statistics for the chosen data
 def time_stats(df):
     """
     Displays statistics on the most frequent times of travel.
@@ -104,7 +104,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#Calculate station statistics for the chosen data
 def station_stats(df):
     """
     Displays statistics on the most popular stations and trip.
@@ -130,7 +130,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#Calculate trip duration statistics for the chosen data
 def trip_duration_stats(df):
     """
     Displays statistics on the total and average trip duration.
@@ -152,7 +152,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#Calculate user statistics for the chosen data
 def user_stats(df):
     """
     Displays statistics on bikeshare users.
