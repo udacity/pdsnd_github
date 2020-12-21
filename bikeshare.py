@@ -62,7 +62,6 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.day_name()
-    df['combination'] = df['Start Station'] + " to " + df['End Station']
 
     #Filter month if needed
     if month != 'all':
@@ -124,6 +123,7 @@ def station_stats(df):
     print("The most commonly used end station from this dataset is: " + str(common_end))
 
     #Display most frequent combination of start station and end station trip
+    df['combination'] = df['Start Station'] + " to " + df['End Station']
     station_combo = df['combination'].mode()[0]
     print("The most commonly used combination of sations from this dataset is: " + str(station_combo))
 
