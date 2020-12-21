@@ -26,7 +26,7 @@ https://github.com/Aritra96/bikeshare-project
 https://github.com/pss2138/Udacity-Programming-for-Data-Science-with-Python-Project2
 
 Additional Resources:
-Udavidy Nanodegree Course Materials
+Udacity Nanodegree Course Materials
 Pandas Documentation
 StackOverflow
 NumPy Documentation
