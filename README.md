@@ -1,11 +1,12 @@
 ### Date created
-Include the date you created this project and README file.
+22-DEC-2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+Github Project: Git Commands Documentation Template
+Programming for Data Science Nanodegree Program 
 
 ### Files used
 Include the files used
