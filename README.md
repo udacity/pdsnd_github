@@ -48,5 +48,6 @@ Author:
 
 ### Acknowledgements
 •	Aritra96 - Aritra96's repository helped with understanding the structure and details of certain functions.
+•	'www.programmingsought.com' also help me understand the scope and structure of the project. 
 •	pandas docs - pandas documentation was immensely helpful in understanding the implemention of pandas methods used in this project.
 •	Udacity - Udacity's Data Analyst Nanodegree program and their instructors were extremely helpful while I was pursuing this project.
