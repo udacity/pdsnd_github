@@ -17,3 +17,7 @@ Popular stations and trip
 Trip duration
 User info
 
+### Programs and Libraries
+Python 3.6.6
+NumPy and pandas
+
