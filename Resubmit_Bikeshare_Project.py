@@ -209,6 +209,7 @@ def user_stats(df,city):
     print ('counts of user types: ',str(u_types))
 
     # TO DO: Display counts of gender
+    print ('Please remember that the city of Washington does not have this information')
     if city != 'washington.csv':
         counts_g=df['Gender'].value_counts()
         print ('counts of gender: ',str(counts_g))
