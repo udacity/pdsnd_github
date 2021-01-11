@@ -22,7 +22,9 @@ Python 3.6.6
 NumPy and pandas
 
 ### Keep in mind when you Programming in Python
+As you develop this project you should remember:
 Python is case sensitive
 Spacing is important
-Use error messages to help you learn
+
+
 
