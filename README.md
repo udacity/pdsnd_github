@@ -21,3 +21,8 @@ User info
 Python 3.6.6
 NumPy and pandas
 
+### Keep in mind when you Programming in Python
+Python is case sensitive
+Spacing is important
+Use error messages to help you learn
+
