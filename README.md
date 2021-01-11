@@ -7,5 +7,8 @@ In this project, you will create a GitHub repository and your local repository. 
 
 ### Bikeshare Project
 This project explore data related to bike share systems for three major cities in USA and answer insteresting questions about ir by computing descriptive statistic.
+### Project Details
+The experience depending on a user's input like city, month and day. After filterinf the dataset, users will see the statistical result of the data.
+
 
 
