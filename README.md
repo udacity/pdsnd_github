@@ -10,5 +10,10 @@ This project explore data related to bike share systems for three major cities i
 ### Project Details
 The experience depending on a user's input like city, month and day. After filterinf the dataset, users will see the statistical result of the data.
 
-
+### Statistics Computed
+The program prints the following information:
+Popular times of travel
+Popular stations and trip
+Trip duration
+User info
 
