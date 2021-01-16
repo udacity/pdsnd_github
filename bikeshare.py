@@ -50,7 +50,7 @@ def get_filters():
     months.append('all')
     print("")
     print("We have data for the months of January, February, March, April, May and June. ")
-    month = input("Please enter the name of the month you would like to filter the data for, or all: ")
+    month = input("Please enter the name of the month you would like to filter the data for, or all:\n ")
     month = month.lower()
     while month not in months:
         month = input("Please enter the correct spelling of one of the available months, or all: ")
