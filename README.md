@@ -5,7 +5,9 @@
 Bikeshare Data Science Project
 
 ### Description
-Describe what your project is about and what it does
+A console application that analyzes data from one of three csv files containing data from the bikeshare project.
+This application exhibits basic python functionality along with
+use of the pandas library.
 
 ### Files used
 Include the files used
