@@ -17,11 +17,11 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-  
+
     while True:
         city=input('Please,enter the city you want from list below\nChicago  or New York City or Washington\n').lower()
         if city in ('chicago','new york city', 'washington'):
-           break   
+           break
         else:
              print('We apology, City is not found')
              continue
@@ -29,14 +29,14 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
         month=input('Please,enter the month you need from list below\nall , January ,February, March,April, May or June \n').lower()
-      
-        
+
+
         if  month in ('all','january', 'february', 'march', 'april', 'may', 'june'):
             break
 
         else:
             print('We apology, Month is not found')
-            continue      
+            continue
 
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -44,11 +44,11 @@ def get_filters():
            day=input('Please,enter the day of week you need from list below\nall ,Sunday, Monday , Tuesday, Wednesday , Thursday , Friday or Saturday \n').lower()
            if day in ('all','sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'):
                 break
-           else : 
+           else :
                  print('Not found')
                  continue
 
-             
+
     print('-'*40)
     return city,month, day
 
@@ -67,7 +67,7 @@ def load_data(city,month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['Month']=df['Start Time'] .dt.month
     df['day_of_week']=(pd.to_datetime(df['Start Time'])).dt.weekday_name
-   
+
     if month != 'all' :
         list_months=['january', 'february', 'march', 'april', 'may', 'june']
         Month=list_months.index(month)+1
@@ -94,7 +94,7 @@ def time_stats(df):
     print('The most common Day is', Common_day)
 
     # TO DO: display the most common start hour
-    
+
     common_hour = df['Hour'].mode()[0]
     print('The most common Hour is', common_hour)
 
@@ -147,7 +147,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 
-def user_stats(df):
+def user_stats_and_type(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
@@ -193,7 +193,7 @@ def Row_data(df):
       if   view_data=='yes' :
         start_loc += 5
         print(df.iloc[0:start_loc])
-        view_display = input("Do you wish to continue?: ").lower()   
+        view_display = input("Do you wish to continue?: ").lower()
         if  view_display=='yes':
             start_loc += 5
             print(df.iloc[0:start_loc])
@@ -201,9 +201,9 @@ def Row_data(df):
             break
       else:
         break
-      
-     
-      
+
+
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -212,14 +212,14 @@ def main():
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
-        user_stats(df)
+        user_stats_and_type(df)
         Row_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter yes or no .Thank you.\n')
         if restart.lower() != 'yes':
             break
 
 
 if __name__ == "__main__":
 	main()
-# resources : https://pandas.pydata.org/pandas-docs/stable/reference/frame.html    
+# resources : https://pandas.pydata.org/pandas-docs/stable/reference/frame.html
