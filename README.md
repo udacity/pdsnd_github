@@ -1,10 +1,10 @@
-### Date created
+### Date created:
 
-### Project Title
+### Project Title:
 
-### Description
+### Description:
 
-### Files used
+### Files used:
 
-### Credits
+### Credits:
 
