@@ -14,3 +14,6 @@ bikeshare.py, chicago.csv, washington.csv, new york.csv
 
   https://www.markdownguide.org/getting-started/ 
 
+- To learn how to push: 
+
+  https://stackoverflow.com/questions/23241052/what-does-git-push-origin-head-mean
