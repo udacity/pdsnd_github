@@ -1,15 +1,12 @@
 ### Date created
-Include the date you created this project and README file.
+20/1/2021
 
 ### Project Title
-Replace the Project Title
-
+PDSND bikeshare.py
 ### Description
-Describe what your project is about and what it does
-
+this project to analyze the data for bikeshare in 3 major city in US (chicago, New York, and Washington)by writing a code using python to answer the questions need it
 ### Files used
-Include the files used
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+bikeshare
+chicago.csv
+new_york_city.csv
+Washington.csv
