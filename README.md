@@ -10,5 +10,7 @@ A local and remote repository are created, and the bikeshare code and files are 
 bikeshare.py, chicago.csv, washington.csv, new york.csv 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- to learn markdown: 
+
+  https://www.markdownguide.org/getting-started/ 
 
