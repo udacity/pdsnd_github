@@ -7,7 +7,7 @@ January 19, 2021.
 A local and remote repository are created, and the bikeshare code and files are posted and modified on them. 
 
 ### Files used
-bikeshare.py, chicago.csv, washington.csv, new york.csv 
+bikeshare_2.py, chicago.csv, washington.csv, new york.csv 
 
 ### Credits
 - to learn markdown: 
