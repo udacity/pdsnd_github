@@ -1,5 +1,6 @@
 ### Date created
 Date 20/1/2021
+Date 20-Jan-2021
 ### Project Title
 PDSND bikeshare.py
 ### Description
@@ -11,4 +12,3 @@ new_york_city.csv
 Washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
