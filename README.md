@@ -1,15 +1,25 @@
 ### Date created
-Include the date you created this project and README file.
+10-1-2021
 
-### Project Title
-Replace the Project Title
+### GitHub Project
+
 
 ### Description
-Describe what your project is about and what it does
+Refactor the BikeShare project using Git and GitHub and improve the documentation of the project
+bikeshare.py program/project explores the US bikeshare data to understand better
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Names and Groups
+Udacity and their team
+AAL (Africa App Launch)
+Google
+Stack Overflow
+Links
+Repo https://github.com/udacity/pdsnd_github
 
