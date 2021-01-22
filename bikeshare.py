@@ -66,6 +66,7 @@ def get_time_filters(month, day):
     return month, day
 
 
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
