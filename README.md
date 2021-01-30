@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+This project was create on 1/30/2021.
 
 ### Project Title
-Replace the Project Title
+Project was renamed from pdsnd_github to bikesharing_program
 
 ### Description
-Describe what your project is about and what it does
+This project will look at bike sharing information from Chicago, Washingtion, and New York City.
 
 ### Files used
-Include the files used
+The main program is bikeshare.py. Data from chicago, new york city, and washington are stored as csv files and provided upon request.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This project was started by forking udacity/pdsnd_github from GitHub.
 
