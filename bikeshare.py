@@ -200,7 +200,6 @@ def station_stats():
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    """TO DO: display most commonly used start station"""
     cities = ['chicago','washington','new_york_city']
     print('-'*70)
     for city in cities:
