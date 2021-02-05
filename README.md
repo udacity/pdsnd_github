@@ -1,15 +1,15 @@
 ### Date created
-4th February 2021
+04/02/2021
 
 ### Project Title
-Project 3
+Udacity Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+Run statistics on multiple data pools that were related to bicycle sharing
 
 ### Files used
-Include the files used
+new_york_city.csv chicago.csv washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thankyou to Udacity for providing a fun and challenging project 
 
