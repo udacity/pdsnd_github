@@ -2,10 +2,10 @@
 06.02.2021
 
 ### Project Title
-Best Project in the World
+Bikesharing
 
 ### Description
-Describe what your project is about and what it does
+This Project handles bike sharing data from 3 cities
 
 ### Files used
 Include the files used
