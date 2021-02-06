@@ -8,8 +8,7 @@ Bikesharing
 This Project handles bike sharing data from 3 cities
 
 ### Files used
-New York, Chicage and Washigton excels are used to prepare this app
+New York, Chicago and Washington excels are used to prepare this app
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
