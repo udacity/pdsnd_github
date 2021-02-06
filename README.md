@@ -1,15 +1,15 @@
-### Date created
-Include the date you created this project and README file.
+2/6/2021 Date created
+title:
+bikeshare.py 
 
-### Project Title
-Replace the Project Title
+Description:
+a program that can read and filters the data
 
-### Description
-Describe what your project is about and what it does
+files:
+chicago.csv
+new_york_city.csv
+washington.csv
 
-### Files used
-Include the files used
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Resources
+https://docs.python.org/3/library/
+https://pandas.pydata.org/pandas-docs/stable/
