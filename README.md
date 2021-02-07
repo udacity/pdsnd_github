@@ -1,6 +1,6 @@
 ### Date created
 18/01/2021
-Include the date you created this project and README file.
+
 
 ### Project Title
 US Bikeshare Project
@@ -16,4 +16,3 @@ bikeshare.py
 https://knowledge.udacity.com/questions/188683
 
 https://www.atlassian.com/git/tutorials/saving-changes/gitignore#shared
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
