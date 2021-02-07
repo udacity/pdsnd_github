@@ -14,5 +14,6 @@ bikeshare.py
 
 ### Credits
 https://knowledge.udacity.com/questions/188683
+
 https://www.atlassian.com/git/tutorials/saving-changes/gitignore#shared
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
