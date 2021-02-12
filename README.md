@@ -1,12 +1,11 @@
 ### Date created
-Include the date you created this project and README file.
+02.12.2021
 
 ### Project Title
-Replace the Project Title
+Project - BikeShare
 
 ### Description
-Describe what your project is about and what it does
-
+This Project will help the user to ananlyze some of the key analytical questions about the stations ,travel times,travellers data and time
 ### Files used
 Include the files used
 
