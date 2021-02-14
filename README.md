@@ -5,7 +5,7 @@
 Bikeshare
 
 ### Description
-Compare the bikeshare system usage between three large cities
+Compare the bikeshare system usage between three large cities(New York, Chicago,Washington DC).
 
 ### Files used
 bikeshare.py
