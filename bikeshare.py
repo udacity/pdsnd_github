@@ -176,15 +176,15 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
         
-        start=0
-        end=5
+        startPoint=0
+        endPoint=5
         while True:
             prompt = input('Would you like to look at the Raw Data(yes or no)?')
             if prompt.lower() != 'yes':
                 break             
-            print(df.iloc[start:end])
-            start=end
-            end = start + 5               
+            print(df.iloc[startPoint:endPoint])
+            startPoint=endPoint
+            endPoint = startPoint + 5               
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
