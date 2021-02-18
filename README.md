@@ -27,7 +27,7 @@ From Udacity:
       Gender
       Birth Year
 
-This project required us to use try/excepts.
+This project required us to use try/excepts, as well as, while loops to handle bad user inputs.
 
 The goal of this project was to create a fully functioning python executable that could analyze the three Cities bikeshare data csv quickly and accurately.
 The program allows the user to filter the data by city, month, and even day of the week. 
