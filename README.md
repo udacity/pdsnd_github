@@ -1,15 +1,25 @@
 ### Date created
-Include the date you created this project and README file.
+19/02/2021
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+The project is the idea of browsing the data of three cities: New York, Chicago and Washington city, and  statistical data is extracted using pandas Library.
+
+1-The first question is to determine the data via the city name.
+2-The second question Determine one month or all months
+3-The third question is to specify one day or all days of the week,
+Displays the data analyzed
+then,The user asked if he wanted to see a sample of data.
+Finally, yes no question if the user wants to run the script again or exit
 
 ### Files used
-Include the files used
+####bikeshare.py
+####chicago.csv
+####washington.csv
+####new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I would like to thank the entire team at Udacity for teaching the required concepts My educational journey was easy and fun.
 
