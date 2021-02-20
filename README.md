@@ -17,10 +17,10 @@ then,The user asked if he wanted to see a sample of data.
 Finally, yes no question if the user wants to run the script again or exit
 <br>
 ### Files used
--bikeshare.py
---chicago.csv
---washington.csv
---new_york_city.csv
+-bikeshare.py<br>
+--chicago.csv<br>
+--washington.csv<br>
+--new_york_city.csv<br>
 <br>
 ### Credits
 I would like to thank the entire team at Udacity for teaching the required concepts My educational journey was easy and fun.
