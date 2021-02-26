@@ -16,24 +16,24 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-     
+
     while True:
-        city = input("Enter the city name please: ").lower()
+        city = input("Enter the ity name please: ").lower()
         if city not in ['chicago', 'new york city', 'washington']:
             print("Invalid input, please try again.")
-        
+
         else:
             print(city)
             break
-         
-    
+
+
     month = input("Pleae enter the month: ").lower()
-    
-    
+
+
     day = input("Please enter the day: ").lower()
-    
+
     print('-'*40)
-    
+
     return city, month, day
 
 
@@ -49,22 +49,22 @@ def load_data(city, month, day):
         df - Pandas DataFrame containing city data filtered by month and day
     """
     df = pd.read_csv(CITY_DATA[city])
-    
+
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
-    
+
     if month != 'all':
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
         df = df[df['month'] == month]
-        
-        
+
+
         df['day_of_week'] = df['Start Time'].dt.weekday_name
 
     if day != 'all':
         df = df[df['day_of_week'] == day.title()]
-        
+
     return df
 
 def time_stats(df):
@@ -79,8 +79,8 @@ def time_stats(df):
 
     df['day'] = df['Start Time'].dt.weekday_name
     common_day = df['day'].mode()[0]
-    print('Most Common Day:', common_day)
-    
+    print('Most common day:', common_day)
+
     df['hour'] = df['Start Time'].dt.hour
     common_hour = df['hour'].mode()[0]
     print('Most Common Start Hour:', common_hour)
@@ -127,24 +127,24 @@ def user_stats(df):
 
     print(f"counts of User Types are: \n{df['User Type'].value_counts()}")
 
-   
+
     if 'Gender' in df:
         print(f"counts of Gender are: \n {df['Gender'].value_counts()}")
     else:
         print('Gender stats cannot be calculated because Gender does not appear in the dataframe')
 
-    
-    print(f"summary statistics: ") 
-    
-    print(df.describe())     
-       
-    
+
+    print(f"summary statistics: ")
+
+    print(df.describe())
+
+
     if 'Birth Year' in df:
         print(f"Most common year of birth is:  {df['Birth Year'].mode()[0]}")
         print(f"Most recent year of birth is:  is {df['Birth Year'].max()}")
     else:
         print('Birth Year stats cannot be calculated because Gender does not appear in the dataframe')
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
