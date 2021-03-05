@@ -13,5 +13,5 @@ It a program about a bikeshare company to analyse it customer behaviour
 bikeshare.py
 
 ### Credits
-Not applicable
+CodeNhlalo
 
