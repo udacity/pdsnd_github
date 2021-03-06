@@ -41,7 +41,7 @@ def get_filters():
         month = input().lower()
 
         if month not in MONTH_DATA.keys():
-            print("\nSorry we were not able to get the  of month filter data, Please input either 'all' to apply no month filter or january, february, ... , december)\n")
+            print("\nSorry we were not able to get the  of month filter data, Please input either 'all' to apply no month filter or january, february,march,apil,may,june)\n")
             print("\nRestarting...")
 
     print(f"\nYou have chosen {month.title()} as your month.")
@@ -172,23 +172,70 @@ def user_stats(df):
     print(f"Counts of user types: {counts_user_types}")
 
     # TO DO: Display counts of gender
-    counts_gender = df['Gender'].value_counts()
-    print(f"Counts of gender: {counts_gender}")
+    #This try clause is implemented to display the numebr of users by Gender
+    #However, not every df may have the Gender column, hence this...
+    try:
+        gender = df['Gender'].value_counts()
+        print(f"\nThe types of users by gender are given below:\n\n{gender}")
+    except:
+        print("\nThere is no 'Gender' column in this file.")
 
     # TO DO: Display earliest, most recent, and most common year of birth
-    earliest_birth_year = df['Birth Year'].min()
-    print(f"Earliest year of birth: {earliest_birth_year}")
-    
-    most_recent_birth_year = df['Birth Year'].max()
-    print(f"Most recent year of birth: {most_recent_birth_year}")
-    
-    most_common_birth_year = df['Birth Year'].mode()[0]
-    print(f"Most common year of birth: {most_common_birth_year}")
-    
+    try:
+        earliest_birth_year = df['Birth Year'].min()
+        print(f"Earliest year of birth: {earliest_birth_year}")
+    except:
+        print("There are no birth year details in this file.")
+    try:   
+        most_recent_birth_year = df['Birth Year'].max()
+        print(f"Most recent year of birth: {most_recent_birth_year}")
+    except: 
+        print("There are no birth year details in this file.")
+    try:
+        most_common_birth_year = df['Birth Year'].mode()[0]
+        print(f"Most common year of birth: {most_common_birth_year}")
+    except:
+        print("There are no birth year details in this file.")
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+#Function to display the data frame itself as per user request
+def display_data(df):
+    """Displays 5 rows of data from the csv file for the selected city.
+    Args:
+        param1 (df): The data frame you wish to work with.
+    Returns:
+        None.
+    """
+    BIN_RESPONSE_LIST = ['yes', 'no']
+    rdata = ''
+    #counter variable is initialized as a tag to ensure only details from
+    #a particular point is displayed
+    counter = 0
+    while rdata not in BIN_RESPONSE_LIST:
+        print("\nDo you wish to view the raw data?")
+        print("\nAccepted responses:\nYes or yes\nNo or no")
+        rdata = input().lower()
+        #the raw data from the df is displayed if user opts for it
+        if rdata == "yes":
+            print(df.head())
+        elif rdata not in BIN_RESPONSE_LIST:
+            print("\nPlease check your input.")
+            print("Input does not seem to match any of the accepted responses.")
+            print("\nRestarting...\n")
 
+    #Extra while loop here to ask user if they want to continue viewing data
+    while rdata == 'yes':
+        print("Do you wish to view more raw data?")
+        counter += 5
+        rdata = input().lower()
+        #If user opts for it, this displays next 5 rows of data
+        if rdata == "yes":
+             print(df[counter:counter+5])
+        elif rdata != "yes":
+             break
+
+    print('-'*80)
 def main():
     while True:
         city, month, day = get_filters()
@@ -198,7 +245,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
+        display_data(df)
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
@@ -206,3 +253,5 @@ def main():
 
 if __name__ == "__main__":
 	main()
+
+
