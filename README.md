@@ -1,6 +1,6 @@
 
 
-Basic Data Exploration with pandas on Bikeshare Data
+### Basic Data Exploration with pandas on Bikeshare Data
 
 ### Description
 Bike Share Data
@@ -50,6 +50,8 @@ The Chicago and New York City files also have the following two columns:
 Gender
 Birth Year
 
+### Author
+Cindy Chen 
 ### Credits
 Arita96 - Arita96's repo helped with understanding the data structure and details of certain function.
 Udecity - Udecity Data Analyst Nanodegree program and their insturtore were superful and point out the area which I can improve.
