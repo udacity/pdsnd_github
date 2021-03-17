@@ -4,7 +4,7 @@
 This bikeshare project and README was created on 03/16/2021
 
 ### Project Title
-This software provides analysis report for US bikeshare data in the city of Chicago, New York, and Washington according to user's input. 
+US bikeshare data analysis
 
 ### Description
 Describe what your project is about and what it does
