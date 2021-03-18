@@ -7,10 +7,12 @@ This bikeshare project and README was created on 03/16/2021
 US bikeshare data analysis
 
 ### Description
-This software provides analysis report for US bikeshare data in the city of Chicago, New York, and Washington according to user's input. 
+This software provides analysis report for US bikeshare data in the city of Chicago, New York, and Washington according to user's input.
 
 ### Files used
-Include the files used
+Chicago.csv
+new_york_city.csv
+Washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
