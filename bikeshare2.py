@@ -25,7 +25,7 @@ def city_input():
     '''
     print('Hello! I am Suman Kumar Subudhi! Let\'s explore some US bikeshare data!')
     print(' ')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+# get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     print('Enter the city you want to analyze the data for:')
     print('Chicago: 1')
     print('New York: 2')
@@ -34,20 +34,20 @@ def city_input():
     city = input('Please choose the city for which you would like to see the Statistics: ')
     city = city.lower()
     while True:     # for handling the unexpected input by user
-            if city == '1' or city == 'chicago':
-                print("\nChicago City! Okay Let's go further\n")
-                return 'chicago'
-            if city == '2' or city == 'new york':
-                print("\nNew York City! Okay let's go further\n")
-                return 'new york city'
-            elif city == '3' or city == 'washington':
-                print("\nWashington! Okay let's go further\n")
-                return 'washington'
+        if city == '1' or city == 'chicago':
+            print("\nChicago City! Okay Let's go further\n")
+            return 'chicago'
+        if city == '2' or city == 'new york':
+            print("\nNew York City! Okay let's go further\n")
+            return 'new york city'
+        elif city == '3' or city == 'washington':
+            print("\nWashington! Okay let's go further\n")
+            return 'washington'
             # error handled by implementing 'else' and provided another option to input data
-            else:
-                print('\nPlease enter 1, 2 or 3 or the names of cities\n')
-                city = input('Please choose the city for which you would like to see the Statistics: ')
-                city = city.lower()
+        else:
+            print('\nPlease enter 1, 2 or 3 or the names of cities\n')
+            city = input('Please choose the city for which you would like to see the Statistics: ')
+            city = city.lower()
     return city
 
 def get_time():
@@ -67,8 +67,8 @@ def get_time():
                     print('\n The data is now being filtered by month...\n')
                     return 'month'
                 elif day_month == "yes":
-                   print ('\n The data is now being filtered by month and day of the month...\n')
-                   return 'day_of_month'
+                    print ('\n The data is now being filtered by month and day of the month...\n')
+                    return 'day_of_month'
 
         if period == "day":
             print('\n The data is now being filtered by the day of the week...\n')
