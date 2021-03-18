@@ -94,7 +94,7 @@ def month_day_info(df, day_m):     # Asks the user for a month and a day of mont
         month_day.append(month)
         maximum_day_month = max_day_month(df, month)
 
-        while (True):
+        while True:
             ask = """ \n Which day of the month? \n
             Please type your response as an integer between 1 and  """
             ask  = ask + str(maximum_day_month) + "\n"
