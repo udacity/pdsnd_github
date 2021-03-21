@@ -26,6 +26,7 @@ def get_filters():
 
 
     print('-'*40)
+    print('Warning! This code only works on one format!')
     return city, month, day
 
 
@@ -52,7 +53,7 @@ def time_stats(df):
     start_time = time.time()
 
     # display the most common month
-
+    print('Enter days in English only!')
 
     # display the most common day of week
 
@@ -130,6 +131,7 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+            print('Warning! After restarting you will re-enter all the requirements again!')
             break
 
 
