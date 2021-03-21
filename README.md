@@ -29,9 +29,9 @@ User Type (Subscriber or Customer)
 The Chicago and New York City files also have the following two columns:
 Gender 
 Birth Year
-||||||| b5ccd59
-Describe what your project is about and what it does
-=======
+
+### Describe what your project is about and what it does
+
 This is an interactive Python project for Bike Share Data. It allows users to select the city, month, and day they would like to query the data and display the following results:
 
 #1 Popular times of travel (i.e., occurs most often in the start time)
@@ -68,19 +68,12 @@ The Chicago and New York City files also have the following two columns:
 Gender
 Birth Year
 ### Files used
-<<<<<<< HEAD
+
 bikeshare_2.py 
 chicago.csv 
 new_york_city.csv 
 washington.csv
-||||||| b5ccd59
-Include the files used
-=======
-bikeshare_2.py
-chicago.csv
-new_york_city.csv
-washington.csv
->>>>>>> documentation
+
 
 ### Credits
 <<<<<<< HEAD
