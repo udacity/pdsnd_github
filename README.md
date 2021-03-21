@@ -7,7 +7,7 @@ Include the date you created this project and README file.
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+The project is a data understanding for the three cities data-sets.
 
 ### Files used
 Include the files used
