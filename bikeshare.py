@@ -11,7 +11,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     print()
-    #Get user input for city (chicago, new york city, washington).
+    #  Get user input for city -- chicago, new york city, washington.
     city = ''
     print('Please select one of the cities below for which you would like to explore the bikeshare data:')
     print()
@@ -32,7 +32,7 @@ def get_filters():
         city = 'Chicago by default'
     print()
     print('Data will be analyzed for: {}'.format(city))
-    
+
     #  Get user input for month
 
     print()
@@ -116,17 +116,16 @@ def get_filters():
         print('Default value is all days.')
         day = 'all days by default'
         dd = 8
-    
+
     print()
     #
     if day == 'all' or day == 'all days by default':
         print('Data will be analyzed for all days.')
     else:
         print('You have choosen to analyze data for: {}'.format(day))
-        
-    #city = city.lower()
+
     return city, mm, dd, month, day
-    
+
 # print a report heading
 def report_heading(city,month,day):
     print()
@@ -147,23 +146,23 @@ def load_data(city, mm, dd):
         city_data = pd.read_csv(CITY_DATA['new york city'])
     else:
         city_data = pd.read_csv(CITY_DATA['washington'])
-    
+
     #
-    
+
     # convert Start Time to date_time format
-    city_data['Start Time'] = pd.to_datetime(city_data['Start Time']) 
+    city_data['Start Time'] = pd.to_datetime(city_data['Start Time'])
     if mm != 13:
         index = city_data[city_data['Start Time'].dt.month != mm].index
-        city_data.drop(index, inplace=True)     
+        city_data.drop(index, inplace=True)
     if dd != 8:
         index = city_data[city_data['Start Time'].dt.day != dd].index
         city_data.drop(index, inplace=True)
-      
+
     return city_data
 
 # calculate time stats
 def time_stats(city_data,mm,dd):
-    
+
     if mm == 13:
         #CALCULATE MOST COMMON MONTH
         max_month = city_data['Start Time'].dt.month.value_counts().idxmax()
@@ -179,8 +178,8 @@ def time_stats(city_data,mm,dd):
 #
 # calculate station stats
 def station_stats(city_data):
-   # find most frequent starting station 
-   max_start_station = city_data['Start Station'].value_counts().idxmax() 
+   # find most frequent starting station
+   max_start_station = city_data['Start Station'].value_counts().idxmax()
    print('Most frequent starting statiion: ', max_start_station)
    # find most common end station
    max_end_station = city_data['End Station'].value_counts().idxmax()
@@ -200,7 +199,7 @@ def trip_duration_stats(city_data):
     print('Total travel time (m): ',total_travel_time_mm)
     print('Total travel time (h): ',total_travel_time_hh)
     print()
-    
+
     print()
 
 # calculate user stats
@@ -222,8 +221,8 @@ def user_stats(city_data,city):
         print('Lates year-of-birth: ', int(latest_yob))
         print('Most common year-of-birth: ', int(most_common_yob))
         print()
-  
-# create csv file to inspect results data frame        
+
+# create csv file to inspect results data frame
 #def create_file(city_data):
 #    city_data.to_csv('final_city_data.csv')
 
@@ -240,19 +239,19 @@ def five_lines(city_data):
         ans = input().lower()
         while ans == 'y':
             d = c + 5
-            print(city_data.iloc[c:d]) 
+            print(city_data.iloc[c:d])
             print('Enter "y" to see more raw data (5 lines), other to continue.')
             ans = input().lower()
             c = c + 5
-        
+
 
 def main():
     while True:
         city, mm, dd, month, day = get_filters() #return city, mm, dd, month, day
         report_heading(city,month,day)           #none
         city_data = load_data(city, mm, dd)      #return city_data
-        time_stats(city_data,mm,dd)              #none  
-        station_stats(city_data)                 #none 
+        time_stats(city_data,mm,dd)              #none
+        station_stats(city_data)                 #none
         trip_duration_stats(city_data)           #none
         user_stats(city_data,city)               #none
   #      create_file(city_data)                   #none
