@@ -9,7 +9,8 @@ Replace the Project Title
 ### Description
 A python program that compiles various statistics based on bikeshare usage data in Chicago,
 New York City, and Washington D.C. over the first six months of 2017.
-The program solicits the user for various analysis parameters.
+The program solicits the user for various analysis parameters: city, month, day, and
+allows the user to view five lines of raw data at a time. 
 The raw data are located in three .csv files.  
 
 ### Files used
