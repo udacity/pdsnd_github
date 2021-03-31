@@ -234,6 +234,15 @@ def view(df):
                 to_view = str(input('\nWoul you like to view a sample of 5 rows of the database? Please answer yes or no: ').title())
 
 
+def compare_city():
+    """
+    This definition allows the user to compare statistics for multiple cities.
+    """
+    compare = str(input('\nWould you like to compare summary data from multiple cities? Please answer yes or no: ').title())
+    if compare ="Yes":
+        compare_citys = str(input('\nIf you would like to compare Chicago with New York, please enter 1 \n If you would like to compare Chicago with Washington, please enter 2\n If you would like to compare New York with Chicago, please enter 3\n If you would like to compare New York with Washington, please enter 4\n if you would like to compare Chicago, New York and Washington, please enter 5').title())
+
+
 def main():
     """
     This definition runs the desired definitions to choose the data and filters,
@@ -262,6 +271,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         view(df)
+        compare_city(df)
 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
