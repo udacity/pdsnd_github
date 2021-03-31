@@ -1,17 +1,24 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+31/03/21
 
 ### Project Title
-Replace the Project Title
+Bike share project
 
 ### Description
-Describe what your project is about and what it does
+This python code allows the user to filter data related to usage of a bike share program in on of three cities (Chicago, New York or Washington).
+The filter can also select a specific month and or day of the week.
+The program then displays summery statistics for:
+  popular time of Travel
+  popular stations
+  trip Duration
+  user details
+The user is then offered the chance to view the raw data.
 
 ### Files used
-Include the files used
+BS_submitted.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+This code was created by Catherine Reynolds with assistance from the UDACITY program.
