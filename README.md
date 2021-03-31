@@ -22,3 +22,6 @@ washington.csv
 
 ### Credits
 This code was created by Catherine Reynolds with assistance from the UDACITY program.
+
+### Development tasks
+User's ability to view and compare multiple city's data.
