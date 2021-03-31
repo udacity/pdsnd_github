@@ -25,3 +25,6 @@ This code was created by Catherine Reynolds with assistance from the UDACITY pro
 
 ### Development tasks
 User's ability to view and compare multiple city's data.
+
+### Known error's
+The data files are not identical. The washincton.csv file doesn't contain the columns "Gender" or "Birth Year".
