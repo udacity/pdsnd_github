@@ -1,3 +1,16 @@
+"""
+Description:
+This python code allows the user to filter data related to usage of a bike share program in on of three cities (Chicago, New York or Washington).
+The filter can also select a specific month and or day of the week.
+The program then displays summery statistics for:
+    popular time of Travel
+    popular stations
+    trip Duration
+    user details
+The user is then offered the chance to view the raw data.
+"""
+
+
 import time
 import pandas as pd
 import numpy as np
