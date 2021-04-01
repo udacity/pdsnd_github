@@ -12,8 +12,8 @@ The user is then offered the chance to view the raw data.
 
 
 import time
-import pandas as pd
-import numpy as np
+#import pandas as pd
+#import numpy as np
 
 def get_city(city_dict):
     """
@@ -237,10 +237,23 @@ def view(df):
 def compare_city():
     """
     This definition allows the user to compare statistics for multiple cities.
+    This definition returns the filters (compare_citys) to be applied to city_compare_stats definition .
     """
-    compare = str(input('\nWould you like to compare summary data from multiple cities? Please answer yes or no: ').title())
-    if compare ="Yes":
-        compare_citys = str(input('\nIf you would like to compare Chicago with New York, please enter 1 \n If you would like to compare Chicago with Washington, please enter 2\n If you would like to compare New York with Chicago, please enter 3\n If you would like to compare New York with Washington, please enter 4\n if you would like to compare Chicago, New York and Washington, please enter 5').title())
+    while True:
+        compare = str(input('\nWould you like to compare summary data from multiple cities? Please answer yes or no: ').title()):
+        if compare =="Yes":
+            while True:
+                compare_citys = int(input('\nIf you would like to compare Chicago with New York, please enter 1 \n If you would like to compare Chicago with Washington, please enter 2\n If you would like to compare New York with Chicago, please enter 3\n If you would like to compare New York with Washington, please enter 4\n if you would like to compare Chicago, New York and Washington, please enter 5').title())
+                if compare_citys >= 1 and compare_citys <=5:
+                    return compare_citys
+                else:
+                    print('\nO dear, you entered an invalid number, please try again.').title())
+        elif compare =="No":
+            return
+        else:
+            print('\nO dear, please check your spelling and try again ').title())
+
+#to do: build city_compare_stats definition and load into main definition.#
 
 
 def main():
