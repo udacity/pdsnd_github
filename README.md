@@ -9,17 +9,14 @@ This Python script is written for Project 2 of Udacity's Data Analyst Nanodegree
 
 ## Files used
 ### python file:
----------------------------
-	* bikeshare.py
----------------------------
+* bikeshare.py
 
 ### csv files:	
----------------------------
 [csv_data](https://drive.google.com/drive/folders/1_W0hCnaJucHeIy-G0esooo9oHDI8eMID?usp=sharing)
-	* chicago.csv
-	* new_york_city.csv
-	* washington.csv
----------------------------
+* chicago.csv
+* new_york_city.csv
+* washington.csv
+
 
 ## **Code explained in Detail:**
 ### **How the program works:**
@@ -76,14 +73,12 @@ The code helps user to tell about bike share use in _Chicago_, _New York City_ a
 ## Credits
 
 Richard Kalehoff (Udacity mentor):
--------------------------------------------
-	[github](https://github.com/richardkalehoff)
-	[twitter](https://twitter.com/richardkalehoff)
--------------------------------------------
+* [github](https://github.com/richardkalehoff)
+* [twitter](https://twitter.com/richardkalehoff)
+
 
 Juno Lee (Udacity Mentor):
--------------------------------------------
-	[github](https://github.com/junolee)
-	[twitter](https://www.linkedin.com/in/junoleelj)
--------------------------------------------
+* [github](https://github.com/junolee)
+* [twitter](https://www.linkedin.com/in/junoleelj)
+
 
