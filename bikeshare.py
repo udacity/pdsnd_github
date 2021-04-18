@@ -236,7 +236,7 @@ def user_stats(df):
     pd.set_option('display.max_columns', 14)
     pd.set_option("expand_frame_repr", False)
     while True:
-        raw = input('\nWould you like to see some raw data? Enter yes or no (Data will be outputed to an excel file called "output.xlsx": \n')
+        raw = input('\nWould you like to see some raw data? Enter yes or no (Data will be outputed to an excel file called "output_#_rows_YYYYmmdd-HHMMSS.xlsx": \n')
         if raw.lower() == 'yes':
             try:
                 rows = int(input('\nplease enter the number of rows you would like to see (between "1" and "300001"): \n'))
@@ -247,7 +247,8 @@ def user_stats(df):
                     print('**PRINTING OUTPUT FILE**')
                     print('='*24 + '\n')
                     print()
-                    df[:x].to_excel('output.xlsx')
+                    timestr = time.strftime("%Y%m%d-%H%M%S")
+                    df[:x].to_excel('output_{}_rows_{}.xlsx'.format(rows, timestr))
                     
                 else:
                     print('='*70)
