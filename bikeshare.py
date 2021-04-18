@@ -21,40 +21,35 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print() 
-    print('=============================================')
-    print('Hello! Let\'s explore some US bikeshare data!')
-    print('=============================================')
-    print()
+    print('='*48 + '\n' + ' Hello! Let\'s explore some US bikeshare data!')
+    print('='*48 + '\n')
     print()  
     
     # Get user input for city (chicago, new york city, washington).
     city = input('Please provide an input for ONE of the following cities (Chicago, New York City, Washington): ').lower()
     while city not in ['chicago', 'new york city', 'washington']:
         print()
-        print('===================================')
+        print('='*36)
         print('**Invalid Input, Please Try Again**')
-        print('===================================')
-        print()
+        print('='*36 + '\n')
         city = input ('Select ONE of the following cities (Chicago, New York City, Washington): ').lower()
         
     # Get user input for month (all, january, february, ... , june)
     month = input('\nPlease provide an input from "January" to "June" OR enter "all" for all months: ').lower()
     while month not in ['all','january', 'february', 'march', 'april', 'may', 'june']:
         print()
-        print('===================================')
+        print('='*36)
         print('**Invalid Input, Please Try Again**')
-        print('===================================')
-        print()
+        print('='*36 + '\n')
         month = input('Select EITHER a month from "January" to "June" OR "all" for all months: ').lower()
         
     # Get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('\nPlease provide an input from "Monday" to "Sunday" OR enter "all" for all days: ').lower()
     while day not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
         print()
-        print('===================================')
+        print('='*36)
         print('**Invalid Input, Please Try Again**')
-        print('===================================')
-        print()
+        print('='*36 + '\n')
         day = input('Select EITHER a day from "Monday" to "Sunday" OR enter "all" for all days: ').lower()
         
     print('-'*85)
@@ -101,9 +96,9 @@ def load_data(city, month, day):
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
     print()
-    print('================================================')
+    print('='*48)
     print('Calculating The Most Frequent Times of Travel...')
-    print('================================================')
+    print('='*48)
     print()
     start_time = time.time()
 
@@ -131,9 +126,9 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
     print()
-    print('==================================================')
+    print('='*49)
     print('Calculating The Most Popular Stations and Trips...')
-    print('==================================================')
+    print('='*49)
     print()
     start_time = time.time()
 
@@ -161,9 +156,9 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
     print()
-    print('============================')
+    print('='*28)
     print('Calculating Trip Duration...')
-    print('============================')
+    print('='*28)
     print()
     start_time = time.time()
 
@@ -185,9 +180,9 @@ def trip_duration_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
     print()
-    print('=========================')
+    print('='*25)
     print('Calculating User Stats...')
-    print('=========================')
+    print('='*25)
     print()
     start_time = time.time()
 
@@ -207,9 +202,9 @@ def user_stats(df):
         print()
     else:
         print()
-        print('============================================')
+        print('='*44)
         print('Sorry, there is no data available for Gender')
-        print('============================================')
+        print('='*44)
         print()
         
     # Display earliest, most recent, and most common year of birth
@@ -217,9 +212,9 @@ def user_stats(df):
         earliest_birth = int(df['Birth Year'].min())
         most_recent_birth = int(df['Birth Year'].max())
         most_common_birth = int(df['Birth Year'].mode())
-        print('===============================================================')
+        print('='*63)
         print('Displaying earliest, most recent, and most common year of birth')
-        print('===============================================================')
+        print('='*63)
         print()
         print(Format.underline + 'Earliest year of birth' + Format.end +': ' , earliest_birth)
         print()
@@ -228,9 +223,9 @@ def user_stats(df):
         print(Format.underline + 'Most common year of birth' + Format.end +': ' , most_common_birth)
     else:
         print()
-        print('================================================')
+        print('='*48)
         print('Sorry, there is no data available for Birth Year')
-        print('================================================')
+        print('='*48)
         print()
     print()
     print('-'*40)
@@ -248,17 +243,16 @@ def user_stats(df):
                 if rows <= 300001:
                     x = 1
                     x += rows
-                    print('========================')
+                     print('='*24)
                     print('**PRINTING OUTPUT FILE**')
-                    print('========================')
+                    print('='*24 + '\n')
                     print()
                     df[:x].to_excel('output.xlsx')
                     
                 else:
-                    print('===========================================================================')
+                    print('='*70)
                     print('**Invalid Input, Please input a number between "1" and "300001" Try Again**')
-                    print('===========================================================================')
-                    print()
+                    print('='*70 + '\n')
                     rows = int(input('please enter the number of rows you would like to see: '))
             except Exception as e:
                 print("Exception occurred: {}".format(e))
@@ -266,10 +260,9 @@ def user_stats(df):
         elif raw.lower() == 'no':
             break
         else:
-            print('============================================')
+           print('='*44)
             print('**Invalid Input, Please enter "yes or "no"**')
-            print('============================================')
-            print()
+            print('='*44 + '\n')
             continue
             
     
