@@ -26,3 +26,4 @@ trial.py the
 ### Credits
 
 W3 school and the mentors in udacity played a key role in bringing this project to completion.
+Youtube was also a vital source for pandas videos.
