@@ -15,11 +15,13 @@ This project aims at analyzing the bikeshare data and draw some useful informati
 ### Files used
 
 The files used include
-
+these files contain the data
 washington.csv
 chicago.csv
 new_york_city.csv
-trial.py the file with actual code to perform analysis
+
+this file with actual code to perform analysis
+trial.py the
 
 ### Credits
 
