@@ -8,7 +8,7 @@ This Bikeshare Project was created on 16th April 2021, the Readme file was creat
 Bikeshare Project for Intro to Data Science with Python Nanodegree
 
 ### Description
-This project was all about analyzing of shared bikes across three major cities to gain useful insights about the system. The cities are: New York City, Washington and Chicago.
+This project was all about analyzing data of shared bikes across three major cities to gain useful insights about the system. The cities are: New York City, Washington and Chicago.
 
 ### Files used
 The files used in this project were:
