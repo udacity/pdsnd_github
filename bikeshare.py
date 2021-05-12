@@ -11,6 +11,7 @@ DAY_DATA = ['all', 'monday', 'tuesday', 'wednesday', 'friday', 'saturday', 'sund
 print("Programming for Data Science with Python Nanodegree")
 
 # The washinton dataframe does not contain gender column
+# Few more columns share same fate
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
