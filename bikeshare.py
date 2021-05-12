@@ -8,7 +8,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTH_DATA = ['all', 'jan', 'feb', 'march', 'april', 'may', 'june']
 
 DAY_DATA = ['all', 'monday', 'tuesday', 'wednesday', 'friday', 'saturday', 'sunday']
+print("Programming for Data Science with Python Nanodegree")
 
+# The washinton dataframe does not contain gender column
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -26,8 +28,8 @@ def get_filters():
             break
         else:
             print('Please Try again')
-        
-        
+
+
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('Provide a month name from all, jan, feb, ... , june \n>')
@@ -153,9 +155,9 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
     print(f"Earliest year of birth is {df['Birth Year'].min()}")
-    
+
     print(f"Most recent year of birth is {df['Birth Year'].max()}")
-    
+
     print(f"Most common year of birth is {df['Birth Year'].mode()[0]}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))

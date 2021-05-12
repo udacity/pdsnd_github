@@ -1,14 +1,21 @@
 ### Date created
-Include the date you created this project and README file.
+May-11-2021
 
 ### Project Title
-Replace the Project Title
+Programming for Data Science with Python Nanodegree
 
 ### Description
-Describe what your project is about and what it does
+The whole project is about to analyse the bikeshare system of Chicago, New York, and Washington city and come up with some good statistical information. We have filtered the whole data by city months and weekdays in order to generalize some statistical facts. We can also view the raw data if we want. The project involved a good use of the libraries like Pandas and numpy.
 
 ### Files used
-Include the files used
+We have used the following files to compleyte the project:
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+* Documentation of numpy
+* Documentation of pandas
+* Geeksforgeeks
+Added another line to REAMD.md
+Added another line to REAMD.md
