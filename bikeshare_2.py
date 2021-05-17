@@ -162,6 +162,7 @@ def main():
         user_stats(df)
 
         line = 1
+        # while loop to ask if whant to see more data
         while True:
             raw = input(
                 '\nWould you like to see some data? Enter yes or no.\n')
