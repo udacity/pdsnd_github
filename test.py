@@ -6,13 +6,13 @@ city_data={'new york':'new_york.csv','washington':'washington.csv','chicago':'ch
 
 def get_city():
     '''
-    request city from user and returns the city name
+    request city from user and returns the city name supplied
     Args:
         none
     returns:
         (str) city
     '''
-    print('welcome, you can view bikeshare data!\n')
+    print('welcome, you can view bikeshare data now!\n')
     city=''
     while city.lower not in ['washington','chicago','new york']:
         city=input('choose a city data to view, washington,new york or chicago?\n' )
@@ -23,7 +23,7 @@ def get_city():
         elif city.lower()=='chicago':
             return 'chicago'
         else:
-            print('wrong input, enter right city name\n')
+            print('wrong input, enter right city name now\n')
     return city
 def get_filter():
     """
@@ -41,7 +41,7 @@ def get_filter():
     return filter
 def get_month():
     """
-    prompt user for month
+    prompt user for month under review
     Args:
         none.
     Returns:
@@ -56,7 +56,7 @@ def get_month():
     month=month_dic[month.lower()]
     return month
 def get_day():
-    '''prompt user for day and return the day.
+    '''prompt user for day and return the day supplied.
     Args:
         none
     Returns:
@@ -72,7 +72,7 @@ def get_day():
     return day
 def get_month(df):
     """
-    shows popular month in the bikeshare
+    shows popular month in the bikeshare database
     Args:
         bikeshare dataframe.
     Returns:
