@@ -8,7 +8,8 @@ Udacity bikeshare project
 
 ### Description
 The bikeshare data explores the use of bikes in three cities in the United States: New York, Chicago and Washington.
-The project uses Rubrik to make an interactive system for users to request information about the cities they are interested in, and the result is provided to them.  
+The project uses Rubrik to make an interactive system for users to request information about the cities they are interested in, and the result is provided to them.
+Also used git. 
 
 ### Files used
 The files uses are: 
