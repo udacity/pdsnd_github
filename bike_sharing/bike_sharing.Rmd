@@ -1,0 +1,219 @@
+---
+title: "bike_sharing"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Load Libraries
+
+```{r message=FALSE, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+library(anytime) # for time
+library(lubridate) # for time
+library(janitor)  # to clean column names
+
+```
+
+
+
+# load the data
+
+
+```{r}
+
+new_york = read.csv("new_york_city.csv")# using base-R read.csv
+washington = read.csv("washington.csv") # using tidyvers read_csv
+chicago = read.csv("chicago.csv")
+
+```
+
+
+Let us observe the data:
+
+```{r}
+glimpse(new_york)
+```
+
+
+The variable names are not the best way of naming, let us use janitor package to clean all the column names and use camel_case style 
+
+# clean names using janitor package
+
+
+```{r}
+tidy_new_york <- clean_names(new_york)
+tidy_washington <- clean_names(washington)
+tidy_chicago <- clean_names(chicago)
+
+```
+
+
+
+```{r}
+
+glimpse(tidy_new_york)
+```
+
+
+# Transform the dataset
+
+```{r}
+
+chi_clean <- tidy_chicago %>%
+  mutate(start_time = as_datetime(as.character(start_time), tz = "UTC"))  %>% # changing to time format
+  mutate(end_time = as_datetime(as.character(end_time), tz = "UTC")) %>% # changing to time format
+  mutate(state = 'New York') # create a new variable to compare bwteen dataset
+
+
+wash_clean <- tidy_washington %>%
+  mutate(start_time = as_datetime(as.character(start_time), tz = "UTC"))%>% # changing to time format
+  mutate(end_time = as_datetime(as.character(end_time), tz = "UTC")) %>% # changing to time format
+  mutate(gender = NA_character_) %>% # create an NA variable since it is empty
+  mutate(birth_year = NA) %>%  #create an NA variable since it is empty
+  mutate(state = 'Washington') # create a new variable to compare
+
+
+
+ny_clean <- tidy_new_york %>%
+  mutate(start_time = anytime(start_time)) %>% # using anytime to change to time
+  mutate(end_time = anytime(end_time)) %>% # using anytime to change
+  mutate(state =  'Chicago') %>%
+  relocate()
+
+```
+
+# Combine the dataframes
+
+
+```{r}
+df_all_states <- bind_rows(wash_clean, chi_clean, ny_clean)
+
+```
+
+#  Question 1: What is the most common month?
+
+
+## Vuzualization
+
+Getting the month from the dates:
+
+```{r}
+df_all_states$month <- month(df_all_states$start_time, label = TRUE) # extracting month from the dates
+
+```
+
+Observing the new dataframe with the new column
+
+```{r}
+glimpse(df_all_states)
+```
+
+
+Plotting the month:
+
+```{r}
+
+df_all_states<- subset(df_all_states, !is.na(month))
+
+ggplot(df_all_states)+
+  geom_bar(aes(x= month, fill= state), position='dodge') +
+  ggtitle(" Months")
+
+```
+
+From the plot, the most common month is June
+
+## Summary 
+
+
+```{r}
+summary(df_all_states$month)
+
+```
+
+We can see June has the highest number of : 37147. All other months have 0 entries. We also have 
+
+
+```{r}
+
+```
+
+
+
+# Question 2: What is the most common day of week?
+
+## Vizualization 
+
+
+```{r}
+df_all_states$day_of_week <- wday(df_all_states$start_time, label = TRUE) # making a da of the week from date using wday function from lubridate
+
+```
+
+
+Plotting the graph of the date
+
+```{r}
+
+
+ggplot(df_all_states)+
+  geom_bar(aes(x= day_of_week, fill= state), position='dodge') +
+  ggtitle(" Days of the week")
+
+```
+
+
+From the vizualizaton above, we can see that Wedensday has the highest day of the week in Chicago and Washington. However, NeYork seems to have small number in all days. It may turns out people dont rent bike as in other cities.
+
+
+## Summary 
+
+
+```{r}
+summary(df_all_states$day_of_week)
+
+```
+
+Still, `Wed` is the most common day of the week with total number of : `25092`
+
+
+
+```{r}
+summary(chi_clean$start_time)
+
+```
+
+# Question 3: What is the most common hour of day?
+
+
+## Vuzualization
+
+
+```{r}
+## Create day hour field.
+df_all_states$hour <-strftime(df_all_states$start_time, format="%H")
+
+ggplot(df_all_states)+
+ geom_bar(aes(x=hour, fill=state), position='dodge') +
+ ggtitle("Number of rides for each hour of the day")
+```
+
+
+The most common hour 8AM that is when people are going  work.
+
+
+ 
+
+# Summary of all the questions
+
+
+```{r}
+skim(df_all_states, start_time, hour, day_of_week ) %>% 
+
+```
+
