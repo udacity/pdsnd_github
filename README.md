@@ -12,7 +12,7 @@ and how to manipulate the data for information.
 The different data and .csv files were used for analysis. Anaconda python editor was used for the software programming part
 
 ### Credits
-Credits goes to the udacity classroom that helped a lot in completing this project
+Credits goes to the udacity classroom that helped a lot in completing this project.
 
 
 
