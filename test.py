@@ -31,7 +31,7 @@ def get_filter():
     Args:
         none.
     returns:
-        (str)filter - day or month
+        (str)filter - month or day
     """
     filter=""
     while filter.lower() not in ['day','month','none']:
