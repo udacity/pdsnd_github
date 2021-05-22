@@ -1,5 +1,5 @@
 ### Date created
-This repository was created on the 15th of May, 2021
+This repository was created on the 15th of May, 2021.
 
 ### Project Title
 Programming for Data Science with Python 
