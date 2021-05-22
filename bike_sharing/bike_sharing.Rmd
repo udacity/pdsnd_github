@@ -73,7 +73,6 @@ chi_clean <- tidy_chicago %>%
 wash_clean <- tidy_washington %>%
   mutate(start_time = as_datetime(as.character(start_time), tz = "UTC"))%>% # changing to time format
   mutate(end_time = as_datetime(as.character(end_time), tz = "UTC")) %>% # changing to time format
-  mutate(birth_year = NA) %>%  #create an NA variable since it is empty
   mutate(state = 'Washington') # create a new variable to compare
 
 
