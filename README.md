@@ -5,7 +5,7 @@ This repository was created on the 15th of May, 2021
 Programming for Data Science with Python 
 
 ### Description
-this help to understand bike sharing data in cities in the US
+This help to understand bike sharing data in cities in the US
 and how to manipulate the data for information.
 
 ### Files used
