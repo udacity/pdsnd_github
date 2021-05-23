@@ -38,5 +38,5 @@ to uncover bike share usage patterns. It compares the system usage between three
 -washington.csv
 
 ### Credits
-Thanks to mary jonah, my coursemate, who guided me on this project.
+Thanks to @maryjonah, my coursemate, who guided me on this project.
 
